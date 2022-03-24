@@ -1,0 +1,14 @@
+%btn {
+  display: inline-block;
+  border: 2px solid $white;
+  background-color: transparent;
+}
+
+.btn {
+  @extend %btn;
+  padding: 2rem 3.2rem;
+}
+
+.btn--navigation {
+  border: none;
+}
