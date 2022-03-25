@@ -4,7 +4,7 @@
 }
 
 .navigation-bar {
-  padding: 6.2rem 0;
+  padding: 3.2rem 0;
   @extend %flexbox;
   justify-content: space-between;
 }
@@ -17,7 +17,7 @@
 
 .navigation__link-item {
   @extend %flexbox;
-  padding: 1rem 2.2rem;
+  padding: 2rem;
   text-transform: uppercase;
 }
 
