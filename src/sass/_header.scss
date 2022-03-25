@@ -4,35 +4,43 @@
 }
 
 .navigation-bar {
-  padding: 3.2rem 0;
   @extend %flexbox;
+  padding: 2.2rem 0;
   justify-content: space-between;
 }
 
 .navigation__links-list {
   @extend %flexbox;
   list-style: none;
-  gap: 4.8rem;
+  height: 5rem;
 }
+
+// todo
+// .navigation__links-list--left {
+//   @extend %btn;
+//   display: flex;
+// }
 
 .navigation__link-item {
   @extend %flexbox;
-  padding: 2rem;
   text-transform: uppercase;
 }
 
 .navigation__link:link,
 .navigation__link:visited {
   text-decoration: none;
-}
-
-.navigation__link-item:hover {
-  @extend %btn;
   padding: 1rem 2.2rem;
-  border-radius: 3rem;
+
+  &:hover {
+    @extend %btn;
+  }
 }
 
-.navigation__link:visited {
+.active-language {
+  padding: 1rem 2.2rem;
+  @extend %btn;
+  color: $outer-space-crayola !important;
+  background-color: $white-2;
 }
 
 .hero-content {
