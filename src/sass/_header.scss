@@ -1,9 +1,13 @@
 .hero {
+  position: relative;
+  @extend %flexbox;
   height: 100vh;
   background-color: $rich-black-fogra-29;
 }
 
 .navigation-bar {
+  position: absolute;
+  top: 0;
   @extend %flexbox;
   padding: 2.2rem 0;
   justify-content: space-between;
@@ -50,6 +54,9 @@
   gap: 19.6rem;
 }
 
+.hero__paragraph {
+  border: none;
+}
 .hero__right {
   background-image: url("../images/me.jpg");
   background-position: center;

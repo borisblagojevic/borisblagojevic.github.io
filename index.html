@@ -8,7 +8,7 @@
       rel="shortcut icon"
       type="image/x-icon"
       class="favicon"
-      href="src/images/favicon/1648058794.ico"
+      href="src/images/favicon/bbFavicon.svg"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,8 +16,16 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="src/css/main.css" />
-    <script type="modul" src="src/js/main.js"></script>
+    <script type="module" src="src/js/main.js"></script>
     <title>Boris Blagojevic</title>
   </head>
   <body>
@@ -42,24 +50,27 @@
             <a href="#Tools" class="navigation__link">Alati</a>
           </li>
           <li class="navigation__link-item">
+            <a class="navigation__link" href="#Contact">Kontakt</a>
+          </li>
+          <li class="navigation__link-item">
             <a class="navigation__link" href="#Projects">Projecti</a>
           </li>
         </ul>
       </nav>
       <div class="hero-content">
         <div class="hero__left">
-          <h1 class="title hero-title">
+          <h1 class="title hero__title">
             Zdravo ja sam, <span class="hero__span"> Boris Blagojevic</span>
           </h1>
-          <p class="subtitle hero-paragraph">Frontend web developer</p>
+          <p class="subtitle hero__paragraph">Frontend web developer</p>
         </div>
         <figure class="hero__right"></figure>
       </div>
     </header>
-    <div class="main">
-      <section class="about light">
+    <main class="main">
+      <section class="about light" id="About">
         <div class="container about-box">
-          <h2 class="title about__title" id="About">O meni</h2>
+          <h2 class="title about__title">O meni</h2>
           <p class="paragraph about__paragraph">Rođen sam u Banoj Luci</p>
           <p class="paragraph about__paragraph">
             Zavrsio sam srednju Elektrotehničku školu Nikola Tesla u Banjoj Luci
@@ -71,15 +82,13 @@
           </p>
         </div>
       </section>
-      <section class="cv dark">
-        <h2 class="subtitle cv__subtitle" id="CV">Pogledajte moj CV</h2>
+      <section class="cv dark" id="CV">
+        <h2 class="subtitle cv__subtitle">Pogledajte moj CV</h2>
         <button class="btn btn--cv">CV</button>
       </section>
-      <section class="tools light">
+      <section class="tools light" id="Tools">
         <div class="container tools-box">
-          <h2 class="title tools__title" id="Tools">
-            Jezici i alati koje koristim
-          </h2>
+          <h2 class="title tools__title">Jezici i alati koje koristim</h2>
           <div class="tools-grid">
             <img
               class="tool"
@@ -146,6 +155,68 @@
           </div>
         </div>
       </section>
-    </div>
+      <section class="contact dark" id="Contact">
+        <h2 class="subtitle contact__title">Kako stupiti u kontakt sa mnom</h2>
+        <div class="contact__links">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/boris-blagojevic/"
+            ><ion-icon class="contact__icon" name="logo-linkedin"></ion-icon
+          ></a>
+          <a target="_blank" href="tel:+387644151370">
+            <ion-icon class="contact__icon" name="call"></ion-icon>
+          </a>
+          <a target="_blank" href="mailto:boris.blagojevicc@hotmail.com">
+            <ion-icon class="contact__icon" name="mail"></ion-icon>
+          </a>
+        </div>
+      </section>
+      <section class="projects light" id="Projects">
+        <h2 class="title">Projekte koje bih izdvojio</h2>
+        <figure class="projects__carousel">
+          <ion-icon class="projects__left" name="arrow-back"></ion-icon>
+          <ion-icon class="projects__right" name="arrow-forward"></ion-icon>
+
+          <a
+            class="project__link"
+            href="https://github.com/Blagoja95/todo-app"
+            target="_blank"
+          >
+            <div class="project__box project__todo"></div>
+          </a>
+
+          <a
+            class="project__link"
+            href="https://github.com/Blagoja95/automatic-garden-watering-sys-aurdion/"
+            target="_blank"
+          >
+            <div class="project__box project__agws"></div>
+          </a>
+
+          <a
+            class="project__link"
+            href="https://github.com/Blagoja95/personal-page"
+            target="_blank"
+          >
+            <div class="project__box project__this-page"></div>
+          </a>
+
+          <div class="project__box project__github">
+            <a
+              class="project__link"
+              href="https://github.com/Blagoja95"
+              target="_blank"
+            >
+            </a>
+          </div>
+        </figure>
+      </section>
+    </main>
+    <footer class="footer dark">
+      <p class="subtitle footer__paragraph">
+        &copy;<span class="crNumber"> 2022 </span>
+        Boris Blagojevic
+      </p>
+    </footer>
   </body>
 </html>

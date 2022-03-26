@@ -40,4 +40,29 @@ body {
 
 .subtitle {
   font-size: 2.4rem;
+  border-bottom: 0.3rem dashed $maximum-green-yellow;
+}
+
+ion-icon {
+  font-size: 6.4rem;
+  color: black;
+  &:hover {
+    color: $ivory;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $maximum-green-yellow;
+  }
+}
+
+.footer {
+  height: 10rem;
+  background-color: $rich-black-fogra-29;
+  padding-top: 3rem;
+}
+
+.footer__paragraph {
+  width: 19ch;
+  margin: 0 auto;
 }

@@ -1,0 +1,18 @@
+.contact {
+  @extend %section;
+  @extend %flexbox;
+  flex-direction: column;
+  background-color: $rich-black-fogra-29;
+}
+
+.contact__title {
+}
+
+.contact__links {
+  @extend %flexbox;
+  gap: 6rem;
+}
+
+.contact__icon {
+  color: $white-2;
+}

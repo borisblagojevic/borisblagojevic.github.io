@@ -9,4 +9,5 @@ export const bih = {
     "Trenutno studiram softverski inžinjering na Panevropskom Univerzitetu Apeiron u Banjoj Luci.",
   ],
   cvSection: "Pogledajte moj CV",
+  contactSection: "Kako stupiti u kontakt sa mnom",
 };
