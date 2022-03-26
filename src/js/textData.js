@@ -10,4 +10,5 @@ export const bih = {
   ],
   cvSection: "Pogledajte moj CV",
   contactSection: "Kako stupiti u kontakt sa mnom",
+  projects: "Projekte koje bih izdvojio",
 };

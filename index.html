@@ -30,7 +30,10 @@
   </head>
   <body>
     <header class="hero dark">
-      <nav class="navigation-bar container">
+      <nav class="navigation-bar mobile container">
+        <ion-icon class="btn btn--menu-mobile" name="menu"></ion-icon>
+      </nav>
+      <nav class="navigation-bar desktop container">
         <ul class="navigation__links-list navigation__links-list--left">
           <li class="navigation__link-item">
             <a href="#" class="navigation__link user-eng">ENG</a>
@@ -57,10 +60,10 @@
           </li>
         </ul>
       </nav>
-      <div class="hero-content">
+      <div class="hero__content">
         <div class="hero__left">
           <h1 class="title hero__title">
-            Zdravo ja sam, <span class="hero__span"> Boris Blagojevic</span>
+            Zdravo, ja sam <span class="hero__span"> Boris Blagojevic</span>
           </h1>
           <p class="subtitle hero__paragraph">Frontend web developer</p>
         </div>
@@ -201,14 +204,13 @@
             <div class="project__box project__this-page"></div>
           </a>
 
-          <div class="project__box project__github">
-            <a
-              class="project__link"
-              href="https://github.com/Blagoja95"
-              target="_blank"
-            >
-            </a>
-          </div>
+          <a
+            class="project__link"
+            href="https://github.com/Blagoja95"
+            target="_blank"
+          >
+            <div class="project__box project__github"></div>
+          </a>
         </figure>
       </section>
     </main>

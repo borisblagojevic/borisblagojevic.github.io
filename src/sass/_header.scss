@@ -48,7 +48,7 @@
   background-color: $white-2;
 }
 
-.hero-content {
+.hero__content {
   @extend %flexbox;
   margin-top: 9.6rem;
   gap: 19.6rem;
@@ -75,4 +75,9 @@
 
 .hero__span {
   color: $maximum-green-yellow;
+}
+
+.mobile {
+  justify-content: flex-end;
+  display: none;
 }
