@@ -7,6 +7,7 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
+      class="favicon"
       href="src/images/favicon/1648058794.ico"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,18 +25,10 @@
       <nav class="navigation-bar container">
         <ul class="navigation__links-list navigation__links-list--left">
           <li class="navigation__link-item">
-            <a
-              href="https://github.com/Blagoja95"
-              class="navigation__link user-eng"
-              >ENG</a
-            >
+            <a href="#" class="navigation__link user-eng">ENG</a>
           </li>
           <li class="navigation__link-item">
-            <a
-              href="https://github.com/Blagoja95"
-              class="navigation__link user-bih"
-              >BIH</a
-            >
+            <a href="#" class="navigation__link user-bih">BIH</a>
           </li>
         </ul>
         <ul class="navigation__links-list navigation__links-list--right">
@@ -55,7 +48,9 @@
       </nav>
       <div class="hero-content">
         <div class="hero__left">
-          <h1 class="title hero-title">Zdravo ja sam, Boris Blagojevic</h1>
+          <h1 class="title hero-title">
+            Zdravo ja sam, <span class="hero__span"> Boris Blagojevic</span>
+          </h1>
           <p class="subtitle hero-paragraph">Frontend web developer</p>
         </div>
         <figure class="hero__right"></figure>
@@ -63,14 +58,28 @@
     </header>
     <div class="main">
       <section class="about light">
-        <div class="container">
-          <h2 class="title about__title">O meni</h2>
-          <p class="paragraph about__paragraph">...</p>
+        <div class="container about-box">
+          <h2 class="title about__title" id="About">O meni</h2>
+          <p class="paragraph about__paragraph">Rođen sam u Banoj Luci</p>
+          <p class="paragraph about__paragraph">
+            Zavrsio sam srednju Elektrotehničku školu Nikola Tesla u Banjoj Luci
+            kao tehničar telekomunikacija
+          </p>
+          <p class="paragraph about__paragraph">
+            Trenutno studiram softverski inženjering na Panevropskom
+            Univerzitetu Apeiron u Banjoj Luci
+          </p>
         </div>
       </section>
-      <section class="tools light" id="Tools">
+      <section class="cv dark">
+        <h2 class="subtitle cv__subtitle" id="CV">Pogledajte moj CV</h2>
+        <button class="btn btn--cv">CV</button>
+      </section>
+      <section class="tools light">
         <div class="container tools-box">
-          <h2 class="title tools__title">Jezici i alati koje koristim</h2>
+          <h2 class="title tools__title" id="Tools">
+            Jezici i alati koje koristim
+          </h2>
           <div class="tools-grid">
             <img
               class="tool"

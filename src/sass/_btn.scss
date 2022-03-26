@@ -5,11 +5,32 @@
   border-radius: 3rem;
 }
 
+%btn--hover-active {
+  &:hover {
+    cursor: pointer;
+    color: $white-2 !important;
+    background-color: $rich-black-fogra-29;
+  }
+
+  &:active {
+    background-color: $maximum-green-yellow;
+  }
+}
+
 .btn {
   @extend %btn;
+  @extend %btn--hover-active;
   padding: 2rem 3.2rem;
 }
 
 .btn--navigation {
   border: none;
+}
+
+.btn--cv {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  padding: 2rem 6.2rem;
+  color: $outer-space-crayola !important;
+  background-color: $white-2;
 }

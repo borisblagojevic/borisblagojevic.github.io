@@ -33,6 +33,7 @@
 
   &:hover {
     @extend %btn;
+    @extend %btn--hover-active;
   }
 }
 
@@ -63,4 +64,8 @@
   height: 40rem;
 
   border-radius: 100%;
+}
+
+.hero__span {
+  color: $maximum-green-yellow;
 }

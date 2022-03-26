@@ -1,0 +1,14 @@
+.about {
+  @extend %section;
+  min-height: 60rem;
+}
+.about-box {
+  @extend %flexbox;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about__paragraph {
+  text-align: center;
+  font-size: 2rem;
+}

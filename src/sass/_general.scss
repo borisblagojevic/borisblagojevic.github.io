@@ -21,6 +21,13 @@ body {
   justify-content: center;
 }
 
+%section {
+  @extend %flexbox;
+  padding: 12rem 0;
+  flex-direction: column;
+  gap: 9.6rem;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -28,6 +35,7 @@ body {
 
 .title {
   font-size: 5.2rem;
+  text-transform: uppercase;
 }
 
 .subtitle {
