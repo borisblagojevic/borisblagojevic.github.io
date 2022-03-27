@@ -71,6 +71,9 @@
   }
 
   .mobile {
+    padding: 0;
+    width: 100%;
+    justify-content: flex-end;
     display: flex;
   }
 }
