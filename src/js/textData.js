@@ -1,4 +1,5 @@
 export const bih = {
+  lang: "bih",
   navigationItem: ["O meni", "CV", "Alati", "Kontakt", "Projekti"],
   headerTitle: ["Zdravo, ja sam", "Boris Blagojevic"],
   toolsSection: "Jezici i alati koje koristim",
@@ -14,6 +15,7 @@ export const bih = {
 };
 
 export const eng = {
+  lang: "eng",
   navigationItem: ["About me", "CV", "Tools", "Contact", "Projects"],
   headerTitle: ["Hello, I am", "Boris Blagojevic"],
   toolsSection: "Languages and tools I use",

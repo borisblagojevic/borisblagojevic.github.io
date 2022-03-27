@@ -18,6 +18,10 @@ let stateLang = JSON.parse(localStorage.getItem("language")) || eng;
 
 const changeLanguage = function (lang) {
   // header
+  lang.lang === "eng"
+    ? btnENG.classList.add("active-language")
+    : btnBIH.classList.add("active-language");
+
   navLink.forEach((el, i) => {
     if (i > 1) el.innerHTML = lang.navigationItem[i - 2];
   });
@@ -44,13 +48,9 @@ const languageBtn = function (el) {
   btnENG.classList.remove("active-language");
   btnBIH.classList.remove("active-language");
 
-  if (el.target.classList[1] === "user-eng") {
-    btnENG.classList.add("active-language");
+  if (el.target.classList[1] === "user-eng")
     localStorage.setItem("language", JSON.stringify(eng));
-  } else {
-    btnBIH.classList.add("active-language");
-    localStorage.setItem("language", JSON.stringify(bih));
-  }
+  else localStorage.setItem("language", JSON.stringify(bih));
 
   // refresh the page
   window.location.reload();
