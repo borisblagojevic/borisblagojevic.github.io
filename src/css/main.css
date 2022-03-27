@@ -14,6 +14,7 @@ body {
   font-family: "Hind", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
+  width: 100%;
 }
 
 .projects__carousel, .contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
@@ -180,7 +181,7 @@ ion-icon:active {
 
 .mobile-menu .navigation__links-list--right {
   flex-direction: column;
-  margin-top: 30%;
+  margin-top: 35%;
 }
 
 .back-to-top {
