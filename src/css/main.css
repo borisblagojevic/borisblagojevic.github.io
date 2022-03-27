@@ -78,7 +78,6 @@ ion-icon:active {
 .navigation__link:hover:visited, .btn:hover {
   cursor: pointer;
   color: #f5f5f5 !important;
-  background-color: #040f0fff;
 }
 .navigation__link:active:link:hover,
 .navigation__link:active:visited:hover, .btn:active {
@@ -102,8 +101,11 @@ ion-icon:active {
 }
 
 .btn--menu-mobile {
+  font-size: 2rem;
+  padding: 1rem;
   color: #f5f5f5;
   border: none;
+  border-radius: 1rem;
 }
 
 .hero {
@@ -168,6 +170,8 @@ ion-icon:active {
 }
 
 .mobile {
+  padding: 0;
+  width: 100%;
   justify-content: flex-end;
   display: none;
 }
@@ -257,7 +261,7 @@ ion-icon:active {
 
 .projects__carousel {
   position: relative;
-  width: 80%;
+  width: 60%;
   height: 50rem;
   border: 1px dashed transparent;
   border-radius: 20rem;
@@ -295,10 +299,11 @@ ion-icon:active {
 .project__box {
   position: absolute;
   z-index: -1;
-  width: 100%;
+  width: 50rem;
   height: 49rem;
   background-size: contain !important;
   background-repeat: no-repeat !important;
+  background-position: center !important;
   transition: transform 0.5s;
 }
 .project__box:hover {
@@ -329,6 +334,7 @@ ion-icon:active {
 }
 
 .project__github {
+  width: 50rem;
   background-image: url("../images/projects/github.jpeg");
   background-position: center;
 }
@@ -399,10 +405,6 @@ ion-icon:active {
     width: 80rem;
   }
 
-  .project__github {
-    width: 40rem;
-  }
-
   .desktop {
     display: none;
   }
@@ -425,7 +427,13 @@ ion-icon:active {
   }
 
   .hero__content {
-    margin-top: 0;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  .hero__right {
+    height: 28rem;
+    width: 28rem;
   }
 
   .projects__carousel {

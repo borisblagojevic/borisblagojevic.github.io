@@ -66,10 +66,6 @@
     width: 80rem;
   }
 
-  .project__github {
-    width: 40rem;
-  }
-
   .desktop {
     display: none;
   }
@@ -93,7 +89,13 @@
   }
 
   .hero__content {
-    margin-top: 0;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  .hero__right {
+    height: 28rem;
+    width: 28rem;
   }
 
   .projects__carousel {

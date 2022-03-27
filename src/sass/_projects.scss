@@ -6,7 +6,7 @@
 .projects__carousel {
   @extend %flexbox;
   position: relative;
-  width: 80%;
+  width: 60%;
   height: 50rem;
 
   border: 1px dashed transparent;
@@ -44,10 +44,11 @@
 .project__box {
   position: absolute;
   z-index: -1;
-  width: 100%;
+  width: 50rem;
   height: 49rem;
   background-size: contain !important;
   background-repeat: no-repeat !important;
+  background-position: center !important;
   transition: transform 0.5s;
 
   &:hover {
@@ -78,6 +79,8 @@
 }
 
 .project__github {
+  width: 50rem;
+
   background-image: url("../images/projects/github.jpeg");
   background-position: center;
 }

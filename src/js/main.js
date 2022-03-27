@@ -33,6 +33,11 @@ const left = function () {
 
 btnLeft.addEventListener("click", left);
 btnRight.addEventListener("click", right);
+document.addEventListener("keydown", function (e) {
+  e.preventDefault();
+  if (e.key === "ArrowLeft") left();
+  if (e.key === "ArrowRight") right();
+});
 
 // init
 translate(position);
