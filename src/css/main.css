@@ -17,7 +17,7 @@ body {
   width: 100vw;
 }
 
-.projects__carousel, .contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
+.project, .contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,7 @@ body {
 .title {
   font-size: 5.2rem;
   text-transform: uppercase;
+  border-bottom: 0.3rem dashed #040f0fff;
 }
 
 .subtitle {
@@ -83,6 +84,7 @@ ion-icon:active {
 }
 .navigation__link:active:link:hover,
 .navigation__link:active:visited:hover, .btn:active {
+  color: #040f0fff !important;
   background-color: #d1d646ff;
 }
 
@@ -100,6 +102,13 @@ ion-icon:active {
   padding: 2rem 6.2rem;
   color: #2d3a3aff !important;
   background-color: #f5f5f5;
+  text-decoration: none;
+}
+.btn--cv:hover {
+  background-color: transparent;
+}
+.btn--cv:active {
+  background-color: #d1d646ff;
 }
 
 .btn--menu-mobile {
@@ -167,6 +176,10 @@ ion-icon:active {
   border-radius: 100%;
 }
 
+.hero__title {
+  border: none;
+}
+
 .hero__span {
   color: #d1d646ff;
 }
@@ -188,7 +201,7 @@ ion-icon:active {
 .back-to-top {
   font-size: 3rem;
   position: fixed;
-  right: 10%;
+  right: 1%;
   top: 90%;
   color: #d1d646ff;
 }
@@ -284,84 +297,83 @@ ion-icon:active {
   color: #f5f5f5;
 }
 
-.projects__carousel {
-  position: relative;
-  width: 60%;
-  height: 50rem;
-  border: 1px dashed transparent;
-  border-radius: 20rem;
-  overflow: hidden;
+.projects__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 50rem);
 }
 
-.projects__left,
-.projects__right {
-  top: 50%;
-  position: absolute;
-  color: #040f0fff;
-}
-.projects__left:hover,
-.projects__right:hover {
-  color: #898980ff;
-}
-.projects__left:active,
-.projects__right:active {
-  color: #d1d646ff;
-  scale: 0.9;
+.project {
+  gap: 3.2rem;
 }
 
-.projects__left {
-  z-index: 1;
-  left: 0;
-  transform: translate(200%, -50%);
+.project:nth-child(even) {
+  grid-column: 2;
+  flex-direction: row-reverse;
 }
 
-.projects__right {
-  z-index: 1;
-  right: 0;
-  transform: translate(-200%, -50%);
+.project:nth-child(odd) {
+  grid-column: 1;
 }
 
-.project__box {
-  position: absolute;
-  z-index: -1;
-  width: 50rem;
-  height: 49rem;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  transition: transform 0.5s;
-}
-.project__box:hover {
-  cursor: pointer;
-}
-
-.project__link {
-  z-index: 0;
-  position: absolute;
+.project__left {
   width: 50%;
-  display: block;
-  height: 100%;
+}
+
+.project__subtitle {
+  width: 10ch;
+  margin-bottom: 3.2rem;
+}
+
+.project__paragraph {
+  width: 50ch;
+  margin-bottom: 3.2rem;
+}
+
+.project__right {
+  width: 50rem;
+  border-radius: 20rem;
+  background-image: url("../images/projects/screen-recording.gif");
+}
+
+.project__link:visited {
+  color: #f5f5f5;
+}
+
+.project__link:link {
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  padding: 2rem 2.2rem;
+  border-radius: 10rem;
+  color: #f5f5f5;
+  background-color: #092020;
+  text-decoration: none;
+}
+.project__link:link:hover {
+  border: 0.3rem solid #092020;
+  cursor: pointer;
+  background-color: transparent;
+  color: #092020 !important;
+}
+.project__link:link:active {
+  border-color: #d1d646ff;
+  background-color: #d1d646ff;
 }
 
 .project__todo {
-  background-image: url("../images/projects/desktop-preview.jpg");
-  background-position: center;
+  grid-row: 1;
 }
 
 .project__agws {
-  background-image: url("../images/projects/2022-03-26 12.02.17.jpeg");
-  background-position: center;
+  grid-row: 2;
 }
 
-.project__this-page {
-  background-image: url("../images/projects/webpage.svg");
-  background-position: center;
+.project__mainpage {
+  grid-row: 3;
 }
 
 .project__github {
-  width: 50rem;
-  background-image: url("../images/projects/github.jpeg");
-  background-position: center;
+  grid-row: 4;
 }
 
 @media screen and (max-width: 1520px) {
@@ -405,11 +417,6 @@ ion-icon:active {
     text-align: center;
   }
 
-  .projects__right,
-.projects__left {
-    font-size: 3.2rem;
-  }
-
   .about__right {
     border: none;
   }
@@ -430,10 +437,6 @@ ion-icon:active {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     column-gap: 8.6rem;
-  }
-
-  .projects__carousel {
-    width: 80rem;
   }
 
   .desktop {
@@ -468,27 +471,6 @@ ion-icon:active {
   .hero__right {
     height: 28rem;
     width: 28rem;
-  }
-
-  .projects__carousel {
-    width: 50rem;
-  }
-
-  .projects__left {
-    transform: translate(100%, -50%);
-  }
-
-  .projects__right {
-    transform: translate(-100%, -50%);
-  }
-
-  .project__github {
-    width: 20rem;
-  }
-
-  .projects__box {
-    width: 30rem !important;
-    height: 20rem !important;
   }
 
   .tools-grid {

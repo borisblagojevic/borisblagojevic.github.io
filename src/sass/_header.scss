@@ -67,6 +67,9 @@
   border-radius: 100%;
 }
 
+.hero__title {
+  border: none;
+}
 .hero__span {
   color: $maximum-green-yellow;
 }
@@ -88,7 +91,7 @@
 .back-to-top {
   font-size: 3rem;
   position: fixed;
-  right: 10%;
+  right: 1%;
   top: 90%;
   color: $maximum-green-yellow;
 }

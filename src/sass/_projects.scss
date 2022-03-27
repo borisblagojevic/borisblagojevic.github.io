@@ -3,84 +3,77 @@
   @extend %flexbox;
 }
 
-.projects__carousel {
+.projects__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 50rem);
+}
+
+.project {
   @extend %flexbox;
-  position: relative;
-  width: 60%;
-  height: 50rem;
-
-  border: 1px dashed transparent;
-  border-radius: 20rem;
-  overflow: hidden;
+  gap: 3.2rem;
 }
 
-.projects__left,
-.projects__right {
-  top: 50%;
-  position: absolute;
-  color: $rich-black-fogra-29;
-
-  &:hover {
-    color: $middle-grey;
-  }
-  &:active {
-    color: $maximum-green-yellow;
-    scale: 0.9;
-  }
+.project:nth-child(even) {
+  grid-column: 2;
+  flex-direction: row-reverse;
 }
 
-.projects__left {
-  z-index: 1;
-  left: 0;
-  transform: translate(200%, -50%);
+.project:nth-child(odd) {
+  grid-column: 1;
 }
-.projects__right {
-  z-index: 1;
-
-  right: 0;
-  transform: translate(-200%, -50%);
-}
-
-.project__box {
-  position: absolute;
-  z-index: -1;
-  width: 50rem;
-  height: 49rem;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  transition: transform 0.5s;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.project__link {
-  z-index: 0;
-  position: absolute;
+.project__left {
   width: 50%;
-  display: block;
-  height: 100%;
+}
+.project__subtitle {
+  width: 10ch;
+  margin-bottom: 3.2rem;
+}
+.project__paragraph {
+  width: 50ch;
+  margin-bottom: 3.2rem;
+}
+.project__right {
+  width: 50rem;
+  border-radius: 20rem;
+  background-image: url("../images/projects/screen-recording.gif");
+}
+.project__link:visited {
+  color: $white-2;
+}
+.project__link:link {
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  padding: 2rem 2.2rem;
+  border-radius: 10rem;
+  color: $white-2;
+  background-color: $rich-black-2;
+  text-decoration: none;
+
+  &:hover {
+    border: 0.3rem solid $rich-black-2;
+    cursor: pointer;
+    background-color: transparent;
+    color: $rich-black-2 !important;
+  }
+
+  &:active {
+    border-color: $maximum-green-yellow;
+    background-color: $maximum-green-yellow;
+  }
 }
 
 .project__todo {
-  background-image: url("../images/projects/desktop-preview.jpg");
-  background-position: center;
+  grid-row: 1;
 }
+
 .project__agws {
-  background-image: url("../images/projects/2022-03-26\ 12.02.17.jpeg");
-  background-position: center;
+  grid-row: 2;
 }
 
-.project__this-page {
-  background-image: url("../images/projects/webpage.svg");
-  background-position: center;
+.project__mainpage {
+  grid-row: 3;
 }
-
 .project__github {
-  width: 50rem;
-
-  background-image: url("../images/projects/github.jpeg");
-  background-position: center;
+  grid-row: 4;
 }

@@ -30,9 +30,9 @@
   </head>
   <body>
     <header class="hero dark" id="TOP">
-      <!-- <a href="#TOP">
+      <a href="#TOP">
         <ion-icon name="arrow-up" class="back-to-top"> </ion-icon>
-      </a> -->
+      </a>
       <nav class="navigation-bar mobile">
         <ion-icon class="btn btn--menu-mobile" name="menu"></ion-icon>
       </nav>
@@ -95,7 +95,7 @@
       </section>
       <section class="cv dark" id="CV">
         <h2 class="subtitle cv__subtitle">Pogledajte moj CV</h2>
-        <button class="btn btn--cv">CV</button>
+        <a href="/cvBorisBlagojevic.docx" download class="btn btn--cv">CV</a>
       </section>
       <section class="tools light" id="Tools">
         <div class="container tools-box">
@@ -184,42 +184,91 @@
       </section>
       <section class="projects light" id="Projects">
         <h2 class="title project__title">Projekte koje bih izdvojio</h2>
-        <!-- <figure class="projects__carousel">
-          <ion-icon class="projects__left" name="arrow-back"></ion-icon>
-          <ion-icon class="projects__right" name="arrow-forward"></ion-icon>
+        <div class="projects__box container">
+          <!-- project 1 -->
+          <div class="project project__todo">
+            <div class="project__left">
+              <h2 class="subtitle project__subtitle">TODO APP</h2>
+              <p class="paragraph project__paragraph">
+                Todo aplikacija koja omogucava njenom korisniku unos novih,
+                brisanje i filtriranje starih zadataka. Sadržaj i status
+                unesenih zadatka kao i podešavanje izgleda aplikacije se čuva u
+                lokalnoj memoriji browsera. Aplikacija rađena po MVC
+                arhitekturi.
+              </p>
+              <a
+                href="https://github.com/Blagoja95/todo-app"
+                target="_blank"
+                class="project__link"
+                >Pogledaj projekat</a
+              >
+            </div>
+            <figure class="project__right hero__right"></figure>
+          </div>
 
-          <a
-            class="project__link"
-            href="https://github.com/Blagoja95/todo-app"
-            target="_blank"
-          >
-            <div class="project__box project__todo"></div>
-          </a>
+          <!-- project 2 -->
+          <div class="project project__agws">
+            <div class="project__left">
+              <h2 class="subtitle project__subtitle">TODO APP</h2>
+              <p class="paragraph project__paragraph">
+                Todo aplikacija koja omogucava njenom korisniku unos novih,
+                brisanje i filtriranje starih zadataka. Sadržaj i status
+                unesenih zadatka kao i podešavanje izgleda aplikacije se čuva u
+                lokalnoj memoriji browsera. Aplikacija rađena po MVC
+                arhitekturi.
+              </p>
+              <a
+                href="https://github.com/Blagoja95/todo-app"
+                target="_blank"
+                class="project__link"
+                >Pogledaj projekat</a
+              >
+            </div>
+            <figure class="project__right hero__right"></figure>
+          </div>
 
-          <a
-            class="project__link"
-            href="https://github.com/Blagoja95/automatic-garden-watering-sys-aurdion/"
-            target="_blank"
-          >
-            <div class="project__box project__agws"></div>
-          </a>
+          <!-- project 3 -->
+          <div class="project project__mainpage">
+            <div class="project__left">
+              <h2 class="subtitle project__subtitle">TODO APP</h2>
+              <p class="paragraph project__paragraph">
+                Todo aplikacija koja omogucava njenom korisniku unos novih,
+                brisanje i filtriranje starih zadataka. Sadržaj i status
+                unesenih zadatka kao i podešavanje izgleda aplikacije se čuva u
+                lokalnoj memoriji browsera. Aplikacija rađena po MVC
+                arhitekturi.
+              </p>
+              <a
+                href="https://github.com/Blagoja95/todo-app"
+                target="_blank"
+                class="project__link"
+                >Pogledaj projekat</a
+              >
+            </div>
+            <figure class="project__right hero__right"></figure>
+          </div>
 
-          <a
-            class="project__link"
-            href="https://github.com/Blagoja95/personal-page"
-            target="_blank"
-          >
-            <div class="project__box project__this-page"></div>
-          </a>
-
-          <a
-            class="project__link"
-            href="https://github.com/Blagoja95"
-            target="_blank"
-          >
-            <div class="project__box project__github"></div>
-          </a>
-        </figure> -->
+          <!-- project 4 -->
+          <div class="project project__github">
+            <div class="project__left">
+              <h2 class="subtitle project__subtitle">TODO APP</h2>
+              <p class="paragraph project__paragraph">
+                Todo aplikacija koja omogucava njenom korisniku unos novih,
+                brisanje i filtriranje starih zadataka. Sadržaj i status
+                unesenih zadatka kao i podešavanje izgleda aplikacije se čuva u
+                lokalnoj memoriji browsera. Aplikacija rađena po MVC
+                arhitekturi.
+              </p>
+              <a
+                href="https://github.com/Blagoja95/todo-app"
+                target="_blank"
+                class="project__link"
+                >Pogledaj projekat</a
+              >
+            </div>
+            <figure class="project__right hero__right"></figure>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer dark">
