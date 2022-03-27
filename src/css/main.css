@@ -14,7 +14,7 @@ body {
   font-family: "Hind", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  width: 100%;
+  width: 100vw;
 }
 
 .projects__carousel, .contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
@@ -27,6 +27,7 @@ body {
   padding: 12rem 0;
   flex-direction: column;
   gap: 9.6rem;
+  width: 100%;
 }
 
 .container {
@@ -187,13 +188,13 @@ ion-icon:active {
 .back-to-top {
   font-size: 3rem;
   position: fixed;
-  right: 1rem;
+  right: 10%;
   top: 90%;
   color: #d1d646ff;
 }
 
 .light .title {
-  color: #092020;
+  color: #d1d646ff;
 }
 
 .light .subtitle {
@@ -244,13 +245,21 @@ ion-icon:active {
 }
 
 .about-box {
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 2rem;
 }
 
 .about__paragraph {
-  text-align: center;
   font-size: 2rem;
+}
+
+.about__right {
+  text-align: left;
+  border-color: #d1d646ff !important;
+  border-left: 0.5rem dashed;
+  padding: 3rem;
+  border-bottom: 0.5rem dashed;
 }
 
 .cv {
@@ -367,6 +376,10 @@ ion-icon:active {
   .projects__carousel {
     width: 100rem;
   }
+
+  .about-box {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 1050px) {
   .hero__content {
@@ -397,12 +410,14 @@ ion-icon:active {
     font-size: 3.2rem;
   }
 
-  .projects__left {
-    transform: translate(400%, -50%);
+  .about__right {
+    border: none;
   }
 
-  .projects__right {
-    transform: translate(-400%, -50%);
+  .about__paragraph {
+    text-align: center;
+    border-bottom: 0.5rem dashed #d1d646ff;
+    padding: 4rem 0 1rem 0;
   }
 }
 @media screen and (max-width: 800px) {
@@ -456,19 +471,24 @@ ion-icon:active {
   }
 
   .projects__carousel {
-    width: 60rem;
+    width: 50rem;
   }
 
   .projects__left {
-    transform: translate(300%, -50%);
+    transform: translate(100%, -50%);
   }
 
   .projects__right {
-    transform: translate(-300%, -50%);
+    transform: translate(-100%, -50%);
   }
 
   .project__github {
-    width: 30rem;
+    width: 20rem;
+  }
+
+  .projects__box {
+    width: 30rem !important;
+    height: 20rem !important;
   }
 
   .tools-grid {

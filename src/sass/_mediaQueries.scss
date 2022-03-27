@@ -10,6 +10,10 @@
   .projects__carousel {
     width: 100rem;
   }
+
+  .about-box {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -41,12 +45,14 @@
     font-size: 3.2rem;
   }
 
-  .projects__left {
-    transform: translate(400%, -50%);
+  .about__right {
+    border: none;
   }
 
-  .projects__right {
-    transform: translate(-400%, -50%);
+  .about__paragraph {
+    text-align: center;
+    border-bottom: 0.5rem dashed $maximum-green-yellow;
+    padding: 4rem 0 1rem 0;
   }
 }
 
@@ -102,19 +108,24 @@
   }
 
   .projects__carousel {
-    width: 60rem;
+    width: 50rem;
   }
 
   .projects__left {
-    transform: translate(300%, -50%);
+    transform: translate(100%, -50%);
   }
 
   .projects__right {
-    transform: translate(-300%, -50%);
+    transform: translate(-100%, -50%);
   }
 
   .project__github {
-    width: 30rem;
+    width: 20rem;
+  }
+
+  .projects__box {
+    width: 30rem !important;
+    height: 20rem !important;
   }
 
   .tools-grid {

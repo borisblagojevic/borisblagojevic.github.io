@@ -5,9 +5,9 @@ export const bih = {
   toolsSection: "Jezici i alati koje koristim",
   aboutSection: [
     "O meni",
-    "Rođen sam u Banoj Luci.",
+    "Rođen sam u Banjoj Luci.",
+    "Trenutno studiram softverski inženjering na Panevropskom Univerzitetu Apeiron u Banjoj Luci.",
     "Zavrsio sam srednju Elektrotehničku školu Nikola Tesla u Banjoj Luci kao tehničar telekomunikacija.",
-    "Trenutno studiram softverski inžinjering na Panevropskom Univerzitetu Apeiron u Banjoj Luci.",
   ],
   cvSection: "Pogledajte moj CV",
   contactSection: "Kako stupiti u kontakt sa mnom",
