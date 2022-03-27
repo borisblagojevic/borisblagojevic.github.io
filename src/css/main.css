@@ -17,7 +17,7 @@ body {
   width: 100vw;
 }
 
-.project, .contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
+.contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,19 +301,11 @@ ion-icon:active {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 50rem);
+  align-items: center;
 }
 
 .project {
-  gap: 3.2rem;
-}
-
-.project:nth-child(even) {
-  grid-column: 2;
-  flex-direction: row-reverse;
-}
-
-.project:nth-child(odd) {
-  grid-column: 1;
+  justify-self: center;
 }
 
 .project__left {
@@ -334,6 +326,7 @@ ion-icon:active {
   width: 50rem;
   border-radius: 20rem;
   background-image: url("../images/projects/screen-recording.gif");
+  justify-self: flex-start;
 }
 
 .project__link:visited {
@@ -360,19 +353,25 @@ ion-icon:active {
   background-color: #d1d646ff;
 }
 
-.project__todo {
-  grid-row: 1;
-}
-
 .project__agws {
+  grid-column: 2;
   grid-row: 2;
 }
 
-.project__mainpage {
-  grid-row: 3;
+.project__agws-img {
+  justify-self: flex-end;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .project__github {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.project__github-img {
+  justify-self: flex-end;
+  grid-column: 1;
   grid-row: 4;
 }
 

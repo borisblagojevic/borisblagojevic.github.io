@@ -7,21 +7,21 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 50rem);
+  align-items: center;
 }
 
 .project {
-  @extend %flexbox;
-  gap: 3.2rem;
+  justify-self: center;
 }
 
-.project:nth-child(even) {
-  grid-column: 2;
-  flex-direction: row-reverse;
-}
+// .project:nth-child(even) {
+//   grid-column: 2;
+// }
 
-.project:nth-child(odd) {
-  grid-column: 1;
-}
+// .project:nth-child(odd) {
+//   grid-column: 1;
+// }
+
 .project__left {
   width: 50%;
 }
@@ -37,6 +37,7 @@
   width: 50rem;
   border-radius: 20rem;
   background-image: url("../images/projects/screen-recording.gif");
+  justify-self: flex-start;
 }
 .project__link:visited {
   color: $white-2;
@@ -63,17 +64,24 @@
   }
 }
 
-.project__todo {
-  grid-row: 1;
-}
-
 .project__agws {
+  grid-column: 2;
   grid-row: 2;
 }
 
-.project__mainpage {
-  grid-row: 3;
+.project__agws-img {
+  justify-self: flex-end;
+  grid-column: 1;
+  grid-row: 2;
 }
+
 .project__github {
+  grid-column: 2;
+  grid-row: 4;
+}
+.project__github-img {
+  justify-self: flex-end;
+
+  grid-column: 1;
   grid-row: 4;
 }
