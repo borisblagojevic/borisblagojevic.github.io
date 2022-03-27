@@ -19,12 +19,6 @@
   height: 5rem;
 }
 
-// todo
-// .navigation__links-list--left {
-//   @extend %btn;
-//   display: flex;
-// }
-
 .navigation__link-item {
   @extend %flexbox;
   text-transform: uppercase;
@@ -79,4 +73,22 @@
 
 .mobile {
   display: none;
+}
+
+.mobile-menu {
+  flex-direction: column;
+  top: 10%;
+}
+
+.mobile-menu .navigation__links-list--right {
+  flex-direction: column;
+  margin-top: 30%;
+}
+
+.back-to-top {
+  font-size: 3rem;
+  position: fixed;
+  right: 1rem;
+  top: 90%;
+  color: $maximum-green-yellow;
 }

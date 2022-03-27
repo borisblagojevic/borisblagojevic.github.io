@@ -111,6 +111,27 @@ const crNumber = document.querySelector(".crNumber");
 const date = new Date();
 crNumber.innerHTML = date.getFullYear();
 
+// menu ***************************************************
+const btnMenuMobile = document.querySelector(".btn--menu-mobile");
+const menuDesktop = document.querySelector(".desktop");
+const heroContent = document.querySelector(".hero__content");
+const toggleDisplay = function (el, reverse = false) {
+  if (!reverse) {
+    if (el.style.display === "none" || el.style.display === "")
+      el.style.display = "flex";
+    else el.style.display = "none";
+  } else {
+    if (el.style.display === "flex" || el.style.display === "")
+      el.style.display = "none";
+    else el.style.display = "flex";
+  }
+};
+btnMenuMobile.addEventListener("click", function () {
+  toggleDisplay(menuDesktop);
+  toggleDisplay(heroContent, true);
+
+  menuDesktop.classList.toggle("mobile-menu");
+});
 // init ******************************************************
 translate(position);
 changeLanguage(stateLang);
