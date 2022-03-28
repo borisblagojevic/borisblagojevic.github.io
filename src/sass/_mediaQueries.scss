@@ -21,7 +21,7 @@
 
   .project__github,
   .project__agws {
-    justify-self: flex-start;
+    justify-self: center;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -60,7 +60,7 @@
 
   .projects__box {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 35rem);
+    grid-template-rows: repeat(8, 40rem);
   }
 
   .project {
@@ -125,6 +125,11 @@
     width: 100%;
     justify-content: flex-end;
     display: flex;
+  }
+
+  .projects__box {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 32rem);
   }
 }
 

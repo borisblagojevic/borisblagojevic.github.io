@@ -4,6 +4,7 @@ import { bih, eng } from "./textData.js";
 const navBar = document.querySelector(".navigation__links-list--left");
 const btnENG = document.querySelector(".user-eng");
 const btnBIH = document.querySelector(".user-bih");
+const btnCV = document.querySelector(".btn--cv");
 
 // elements to change
 const navLink = document.querySelectorAll(".navigation__link");
@@ -27,6 +28,11 @@ const changeLanguage = function (lang) {
   lang.lang === "eng"
     ? btnENG.classList.add("active-language")
     : btnBIH.classList.add("active-language");
+
+  // cv
+  lang.lang === "eng"
+    ? (btnCV.href = "/cvBorisBlagojevicEng.pdf")
+    : (btnCV.href = "/cvBorisBlagojevicBIH.pdf");
 
   navLink.forEach((el, i) => {
     if (i > 1) el.innerHTML = lang.navigationItem[i - 2];
