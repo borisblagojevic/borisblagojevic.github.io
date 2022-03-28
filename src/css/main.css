@@ -17,7 +17,7 @@ body {
   width: 100vw;
 }
 
-.contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
+.project, .contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,11 +305,14 @@ ion-icon:active {
 }
 
 .project {
+  flex-direction: column;
+  align-items: flex-start;
   justify-self: center;
 }
 
 .project__left {
   width: 50%;
+  height: fit-content;
 }
 
 .project__subtitle {
@@ -384,12 +387,22 @@ ion-icon:active {
     width: 20ch;
   }
 
-  .projects__carousel {
-    width: 100rem;
-  }
-
   .about-box {
     flex-direction: column;
+  }
+
+  .project {
+    justify-self: flex-start;
+  }
+
+  .project__github-img,
+.project__agws-img {
+    justify-self: center;
+  }
+
+  .project__github,
+.project__agws {
+    justify-self: flex-start;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -424,6 +437,23 @@ ion-icon:active {
     text-align: center;
     border-bottom: 0.5rem dashed #d1d646ff;
     padding: 4rem 0 1rem 0;
+  }
+
+  .projects__box {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 50rem);
+  }
+
+  .project {
+    align-items: center;
+    text-align: center;
+  }
+
+  .project__left,
+.project__right {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: center;
   }
 }
 @media screen and (max-width: 800px) {
@@ -483,6 +513,15 @@ ion-icon:active {
 
   .subtitle {
     font-size: 2rem;
+  }
+
+  .project__title {
+    width: 15ch;
+  }
+}
+@media screen and (max-width: 400px) {
+  .project__paragraph {
+    width: 30ch;
   }
 }
 

@@ -11,7 +11,15 @@ export const bih = {
   ],
   cvSection: "Pogledajte moj CV",
   contactSection: "Kako stupiti u kontakt sa mnom",
-  projects: "Projekte koje bih izdvojio",
+  projects: [
+    "Projekte koje bih izdvojio",
+    [
+      "TODO APP",
+      " Todo aplikacija koja omogucava njenom korisniku unos novih, brisanje i filtriranje starih zadataka. Sadržaj i status unesenih zadatka kao i podešavanje izgleda aplikacije se čuva u lokalnoj memoriji browsera. Aplikacija rađena po MVC arhitekturi.",
+      "Pogledaj projekat",
+    ],
+    ["Automatsko navodnjavanje baste", ""],
+  ],
 };
 
 export const eng = {

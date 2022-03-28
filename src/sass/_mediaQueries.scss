@@ -7,15 +7,23 @@
     width: 20ch;
   }
 
-  .projects__carousel {
-    width: 100rem;
-  }
-
   .about-box {
     flex-direction: column;
   }
-}
+  .project {
+    justify-self: flex-start;
+  }
 
+  .project__github-img,
+  .project__agws-img {
+    justify-self: center;
+  }
+
+  .project__github,
+  .project__agws {
+    justify-self: flex-start;
+  }
+}
 @media screen and (max-width: 1050px) {
   .hero__content {
     flex-direction: column;
@@ -49,6 +57,29 @@
     border-bottom: 0.5rem dashed $maximum-green-yellow;
     padding: 4rem 0 1rem 0;
   }
+
+  .projects__box {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 50rem);
+  }
+
+  .project {
+    align-items: center;
+    text-align: center;
+  }
+
+  .project__left,
+  .project__right {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: center;
+  }
+
+  // .project__left {
+  // }
+
+  // .project__right {
+  // }
 }
 
 @media screen and (max-width: 800px) {
@@ -109,5 +140,15 @@
 
   .subtitle {
     font-size: 2rem;
+  }
+
+  .project__title {
+    width: 15ch;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project__paragraph {
+    width: 30ch;
   }
 }

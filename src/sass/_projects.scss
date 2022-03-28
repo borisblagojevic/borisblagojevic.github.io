@@ -11,6 +11,9 @@
 }
 
 .project {
+  @extend %flexbox;
+  flex-direction: column;
+  align-items: flex-start;
   justify-self: center;
 }
 
@@ -24,6 +27,7 @@
 
 .project__left {
   width: 50%;
+  height: fit-content;
 }
 .project__subtitle {
   width: 10ch;
