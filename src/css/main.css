@@ -311,12 +311,11 @@ ion-icon:active {
 }
 
 .project__left {
-  width: 50%;
+  width: 60%;
   height: fit-content;
 }
 
 .project__subtitle {
-  width: 10ch;
   margin-bottom: 3.2rem;
 }
 
@@ -328,12 +327,7 @@ ion-icon:active {
 .project__right {
   width: 50rem;
   border-radius: 20rem;
-  background-image: url("../images/projects/screen-recording.gif");
   justify-self: flex-start;
-}
-
-.project__link:visited {
-  color: #f5f5f5;
 }
 
 .project__link:link {
@@ -345,13 +339,16 @@ ion-icon:active {
   background-color: #092020;
   text-decoration: none;
 }
-.project__link:link:hover {
+.project__link:visited {
+  color: #f5f5f5;
+}
+.project__link:hover {
   border: 0.3rem solid #092020;
   cursor: pointer;
   background-color: transparent;
   color: #092020 !important;
 }
-.project__link:link:active {
+.project__link:active {
   border-color: #d1d646ff;
   background-color: #d1d646ff;
 }
@@ -441,7 +438,7 @@ ion-icon:active {
 
   .projects__box {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 50rem);
+    grid-template-rows: repeat(8, 35rem);
   }
 
   .project {
@@ -452,8 +449,39 @@ ion-icon:active {
   .project__left,
 .project__right {
     grid-column: 1;
-    grid-row: auto;
     justify-self: center;
+  }
+
+  .project__todo {
+    grid-row: 2;
+  }
+
+  .project__todo-img {
+    grid-row: 1;
+  }
+
+  .project__agws {
+    grid-row: 4;
+  }
+
+  .project__agws-img {
+    grid-row: 3;
+  }
+
+  .project__mainpage {
+    grid-row: 6;
+  }
+
+  .project__mainpage-img {
+    grid-row: 5;
+  }
+
+  .project__github {
+    grid-row: 8;
+  }
+
+  .project__github-img {
+    grid-row: 7;
   }
 }
 @media screen and (max-width: 800px) {
@@ -522,6 +550,12 @@ ion-icon:active {
 @media screen and (max-width: 400px) {
   .project__paragraph {
     width: 30ch;
+  }
+}
+@media screen and (max-height: 400px) {
+  .hero {
+    height: 100%;
+    padding: 3rem;
   }
 }
 

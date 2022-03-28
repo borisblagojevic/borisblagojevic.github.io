@@ -12,7 +12,13 @@ const aboutBox = document.querySelectorAll(".about__item");
 const cvSection = document.querySelector(".cv__subtitle");
 const toolsSection = document.querySelector(".tools__title");
 const contactSection = document.querySelector(".contact__title");
-const projectSection = document.querySelector(".project__title");
+
+// projects
+const projectTitle = document.querySelector(".project__title");
+const projectSubtitles = document.querySelectorAll(".project__subtitle");
+const projectParagraph = document.querySelectorAll(".project__paragraph");
+const projectImgs = document.querySelectorAll(".project__right");
+const projectLink = document.querySelectorAll(".project__link");
 
 let stateLang = JSON.parse(localStorage.getItem("language")) || eng;
 
@@ -41,7 +47,17 @@ const changeLanguage = function (lang) {
   contactSection.innerHTML = lang.contactSection;
 
   // project
-  projectSection.innerHTML = lang.projects;
+  projectTitle.innerHTML = lang.projectTitle;
+
+  projectSubtitles.forEach((el, i) => (el.innerHTML = lang.projects[i][0]));
+
+  projectParagraph.forEach((el, i) => (el.innerHTML = lang.projects[i][1]));
+
+  projectLink.forEach((el) => (el.innerHTML = lang.projects[0][3]));
+
+  projectImgs.forEach(
+    (el, i) => (el.style.backgroundImage = `url('${lang.projects[i][2]}')`)
+  );
 };
 
 const languageBtn = function (el) {
@@ -55,10 +71,6 @@ const languageBtn = function (el) {
   // refresh the page
   window.location.reload();
 };
-
-// if (stateLang) {
-//   console.log(true);
-// }
 
 btnENG.addEventListener("click", languageBtn.bind(btnENG));
 btnBIH.addEventListener("click", languageBtn.bind(btnBIH));
@@ -135,3 +147,5 @@ btnMenuMobile.addEventListener("click", function () {
 // init ******************************************************
 // translate(position);
 changeLanguage(stateLang);
+
+// localStorage.clear();

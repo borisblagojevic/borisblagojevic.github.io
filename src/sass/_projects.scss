@@ -26,34 +26,39 @@
 // }
 
 .project__left {
-  width: 50%;
+  width: 60%;
   height: fit-content;
 }
+
 .project__subtitle {
-  width: 10ch;
   margin-bottom: 3.2rem;
 }
+
 .project__paragraph {
   width: 50ch;
   margin-bottom: 3.2rem;
 }
+
 .project__right {
   width: 50rem;
   border-radius: 20rem;
-  background-image: url("../images/projects/screen-recording.gif");
   justify-self: flex-start;
 }
-.project__link:visited {
-  color: $white-2;
-}
-.project__link:link {
-  font-size: 1.4rem;
-  letter-spacing: 0.3rem;
-  padding: 2rem 2.2rem;
-  border-radius: 10rem;
-  color: $white-2;
-  background-color: $rich-black-2;
-  text-decoration: none;
+
+.project__link {
+  &:link {
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+    padding: 2rem 2.2rem;
+    border-radius: 10rem;
+    color: $white-2;
+    background-color: $rich-black-2;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $white-2;
+  }
 
   &:hover {
     border: 0.3rem solid $rich-black-2;
