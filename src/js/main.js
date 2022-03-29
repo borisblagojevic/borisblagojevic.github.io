@@ -31,8 +31,8 @@ const changeLanguage = function (lang) {
 
   // cv
   lang.lang === "eng"
-    ? (btnCV.href = "cvBorisBlagojevicEng.pdf")
-    : (btnCV.href = "cvBorisBlagojevicBIH.pdf");
+    ? (btnCV.href = "src/cv/cvBorisBlagojevicEng.pdf")
+    : (btnCV.href = "src/cvBorisBlagojevicBIH.pdf");
 
   navLink.forEach((el, i) => {
     if (i > 1) el.innerHTML = lang.navigationItem[i - 2];
