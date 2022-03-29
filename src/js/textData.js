@@ -45,16 +45,16 @@ export const eng = {
   aboutSection: [
     "About me",
     "Born in  Banja Luka.",
-    "I graduate electro technical high school in Banja Luka as telecommunication technician.",
-    "I'm currently studying software engineering at Pan-Evropian University Apeiron in Banja Luka.",
+    "I graduated from the electro-technical high school in Banja Luka as a telecommunication technician.",
+    "I'm currently studying software engineering at Pan-European University Apeiron in Banja Luka.",
   ],
   cvSection: "My resume",
   contactSection: "Let's get in touch",
   projectTitle: "Some of my projects",
   projects: [
     [
-      "TODO APP",
-      "Todo application that allows its user to enter new tasks, delete and filter old tasks. Saves the content and status of  tasks and the chosen theme of the application in the local memory of the browser. This application is made with MVC architecture.",
+      "TO DO APP",
+      "To do application that allows its user to enter new tasks, delete and filter old tasks. Saves the content and status of  tasks and the chosen theme of the application in the local memory of the browser. This application is made with MVC architecture.",
       "src/images/projects/screen-recording.gif",
       "Take a look",
     ],
