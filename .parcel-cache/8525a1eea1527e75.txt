@@ -1,4 +1,4 @@
-4267
+4270
 79C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\clone\LICENSE130657054670000000 0
 104C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\utility-types\dist\mapped-types.js.map121436361000000000 0
 104C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@swc\helpers\src\_iterable_to_array.js132902623550000000 0
@@ -17,7 +17,7 @@
 76C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\nullthrows132931390498988512 1
 76C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\fs132931390497757397 1
 97C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\source-map\dist\node.js121436361000000000 0
-63C:\Users\sirob\Desktop\web\borisblagojevic.github.io\.gitignore132930576996785433 0
+63C:\Users\sirob\Desktop\web\borisblagojevic.github.io\.gitignore132931393220269617 0
 61C:\Users\sirob\Desktop\web\borisblagojevic.github.io\src\sass132930576998126666 1
 98C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\terser\lib\compress\inference.js121436361000000000 0
 97C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\caniuse-lite\data\regions\AL.js121436361000000000 0
@@ -28,7 +28,7 @@
 90C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@swc\helpers\src\_set.js132902623550000000 0
 86C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\hash\LICENSE121436361000000000 0
 56C:\Users\sirob\Desktop\web\borisblagojevic.github.io\src132930576998056589 1
-57C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist132931391973647985 1
+57C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist132931398615139963 1
 90C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\css-tree\data\patch.json121436361000000000 0
 92C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\v8-compile-cache\README.md121436361000000000 0
 97C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\caniuse-lite\data\regions\TW.js121436361000000000 0
@@ -46,7 +46,7 @@
 85C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\.bin\node-gyp-build132931390500159575 0
 75C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\yaml\dist132931390456331219 1
 96C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\core\lib\Validation.js121436361000000000 0
-63C:\Users\sirob\Desktop\web\borisblagojevic.github.io\index.html132931391971826317 0
+63C:\Users\sirob\Desktop\web\borisblagojevic.github.io\index.html132931398611176347 0
 94C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\workers\src\child.js121436361000000000 0
 95C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\escape-string-regexp\index.js131005306320000000 0
 89C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\weak-lru-cache\index.js121436361000000000 0
@@ -168,7 +168,7 @@
 73C:\Users\sirob\Desktop\web\borisblagojevic.github.io\src\sass\_tools.scss132930576998116643 0
 82C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\nan\CHANGELOG.md132725668230000000 0
 82C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\v8-compile-cache132931390497707345 1
-71C:\Users\sirob\Desktop\web\borisblagojevic.github.io\src\js\textData.js132930578846112368 0
+71C:\Users\sirob\Desktop\web\borisblagojevic.github.io\src\js\textData.js132931397507233092 0
 116C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\runtime-js\lib\helpers\worker\js-loader.js121436361000000000 0
 83C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\binary-extensions132931390496525020 1
 113C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\css-select\lib\pseudo-selectors\subselects.d.ts121436361000000000 0
@@ -2608,6 +2608,7 @@
 111C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\watcher\src\windows\WindowsBackend.cc121436361000000000 0
 113C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\css-tree\lib\syntax\node\PseudoClassSelector.js121436361000000000 0
 115C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\css-tree\lib\syntax\node\PseudoElementSelector.js121436361000000000 0
+80C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\index.34df27b5.css.map132931398615139963 0
 99C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\css-tree\lib\syntax\node\Ratio.js121436361000000000 0
 112C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\hash\parcel-hash.linux-arm64-musl.node121436361000000000 0
 102C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\optimizer-image\package.json132931390497467116 0
@@ -2969,6 +2970,7 @@
 102C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\caniuse-lite\data\features\brotli.js121436361000000000 0
 100C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\caniuse-lite\data\features\cors.js121436361000000000 0
 111C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\transformer-svg\lib\SVGTransformer.js121436361000000000 0
+76C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\index.34df27b5.css132931398615119935 0
 94C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\@parcel\cache\lib\types.d.ts121436361000000000 0
 100C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\caniuse-lite\data\features\calc.js121436361000000000 0
 103C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\caniuse-lite\data\features\ch-unit.js121436361000000000 0
@@ -4259,10 +4261,11 @@
 81C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\.bin\terser.cmd132931390500349753 0
 81C:\Users\sirob\Desktop\web\borisblagojevic.github.io\node_modules\.bin\terser.ps1132931390500349753 0
 80C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\bbFavicon.18d592a5.svg132931391764264165 0
-75C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\index.18dbc454.js132931391763673633 0
-79C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\index.18dbc454.js.map132931391763703663 0
+75C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\index.18dbc454.js132931397200790467 0
+79C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\index.18dbc454.js.map132931397200810481 0
 80C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\index.f7626f62.css.map132931391764094015 0
-68C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\index.html132931391973637985 0
+68C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\index.html132931398615079896 0
+79C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\index.html.3085216538132931395757616771 0
 73C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\me.c6d63495.jpg132931391763473450 0
 64C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\src\cv132931391973678016 1
 89C:\Users\sirob\Desktop\web\borisblagojevic.github.io\dist\src\cv\cvBorisBlagojevicEng.pdf132931391973668012 0

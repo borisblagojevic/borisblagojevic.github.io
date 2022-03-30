@@ -2,7 +2,8 @@
 /dist
 /node_modules
 /cvAssets
-
+.cache/
+.parcel-cache/
 # inserted following from this git rep : 
 # https://github.com/parcel-bundler/examples/blob/master/.gitignore
 

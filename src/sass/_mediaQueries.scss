@@ -10,21 +10,13 @@
   .about-box {
     flex-direction: column;
   }
-  .project {
-    justify-self: flex-start;
-  }
 
-  .project__github-img,
-  .project__agws-img {
-    justify-self: center;
-  }
-
-  .project__github,
-  .project__agws {
-    justify-self: center;
+  .project__paragraph {
+    width: 45ch;
   }
 }
-@media screen and (max-width: 1050px) {
+
+@media screen and (max-width: 1120px) {
   .hero__content {
     flex-direction: column;
     gap: 5em;

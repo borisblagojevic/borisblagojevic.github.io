@@ -302,6 +302,8 @@ ion-icon:active {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 50rem);
   align-items: center;
+  justify-items: center;
+  row-gap: 4rem;
 }
 
 .project {
@@ -327,7 +329,6 @@ ion-icon:active {
 .project__right {
   width: 50rem;
   border-radius: 20rem;
-  justify-self: flex-start;
 }
 
 .project__link:link {
@@ -359,7 +360,6 @@ ion-icon:active {
 }
 
 .project__agws-img {
-  justify-self: flex-end;
   grid-column: 1;
   grid-row: 2;
 }
@@ -370,7 +370,6 @@ ion-icon:active {
 }
 
 .project__github-img {
-  justify-self: flex-end;
   grid-column: 1;
   grid-row: 4;
 }
@@ -388,21 +387,11 @@ ion-icon:active {
     flex-direction: column;
   }
 
-  .project {
-    justify-self: flex-start;
-  }
-
-  .project__github-img,
-.project__agws-img {
-    justify-self: center;
-  }
-
-  .project__github,
-.project__agws {
-    justify-self: center;
+  .project__paragraph {
+    width: 45ch;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1120px) {
   .hero__content {
     flex-direction: column;
     gap: 5em;

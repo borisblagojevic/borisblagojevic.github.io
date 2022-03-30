@@ -8,6 +8,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 50rem);
   align-items: center;
+  justify-items: center;
+  row-gap: 4rem;
 }
 
 .project {
@@ -42,7 +44,6 @@
 .project__right {
   width: 50rem;
   border-radius: 20rem;
-  justify-self: flex-start;
 }
 
 .project__link {
@@ -79,7 +80,6 @@
 }
 
 .project__agws-img {
-  justify-self: flex-end;
   grid-column: 1;
   grid-row: 2;
 }
@@ -89,8 +89,6 @@
   grid-row: 4;
 }
 .project__github-img {
-  justify-self: flex-end;
-
   grid-column: 1;
   grid-row: 4;
 }
