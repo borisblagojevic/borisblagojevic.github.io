@@ -1,6 +1,7 @@
 # Welcome to my personal web page 👋
 
 ## Live url
+www.borisblagojevic.me
 https://blagoja95.github.io/borisblagojevic.github.io/
 
 ## Colors
