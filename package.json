@@ -1,8 +1,28 @@
 {
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "^2.4.0",
     "sass": "^1.49.9"
   },
-  "dependencies": {
-    "parcel": "^2.4.0"
-  }
+  "dependencies": {},
+  "name": "borisblagojevic.github.io",
+  "description": "https://blagoja95.github.io/borisblagojevic.github.io/",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blagoja95/borisblagojevic.github.io.git"
+  },
+  "keywords": [
+    "webpage"
+  ],
+  "author": "Boris Blagojevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blagoja95/borisblagojevic.github.io/issues"
+  },
+  "homepage": "https://github.com/Blagoja95/borisblagojevic.github.io#readme"
 }
