@@ -15,6 +15,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .project, .contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
@@ -421,8 +422,8 @@ ion-icon:active {
 
   .about__paragraph {
     text-align: center;
-    border-bottom: 0.5rem dashed #d1d646ff;
     padding: 4rem 0 1rem 0;
+    border-bottom: 0.5rem dashed #d1d646ff;
   }
 
   .projects__box {
