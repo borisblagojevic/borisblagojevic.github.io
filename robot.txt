@@ -1,0 +1,3 @@
+# borisblagojevic.me/robots.txt
+User-agent: googlebot
+User-agent: *
