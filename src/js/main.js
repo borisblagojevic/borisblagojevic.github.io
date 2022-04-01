@@ -130,7 +130,8 @@ const date = new Date();
 crNumber.innerHTML = date.getFullYear();
 
 // menu ***************************************************
-const btnMenuMobile = document.querySelector(".btn--menu-mobile");
+const btnMenuMobile = document.querySelector(".menu-mobile");
+const btnMenuClose = document.querySelector(".menu-close");
 const menuDesktop = document.querySelector(".desktop");
 const heroContent = document.querySelector(".hero__content");
 const toggleDisplay = function (el, reverse = false) {
@@ -144,14 +145,22 @@ const toggleDisplay = function (el, reverse = false) {
     else el.style.display = "flex";
   }
 };
-btnMenuMobile.addEventListener("click", function () {
-  toggleDisplay(menuDesktop);
-  toggleDisplay(heroContent, true);
+
+const callDisplayFunctions = function (open = true) {
+  toggleDisplay(menuDesktop, open === true ? true : false);
+  toggleDisplay(btnMenuClose, open === true ? true : false);
+
+  toggleDisplay(btnMenuMobile, open === true ? false : true);
+  toggleDisplay(heroContent, open === true ? false : true);
 
   menuDesktop.classList.toggle("mobile-menu");
-});
+};
+
+btnMenuMobile.addEventListener("click", callDisplayFunctions);
+
+btnMenuClose.addEventListener("click", callDisplayFunctions.bind(false));
 // init ******************************************************
 // translate(position);
 changeLanguage(stateLang);
-
+toggleDisplay(btnMenuClose, true);
 // localStorage.clear();
