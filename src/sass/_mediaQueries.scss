@@ -10,8 +10,10 @@
   .about-box {
     flex-direction: column;
   }
-
-  .project__paragraph {
+  .project__right {
+    width: 40rem;
+  }
+  .project .project__paragraph {
     width: 45ch;
   }
 }
@@ -51,48 +53,25 @@
   }
 
   .projects__box {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 40rem);
+    row-gap: 15rem;
+  }
+
+  .project:nth-child(odd) {
+    flex-direction: column-reverse;
   }
 
   .project {
+    @extend %flexbox;
+    flex-direction: column-reverse;
+    gap: 6rem;
+  }
+
+  .project_inner {
     align-items: center;
+  }
+
+  .project__paragraph {
     text-align: center;
-  }
-
-  .project__left,
-  .project__right {
-    grid-column: 1;
-    justify-self: center;
-  }
-
-  .project__todo {
-    grid-row: 2;
-  }
-  .project__todo-img {
-    grid-row: 1;
-  }
-
-  .project__agws {
-    grid-row: 4;
-  }
-  .project__agws-img {
-    grid-row: 3;
-  }
-
-  .project__mainpage {
-    grid-row: 6;
-  }
-  .project__mainpage-img {
-    grid-row: 5;
-  }
-
-  .project__github {
-    grid-row: 8;
-  }
-
-  .project__github-img {
-    grid-row: 7;
   }
 }
 
@@ -117,11 +96,6 @@
     width: 100%;
     justify-content: flex-end;
     display: flex;
-  }
-
-  .projects__box {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 32rem);
   }
 }
 
@@ -167,6 +141,9 @@
 }
 
 @media screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
   .project__paragraph {
     width: 30ch;
   }

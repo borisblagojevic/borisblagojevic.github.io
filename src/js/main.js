@@ -59,11 +59,7 @@ const changeLanguage = function (lang) {
 
   projectParagraph.forEach((el, i) => (el.innerHTML = lang.projects[i][1]));
 
-  projectLink.forEach((el) => (el.innerHTML = lang.projects[0][3]));
-
-  projectImgs.forEach(
-    (el, i) => (el.style.backgroundImage = `url('${lang.projects[i][2]}')`)
-  );
+  projectLink.forEach((el) => (el.innerHTML = lang.projects[0][2]));
 };
 
 const languageBtn = function (el) {
