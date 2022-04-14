@@ -8,6 +8,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,13 +19,30 @@ body {
   overflow-x: hidden;
 }
 
-.project_inner, .project, .contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
+.project_inner,
+.project,
+.contact__links,
+.about-box,
+.hero__content,
+.navigation__link-item,
+.navigation__links-list,
+.navigation-bar,
+.hero,
+.projects,
+.contact,
+.cv,
+.about,
+.tools-box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.projects, .contact, .cv, .about, .tools-box {
+.projects,
+.contact,
+.cv,
+.about,
+.tools-box {
   padding: 12rem 0;
   flex-direction: column;
   gap: 9.6rem;
@@ -74,8 +92,10 @@ ion-icon:active {
   display: none !important;
 }
 
-.active-language, .navigation__link:link:hover,
-.navigation__link:visited:hover, .btn {
+.active-language,
+.navigation__link:link:hover,
+.navigation__link:visited:hover,
+.btn {
   display: inline-block;
   border: 2px solid #fff;
   background-color: transparent;
@@ -83,12 +103,14 @@ ion-icon:active {
 }
 
 .navigation__link:hover:link,
-.navigation__link:hover:visited, .btn:hover {
+.navigation__link:hover:visited,
+.btn:hover {
   cursor: pointer;
   color: #f5f5f5 !important;
 }
 .navigation__link:active:link:hover,
-.navigation__link:active:visited:hover, .btn:active {
+.navigation__link:active:visited:hover,
+.btn:active {
   color: #040f0fff !important;
   background-color: #d1d646ff;
 }
