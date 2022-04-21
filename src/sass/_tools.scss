@@ -16,7 +16,8 @@
   filter: grayscale(100%);
   opacity: 50%;
 
-  &:hover {
+  &:hover,
+  &:active {
     filter: grayscale(0);
     opacity: 100%;
     cursor: pointer;

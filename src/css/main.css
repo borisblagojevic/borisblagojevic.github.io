@@ -8,7 +8,6 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -19,30 +18,13 @@ body {
   overflow-x: hidden;
 }
 
-.project_inner,
-.project,
-.contact__links,
-.about-box,
-.hero__content,
-.navigation__link-item,
-.navigation__links-list,
-.navigation-bar,
-.hero,
-.projects,
-.contact,
-.cv,
-.about,
-.tools-box {
+.project_inner, .project, .contact__links, .about-box, .hero__content, .navigation__link-item, .navigation__links-list, .navigation-bar, .hero, .projects, .contact, .cv, .about, .tools-box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.projects,
-.contact,
-.cv,
-.about,
-.tools-box {
+.projects, .contact, .cv, .about, .tools-box {
   padding: 12rem 0;
   flex-direction: column;
   gap: 9.6rem;
@@ -92,10 +74,8 @@ ion-icon:active {
   display: none !important;
 }
 
-.active-language,
-.navigation__link:link:hover,
-.navigation__link:visited:hover,
-.btn {
+.active-language, .navigation__link:link:hover,
+.navigation__link:visited:hover, .btn {
   display: inline-block;
   border: 2px solid #fff;
   background-color: transparent;
@@ -103,14 +83,12 @@ ion-icon:active {
 }
 
 .navigation__link:hover:link,
-.navigation__link:hover:visited,
-.btn:hover {
+.navigation__link:hover:visited, .btn:hover {
   cursor: pointer;
   color: #f5f5f5 !important;
 }
 .navigation__link:active:link:hover,
-.navigation__link:active:visited:hover,
-.btn:active {
+.navigation__link:active:visited:hover, .btn:active {
   color: #040f0fff !important;
   background-color: #d1d646ff;
 }
@@ -189,7 +167,6 @@ ion-icon:active {
 }
 
 .hero__right {
-  background-image: url("../images/me.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -201,6 +178,10 @@ ion-icon:active {
   width: 40rem;
   height: 40rem;
   border-radius: 100%;
+}
+
+.hero-img {
+  background-image: url("../images/me.jpg");
 }
 
 .hero__title {
@@ -274,7 +255,7 @@ ion-icon:active {
   filter: grayscale(100%);
   opacity: 50%;
 }
-.tool:hover {
+.tool:hover, .tool:active {
   filter: grayscale(0);
   opacity: 100%;
   cursor: pointer;
@@ -345,15 +326,11 @@ ion-icon:active {
 .project_inner {
   flex-direction: column;
   align-items: flex-start;
-}
-
-.project__subtitle {
-  margin-bottom: 3.2rem;
+  gap: 3rem;
 }
 
 .project__paragraph {
   width: 50ch;
-  margin-bottom: 3.2rem;
 }
 
 .project__right {
@@ -369,6 +346,7 @@ ion-icon:active {
   color: #f5f5f5;
   background-color: #092020;
   text-decoration: none;
+  border: 0.3rem solid transparent;
 }
 .project__link:visited {
   color: #f5f5f5;
@@ -382,22 +360,6 @@ ion-icon:active {
 .project__link:active {
   border-color: #d1d646ff;
   background-color: #d1d646ff;
-}
-
-.project__todo-img {
-  background-image: url("../images/projects/screen-recording.gif");
-}
-
-.project__agws-img {
-  background-image: url("../images/projects/awgs.jpeg");
-}
-
-.project__mainpage-img {
-  background-image: url("../images/projects/mywebpage.gif");
-}
-
-.project__github-img {
-  background-image: url("../images/projects//github.png");
 }
 
 @media screen and (max-width: 1520px) {

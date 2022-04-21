@@ -15,6 +15,7 @@ const toolsSection = document.querySelector(".tools__title");
 const contactSection = document.querySelector(".contact__title");
 
 // projects
+const projectBox = document.querySelector(".projects__box");
 const projectTitle = document.querySelector(".project__title");
 const projectSubtitles = document.querySelectorAll(".project__subtitle");
 const projectParagraph = document.querySelectorAll(".project__paragraph");
@@ -55,11 +56,32 @@ const changeLanguage = function (lang) {
   // project
   projectTitle.innerHTML = lang.projectTitle;
 
-  projectSubtitles.forEach((el, i) => (el.innerHTML = lang.projects[i][0]));
+  while (projectBox.firstChild) projectBox.removeChild(projectBox.firstChild);
+  lang.projects.forEach((project) => createHTML(projectBox, project));
+};
 
-  projectParagraph.forEach((el, i) => (el.innerHTML = lang.projects[i][1]));
+const createHTML = (element, data) => {
+  const html = `
+          <div class="project">
+            <div class="project_inner project__left">
+              <h2 class="subtitle project__subtitle">${data.title}</h2>
+              <p class="paragraph project__paragraph">
+                ${data.info}
+              </p>
+              <a
+                href="${data.github}"
+                target="_blank"
+                class="project__link"
+                >${data.btn_title}</a
+              >
+            </div>
+            <img src="${data.img}" alt="project image"
+              class="project__right hero__right project__todo-img"
+            ></img>
+          </div>
+  `;
 
-  projectLink.forEach((el) => (el.innerHTML = lang.projects[0][2]));
+  element.insertAdjacentHTML("beforeend", html);
 };
 
 const languageBtn = function (el) {

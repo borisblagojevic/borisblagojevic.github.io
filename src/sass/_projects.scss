@@ -26,15 +26,11 @@
   @extend %flexbox;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.project__subtitle {
-  margin-bottom: 3.2rem;
+  gap: 3rem;
 }
 
 .project__paragraph {
   width: 50ch;
-  margin-bottom: 3.2rem;
 }
 
 .project__right {
@@ -51,6 +47,7 @@
     color: $white-2;
     background-color: $rich-black-2;
     text-decoration: none;
+    border: 0.3rem solid transparent;
   }
 
   &:visited {
@@ -68,20 +65,4 @@
     border-color: $maximum-green-yellow;
     background-color: $maximum-green-yellow;
   }
-}
-
-.project__todo-img {
-  background-image: url("../images/projects/screen-recording.gif");
-}
-
-.project__agws-img {
-  background-image: url("../images/projects/awgs.jpeg");
-}
-
-.project__mainpage-img {
-  background-image: url("../images/projects/mywebpage.gif");
-}
-
-.project__github-img {
-  background-image: url("../images/projects//github.png");
 }

@@ -52,7 +52,6 @@
   border: none;
 }
 .hero__right {
-  background-image: url("../images/me.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -65,6 +64,10 @@
   height: 40rem;
 
   border-radius: 100%;
+}
+
+.hero-img {
+  background-image: url("../images/me.jpg");
 }
 
 .hero__title {
