@@ -75,7 +75,7 @@ const createHTML = (element, data) => {
                 >${data.btn_title}</a
               >
             </div>
-            <img src="${data.img}" alt="project image"
+            <img src="${data.img}" alt="${data.btn_title} image" 
               class="project__right hero__right project__todo-img"
             ></img>
           </div>

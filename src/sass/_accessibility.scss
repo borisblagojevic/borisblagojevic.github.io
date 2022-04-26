@@ -1,0 +1,26 @@
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.skip-nav-link {
+  z-index: 1;
+  position: absolute;
+  left: 1rem;
+  transform: translatey(-120%);
+  transition: transform 500ms ease-in;
+
+  font-size: 5rem;
+  padding: 1rem;
+  background-color: $white-2;
+  color: $maximum-green-yellow;
+  border-radius: 0 0 10px 10px;
+}
+
+.skip-nav-link:focus {
+  transform: translatey(0%);
+  border: 3px dotted $maximum-green-yellow;
+}

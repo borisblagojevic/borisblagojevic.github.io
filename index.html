@@ -37,8 +37,9 @@
     />
   </head>
   <body>
+    <a id="main" href="#main-content" class="skip-nav-link">Skip Navigation</a>
     <header class="hero dark" id="TOP">
-      <a href="#TOP">
+      <a href="#TOP" class="back-to-top-box">
         <ion-icon name="arrow-up" class="back-to-top"> </ion-icon>
       </a>
       <nav class="navigation-bar mobile">
@@ -79,12 +80,12 @@
           </li>
         </ul>
       </nav>
-      <div class="hero__content">
+      <div class="hero__content" id="main-content">
         <div class="hero__left">
           <h1 class="title hero__title">
             Zdravo, ja sam <span class="hero__span"> Boris Blagojevic</span>
           </h1>
-          <p class="subtitle hero__paragraph">Frontend web developer</p>
+          <h2 class="subtitle hero__paragraph">Frontend web developer</h2>
         </div>
         <figure class="hero__right hero-img"></figure>
       </div>
@@ -208,11 +209,11 @@
         <div class="projects__box container"></div>
       </section>
     </main>
-    <footer class="footer dark">
-      <p class="subtitle footer__paragraph">
+    <footer class="footer dark" id="footer">
+      <h2 class="subtitle footer__paragraph">
         &copy;<span class="crNumber"> 2022 </span>
         Boris Blagojevic
-      </p>
+      </h2>
     </footer>
   </body>
 </html>
