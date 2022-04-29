@@ -31,9 +31,9 @@ const changeLanguage = function (lang) {
     : btnBIH.classList.add("active-language");
 
   // cv
-  lang.lang === "eng"
-    ? (btnCV.href = "src/cv/cvBorisBlagojevicEng.pdf")
-    : (btnCV.href = "src/cv/cvBorisBlagojevicBIH.pdf");
+  // lang.lang === "eng"
+  //   ? (btnCV.href = "src/cv/cvBorisBlagojevicEng.pdf")
+  //   : (btnCV.href = "src/cv/cvBorisBlagojevicBIH.pdf");
 
   navLink.forEach((el, i) => {
     if (i > 1) el.innerHTML = lang.navigationItem[i - 2];
