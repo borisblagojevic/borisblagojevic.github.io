@@ -6,7 +6,7 @@ www.borisblagojevic.me
 https://blagoja95.github.io/borisblagojevic.github.io/
 
 ToDo:
-- Image loading optimisation
+- Images loading optimisation
 - Reacreate in ReactJS
 
 ## Colors
