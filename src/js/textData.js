@@ -6,8 +6,8 @@ export const bih = {
   aboutSection: [
     "O meni",
     "Rođen sam u Banjoj Luci.",
-    "Trenutno studiram softverski inženjering na Panevropskom Univerzitetu Apeiron u Banjoj Luci.",
     "Zavrsio sam srednju Elektrotehničku školu Nikola Tesla u Banjoj Luci kao tehničar telekomunikacija.",
+    "Trenutno spremam diplomski za softverski inženjering na Panevropskom Univerzitetu Apeiron u Banjoj Luci.",
   ],
   cvSection: "Pogledajte moj CV",
   contactSection: "Kako stupiti u kontakt sa mnom",
@@ -62,7 +62,7 @@ export const eng = {
     "About me",
     "Born in  Banja Luka.",
     "I graduated from the electro-technical high school in Banja Luka as a telecommunication technician.",
-    "I'm currently studying software engineering at Pan-European University Apeiron in Banja Luka.",
+    "I am currently completing my degree in software engineering at the Pan-European University of Apeiron in Banja Luka.",
   ],
   cvSection: "My resume",
   contactSection: "Let's get in touch",
