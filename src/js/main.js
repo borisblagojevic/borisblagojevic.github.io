@@ -152,6 +152,8 @@ const btnMenuMobile = document.querySelector(".menu-mobile");
 const btnMenuClose = document.querySelector(".menu-close");
 const menuDesktop = document.querySelector(".desktop");
 const heroContent = document.querySelector(".hero__content");
+const hero = document.querySelector(".hero");
+
 const toggleDisplay = function (el, reverse = false) {
   if (!reverse) {
     if (el.style.display === "none" || el.style.display === "")
@@ -168,6 +170,12 @@ const callDisplayFunctions = function (open = true) {
   toggleDisplay(menuDesktop, open === true ? true : false);
   toggleDisplay(btnMenuClose, open === true ? true : false);
 
+  if (open) hero.style.height = "100vh";
+  else {
+    hero.style.height = "fit-content";
+    hero.style.paddingBottom = "10%";
+  }
+
   toggleDisplay(btnMenuMobile, open === true ? false : true);
   toggleDisplay(heroContent, open === true ? false : true);
 
@@ -176,7 +184,7 @@ const callDisplayFunctions = function (open = true) {
 
 btnMenuMobile.addEventListener("click", callDisplayFunctions);
 
-btnMenuClose.addEventListener("click", callDisplayFunctions.bind(false));
+btnMenuClose.addEventListener("click", () => callDisplayFunctions(false));
 // init ******************************************************
 // translate(position);
 changeLanguage(stateLang);

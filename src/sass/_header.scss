@@ -54,7 +54,6 @@
 .hero__right {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
   border-color: $maximum-green-yellow;
   border-style: dashed;
   filter: brightness(0.8);
@@ -67,7 +66,13 @@
 }
 
 .hero-img {
-  background-image: url("../images/me.jpg");
+  background-image: url("../images/me_1.jpg");
+  background-size: cover;
+
+  // &:hover,
+  // &:active {
+  //   filter: grayscale(100%);
+  // }
 }
 
 .hero__title {

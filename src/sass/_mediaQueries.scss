@@ -19,6 +19,11 @@
 }
 
 @media screen and (max-width: 1120px) {
+  .hero {
+    height: fit-content;
+    padding-bottom: 10%;
+  }
+
   .hero__content {
     flex-direction: column;
     gap: 5em;
@@ -49,7 +54,10 @@
   .about__paragraph {
     text-align: center;
     padding: 4rem 0 1rem 0;
-    border-bottom: 0.5rem dashed $maximum-green-yellow;
+
+    &:last-child {
+      border-bottom: 0.5rem dashed $maximum-green-yellow;
+    }
   }
 
   .projects__box {
@@ -104,6 +112,10 @@
     font-size: 50%;
   }
 
+  .hero {
+    padding: 10% 0;
+  }
+
   .navigation-bar {
     padding: 1rem;
   }
@@ -141,6 +153,9 @@
 }
 
 @media screen and (max-width: 400px) {
+  html {
+    font-size: 46%;
+  }
   .container {
     width: 90%;
   }

@@ -118,7 +118,7 @@ ion-icon:active {
 
 .btn--menu-mobile {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   color: #f5f5f5;
   border: none;
   border-radius: 1rem;
@@ -169,7 +169,6 @@ ion-icon:active {
 .hero__right {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
   border-color: #d1d646ff;
   border-style: dashed;
   filter: brightness(0.8);
@@ -181,7 +180,8 @@ ion-icon:active {
 }
 
 .hero-img {
-  background-image: url("../images/me.jpg");
+  background-image: url("../images/me_1.jpg");
+  background-size: cover;
 }
 
 .hero__title {
@@ -410,6 +410,11 @@ ion-icon:active {
   }
 }
 @media screen and (max-width: 1120px) {
+  .hero {
+    height: fit-content;
+    padding-bottom: 10%;
+  }
+
   .hero__content {
     flex-direction: column;
     gap: 5em;
@@ -440,6 +445,8 @@ ion-icon:active {
   .about__paragraph {
     text-align: center;
     padding: 4rem 0 1rem 0;
+  }
+  .about__paragraph:last-child {
     border-bottom: 0.5rem dashed #d1d646ff;
   }
 
@@ -492,6 +499,10 @@ ion-icon:active {
     font-size: 50%;
   }
 
+  .hero {
+    padding: 10% 0;
+  }
+
   .navigation-bar {
     padding: 1rem;
   }
@@ -528,6 +539,10 @@ ion-icon:active {
   }
 }
 @media screen and (max-width: 400px) {
+  html {
+    font-size: 46%;
+  }
+
   .container {
     width: 90%;
   }
