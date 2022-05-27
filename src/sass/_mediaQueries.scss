@@ -19,11 +19,6 @@
 }
 
 @media screen and (max-width: 1120px) {
-  .hero {
-    height: fit-content;
-    padding-bottom: 10%;
-  }
-
   .hero__content {
     flex-direction: column;
     gap: 5em;
@@ -164,9 +159,9 @@
   }
 }
 
-@media screen and (max-height: 400px) {
-  .hero {
-    height: 100%;
-    padding: 3rem;
-  }
-}
+// @media screen and (max-height: 400px) {
+//   .hero {
+//     height: 100%;
+//     padding: 3rem;
+//   }
+// }

@@ -172,7 +172,7 @@ const callDisplayFunctions = function (open = true) {
 
   if (open) hero.style.height = "100vh";
   else {
-    hero.style.height = "fit-content";
+    hero.style.height = "100vh";
     hero.style.paddingBottom = "10%";
   }
 
