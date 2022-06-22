@@ -58,10 +58,14 @@ const changeLanguage = function (lang) {
   projectTitle.innerHTML = lang.projectTitle;
 
   while (projectBox.firstChild) projectBox.removeChild(projectBox.firstChild);
-  lang.projects.forEach((project) => createHTML(projectBox, project));
+
+  lang.projects.forEach((project) => {
+    if (project.img.endsWith(".webm")) createHTMLVid(projectBox, project);
+    else createHTMLIMG(projectBox, project);
+  });
 };
 
-const createHTML = (element, data) => {
+const createHTMLVid = (element, data) => {
   const html = `
           <div class="project">
             <div class="project_inner project__left">
@@ -75,10 +79,37 @@ const createHTML = (element, data) => {
                 class="project__link"
                 >${data.btn_title}</a
               >
-            </div>
-            <img src="${data.img}" alt="${data.btn_title} image" 
+              </div>
+              <video alt="${data.btn_title}" autoplay loop
               class="project__right hero__right project__todo-img"
-            ></img>
+              >
+                <source src="${data.img}" type="video/webm">
+              </video>
+          </div>
+  `;
+
+  element.insertAdjacentHTML("beforeend", html);
+};
+
+const createHTMLIMG = (element, data) => {
+  const html = `
+          <div class="project">
+            <div class="project_inner project__left">
+              <h2 class="subtitle project__subtitle">${data.title}</h2>
+              <p class="paragraph project__paragraph">
+                ${data.info}
+              </p>
+              <a
+                href="${data.github}"
+                target="_blank"
+                class="project__link"
+                >${data.btn_title}</a
+              >
+              </div>
+              <img src="${data.img}" alt="${data.btn_title}"  loading="lazy" 
+              class="project__right hero__right project__todo-img"
+              >
+              </img>
           </div>
   `;
 

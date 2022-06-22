@@ -31,7 +31,7 @@ export const bih = {
     {
       title: "TODO APP",
       info: " Todo aplikacija koja omogucava njenom korisniku unos novih, brisanje starih kao i filtriranje  zadataka. Čuvanje sadržaja i stanja unesenih zadatka  te podešavanje izgleda aplikacije se čuva u lokalnoj memoriji browsera. I ova aplikacija je rađena po MVC arhitekturi.",
-      btn_title: "Uvjek zaboraviš nešto kupiti",
+      btn_title: "Uvjek zaboraviš nešto kupiti?",
       github: "https://blagoja95.github.io/todo-app/",
       img: "src/images/projects/todo.webm",
     },
@@ -81,7 +81,7 @@ export const eng = {
       btn_title: "Try searching images yourself",
       github:
         "https://blagoja95.github.io/image-galery-pixabayAPI-tailwind-react/",
-      img: "src/images/projects/recipe.webm",
+      img: "src/images/projects/imagesSearch.webm",
     },
     {
       title: "RECIPE APP",
@@ -100,7 +100,7 @@ export const eng = {
     {
       title: "AUTOMATIC GARDEN WATERING SYSTEM",
       info: "A garden irrigation system that opens the valve and discharges water at a predetermined time. The first version of this system was made in 2020. ",
-      btn_title: "Want to have a healthy and green garden",
+      btn_title: "Want to have a healthy and green garden?",
       github:
         "https://github.com/Blagoja95/automatic-garden-watering-sys-aurdion",
       img: "src/images/projects/awgs.jpeg",
