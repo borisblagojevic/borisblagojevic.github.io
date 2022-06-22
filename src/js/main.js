@@ -31,11 +31,6 @@ const changeLanguage = function (lang) {
     ? btnENG.classList.add("active-language")
     : btnBIH.classList.add("active-language");
 
-  // cv
-  // lang.lang === "eng"
-  //   ? (btnCV.href = "src/cv/cvBorisBlagojevicEng.pdf")
-  //   : (btnCV.href = "src/cv/cvBorisBlagojevicBIH.pdf");
-
   navLink.forEach((el, i) => {
     if (i > 1) el.innerHTML = lang.navigationItem[i - 2];
   });
@@ -80,10 +75,12 @@ const createHTMLVid = (element, data) => {
                 >${data.btn_title}</a
               >
               </div>
-              <video alt="${data.btn_title}" autoplay loop playsinline
+              <video alt="${data.btn_title}" 
               class="project__right hero__right project__todo-img"
+              autoplay loop muted
               >
                 <source src="${data.img}" type="video/webm">
+                This video is not supported on your browser!
               </video>
           </div>
   `;

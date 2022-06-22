@@ -19,7 +19,7 @@ export const bih = {
       btn_title: "Pronadji i ti sliku",
       github:
         "https://blagoja95.github.io/image-galery-pixabayAPI-tailwind-react/",
-      img: "src/images/projects/recipe.webm",
+      img: "src/images/projects/imagesSearch.webm",
     },
     {
       title: "RECIPE APP",
