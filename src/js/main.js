@@ -1,6 +1,5 @@
 import { bih, eng } from "./textData.js";
 
-// LANGUAGE SETTINGS ************************************************8
 const navBar = document.querySelector(".navigation__links-list--left");
 const btnENG = document.querySelector(".user-eng");
 const btnBIH = document.querySelector(".user-bih");
@@ -23,6 +22,8 @@ const projectImgs = document.querySelectorAll(".project__right");
 const projectLink = document.querySelectorAll(".project__link");
 
 let stateLang = JSON.parse(localStorage.getItem("language")) || eng;
+
+// LANGUAGE SETTINGS ************************************************8
 
 const changeLanguage = function (lang) {
   // header
@@ -100,46 +101,6 @@ btnENG.addEventListener("click", languageBtn.bind(btnENG));
 btnBIH.addEventListener("click", languageBtn.bind(btnBIH));
 
 // *************************************************
-
-// CAROUSEL *******************************************
-// const carousel = document.querySelectorAll(".project__box");
-// const carouselLinks = document.querySelectorAll(".project__link");
-// const btnLeft = document.querySelector(".projects__left");
-// const btnRight = document.querySelector(".projects__right");
-// let position = 0;
-
-// const translateEl = function (el, value) {
-//   el.forEach(
-//     (el, i) => (el.style.transform = `translateX(${200 * (i - value)}%)`)
-//   );
-// };
-
-// const translate = function (value) {
-//   translateEl(carousel, value);
-//   translateEl(carouselLinks, value);
-// };
-
-// const right = function () {
-//   if (position === carousel.length - 1) position = 0;
-//   else position++;
-
-//   translate(position);
-// };
-
-// const left = function () {
-//   if (position === 0) position = carousel.length - 1;
-//   else position--;
-
-//   translate(position);
-// };
-
-// btnLeft.addEventListener("click", left);
-// btnRight.addEventListener("click", right);
-// document.addEventListener("keydown", function (e) {
-//   e.preventDefault();
-//   if (e.key === "ArrowLeft") left();
-//   if (e.key === "ArrowRight") right();
-// });
 
 // date **********************************************************
 
