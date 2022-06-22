@@ -1,6 +1,5 @@
 import { bih, eng } from "./textData.js";
 
-// LANGUAGE SETTINGS ************************************************8
 const navBar = document.querySelector(".navigation__links-list--left");
 const btnENG = document.querySelector(".user-eng");
 const btnBIH = document.querySelector(".user-bih");
@@ -23,6 +22,8 @@ const projectImgs = document.querySelectorAll(".project__right");
 const projectLink = document.querySelectorAll(".project__link");
 
 let stateLang = JSON.parse(localStorage.getItem("language")) || eng;
+
+// LANGUAGE SETTINGS ************************************************8
 
 const changeLanguage = function (lang) {
   // header
@@ -57,10 +58,14 @@ const changeLanguage = function (lang) {
   projectTitle.innerHTML = lang.projectTitle;
 
   while (projectBox.firstChild) projectBox.removeChild(projectBox.firstChild);
-  lang.projects.forEach((project) => createHTML(projectBox, project));
+
+  lang.projects.forEach((project) => {
+    if (project.img.endsWith(".webm")) createHTMLVid(projectBox, project);
+    else createHTMLIMG(projectBox, project);
+  });
 };
 
-const createHTML = (element, data) => {
+const createHTMLVid = (element, data) => {
   const html = `
           <div class="project">
             <div class="project_inner project__left">
@@ -74,10 +79,37 @@ const createHTML = (element, data) => {
                 class="project__link"
                 >${data.btn_title}</a
               >
-            </div>
-            <img src="${data.img}" alt="${data.btn_title} image" 
+              </div>
+              <video alt="${data.btn_title}" autoplay loop
               class="project__right hero__right project__todo-img"
-            ></img>
+              >
+                <source src="${data.img}" type="video/webm">
+              </video>
+          </div>
+  `;
+
+  element.insertAdjacentHTML("beforeend", html);
+};
+
+const createHTMLIMG = (element, data) => {
+  const html = `
+          <div class="project">
+            <div class="project_inner project__left">
+              <h2 class="subtitle project__subtitle">${data.title}</h2>
+              <p class="paragraph project__paragraph">
+                ${data.info}
+              </p>
+              <a
+                href="${data.github}"
+                target="_blank"
+                class="project__link"
+                >${data.btn_title}</a
+              >
+              </div>
+              <img src="${data.img}" alt="${data.btn_title}"  loading="lazy" 
+              class="project__right hero__right project__todo-img"
+              >
+              </img>
           </div>
   `;
 
@@ -100,46 +132,6 @@ btnENG.addEventListener("click", languageBtn.bind(btnENG));
 btnBIH.addEventListener("click", languageBtn.bind(btnBIH));
 
 // *************************************************
-
-// CAROUSEL *******************************************
-// const carousel = document.querySelectorAll(".project__box");
-// const carouselLinks = document.querySelectorAll(".project__link");
-// const btnLeft = document.querySelector(".projects__left");
-// const btnRight = document.querySelector(".projects__right");
-// let position = 0;
-
-// const translateEl = function (el, value) {
-//   el.forEach(
-//     (el, i) => (el.style.transform = `translateX(${200 * (i - value)}%)`)
-//   );
-// };
-
-// const translate = function (value) {
-//   translateEl(carousel, value);
-//   translateEl(carouselLinks, value);
-// };
-
-// const right = function () {
-//   if (position === carousel.length - 1) position = 0;
-//   else position++;
-
-//   translate(position);
-// };
-
-// const left = function () {
-//   if (position === 0) position = carousel.length - 1;
-//   else position--;
-
-//   translate(position);
-// };
-
-// btnLeft.addEventListener("click", left);
-// btnRight.addEventListener("click", right);
-// document.addEventListener("keydown", function (e) {
-//   e.preventDefault();
-//   if (e.key === "ArrowLeft") left();
-//   if (e.key === "ArrowRight") right();
-// });
 
 // date **********************************************************
 
