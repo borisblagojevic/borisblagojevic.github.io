@@ -80,7 +80,7 @@ const createHTMLVid = (element, data) => {
                 >${data.btn_title}</a
               >
               </div>
-              <video alt="${data.btn_title}" autoplay loop
+              <video alt="${data.btn_title}" autoplay loop playsinline
               class="project__right hero__right project__todo-img"
               >
                 <source src="${data.img}" type="video/webm">
