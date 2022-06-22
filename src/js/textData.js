@@ -14,7 +14,7 @@ export const bih = {
   projectTitle: "Projekte koje bih izdvojio",
   projects: [
     {
-      title: "IMAGE GALLERY w/ PIXABAYAPI",
+      title: "PRETRAŽIVANJE SLIKA POMOĆU 'PIXABAY API-a'",
       info: "This application allows its user to search the enormous amount of images using powerfull Pixabay API. Users can search any image by typing in a desired keyword like 'cats' or 'cars' and the get a list of images present that to the user as a card with image and data about that image. Filter those search results by selecting the type of image like photos, vectors and illustrations.",
       btn_title: "Pronadji i ti sliku",
       github:
@@ -36,7 +36,7 @@ export const bih = {
       img: "src/images/projects/todo.webm",
     },
     {
-      title: "AUTOMATSKO NAVODNJAVANJE BASTE",
+      title: "SISTEM ZA AUTOMATSKO NAVODNJAVANJE BASTE",
       info: "Sistem za navodnjavanje baste koji otvara ventil i ispušta vodu u unaprijed zadato vrijeme. Prva verzija ovog sistem napravljena je 2020. ",
       btn_title: "Da se i tvoja bašta zeleni",
       github:
@@ -98,7 +98,7 @@ export const eng = {
       img: "src/images/projects/todo.webm",
     },
     {
-      title: "AUTOMATIC GARDEN WATERING SYSTEM",
+      title: "AUTOMATIC WATERING SYSTEM FOR GARDEN",
       info: "A garden irrigation system that opens the valve and discharges water at a predetermined time. The first version of this system was made in 2020. ",
       btn_title: "Want to have a healthy and green garden?",
       github:
