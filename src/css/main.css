@@ -214,6 +214,11 @@ ion-icon:active {
   color: #d1d646;
 }
 
+.typing-animation {
+  border-right: solid white 0.1rem;
+  padding-right: 0.3rem;
+}
+
 .light .title {
   color: #d1d646;
 }

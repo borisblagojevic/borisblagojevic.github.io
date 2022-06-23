@@ -1,4 +1,5 @@
 import { bih, eng } from "./textData.js";
+import typingAnimation from "./typingAnimation.js";
 
 const navBar = document.querySelector(".navigation__links-list--left");
 const btnENG = document.querySelector(".user-eng");
@@ -77,7 +78,8 @@ const createHTMLVid = (element, data) => {
               </div>
               <video alt="${data.btn_title}" 
               class="project__right hero__right project__todo-img"
-              autoplay loop muted
+              autoplay loop muted playsinline
+              poster="src/images/favicon/bbFavicon.svg"
               >
                 <source src="${data.img}" type="video/webm">
                 This video is not supported on your browser!
@@ -175,7 +177,9 @@ btnMenuMobile.addEventListener("click", callDisplayFunctions);
 
 btnMenuClose.addEventListener("click", () => callDisplayFunctions(false));
 // init ******************************************************
+
 // translate(position);
 changeLanguage(stateLang);
 toggleDisplay(btnMenuClose, true);
+typingAnimation();
 // localStorage.clear();
