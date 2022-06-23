@@ -18,7 +18,7 @@ export const bih = {
       info: "This application allows its user to search the enormous amount of images using powerfull Pixabay API. Users can search any image by typing in a desired keyword like 'cats' or 'cars' and the get a list of images present that to the user as a card with image and data about that image. Filter those search results by selecting the type of image like photos, vectors and illustrations.",
       btn_title: "Pronadji i ti sliku",
       github:
-        "https://blagoja95.github.io/image-galery-pixabayAPI-tailwind-react/",
+        "https://blagoja95.github.io/image-gallery-pixabayAPI-tailwind-react/",
       img: "src/images/projects/imagesSearch.webm",
     },
     {
@@ -80,7 +80,7 @@ export const eng = {
       info: "This application allows its user to search the enormous amount of images using powerfull Pixabay API. Users can search any image by typing in a desired keyword like 'cats' or 'cars' and the get a list of images present that to the user as a card with image and data about that image. Filter those search results by selecting the type of image like photos, vectors and illustrations.",
       btn_title: "Try searching images yourself",
       github:
-        "https://blagoja95.github.io/image-galery-pixabayAPI-tailwind-react/",
+        "https://blagoja95.github.io/image-gallery-pixabayAPI-tailwind-react/",
       img: "src/images/projects/imagesSearch.webm",
     },
     {
