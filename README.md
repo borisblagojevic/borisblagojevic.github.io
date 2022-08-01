@@ -7,9 +7,9 @@ www.borisblagojevic.me
 
 one of my major projects. Made in HTML, SASS and a bit of JavaScript to display the mobile menu, select languages and to store user preferences locally.
 
-TODO:
+TO DO:
 - Images loading optimisation (DONE)
-- Text typing animation in header
+- Text typing animation in header (DONE)
 - Upgrade the footer
 - Tool i use: higlight randomly each tool icon every few secunds
 
