@@ -5,7 +5,10 @@
   background-color: $rich-black-fogra-29;
 }
 
-.contact__title {
+.contact__links {
+  & a:hover {
+    transform: translateY(10%);
+  }
 }
 
 .contact__links {

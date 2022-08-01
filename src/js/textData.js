@@ -15,7 +15,11 @@ export const bih = {
   projects: [
     {
       title: "PRETRAŽIVANJE SLIKA POMOĆU 'PIXABAY API-a'",
-      info: "This application allows its user to search the enormous amount of images using powerfull Pixabay API. Users can search any image by typing in a desired keyword like 'cats' or 'cars' and the get a list of images present that to the user as a card with image and data about that image. Filter those search results by selecting the type of image like photos, vectors and illustrations.",
+      info:
+        "This application allows its user to search the enormous amount of images using powerfull Pixabay API." +
+        " Users can search any image by typing in a desired keyword like 'cats' or 'cars' and the get a list of images present " +
+        " that to the user as a card with image and data about that image. " +
+        " Filter those search results by selecting the type of image like photos, vectors and illustrations.",
       btn_title: "Pronadji i ti sliku",
       github:
         "https://blagoja95.github.io/image-gallery-pixabayAPI-tailwind-react/",
@@ -23,14 +27,19 @@ export const bih = {
     },
     {
       title: "RECIPE APP",
-      info: "Aplikacija koja omogućava svome korisniku pretraživanje preko milion recepata. Dodavanje novih recepata, pojednostavljena pretraga grupisanih recepata ili potraga pomoću klučne rječi. Takođe korisnik ima mogućnost kriranja vlastitog recepta. Aplikacija rađena po MVC arhitekturi.",
+      info:
+        "Aplikacija koja omogućava svome korisniku pretraživanje preko milion recepata. Dodavanje novih recepata, " +
+        " pojednostavljena pretraga grupisanih recepata ili potraga pomoću klučne rječi. " +
+        " Takođe korisnik ima mogućnost kriranja vlastitog recepta. Aplikacija rađena po MVC arhitekturi.",
       btn_title: "Nemaš ideju za ručak?",
       github: "https://recipe-app-demo-bb.netlify.app/",
       img: "src/images/projects/recipe.webm",
     },
     {
       title: "TODO APP",
-      info: " Todo aplikacija koja omogucava njenom korisniku unos novih, brisanje starih kao i filtriranje  zadataka. Čuvanje sadržaja i stanja unesenih zadatka  te podešavanje izgleda aplikacije se čuva u lokalnoj memoriji browsera. I ova aplikacija je rađena po MVC arhitekturi.",
+      info:
+        " Todo aplikacija koja omogucava njenom korisniku unos novih, brisanje starih kao i filtriranje  zadataka." +
+        " Čuvanje sadržaja i stanja unesenih zadatka  te podešavanje izgleda aplikacije se čuva u lokalnoj memoriji browsera. I ova aplikacija je rađena po MVC arhitekturi.",
       btn_title: "Uvjek zaboraviš nešto kupiti?",
       github: "https://blagoja95.github.io/todo-app/",
       img: "src/images/projects/todo.webm",
@@ -62,7 +71,7 @@ export const bih = {
 
 export const eng = {
   lang: "eng",
-  navigationItem: ["About me", "CV", "Tools", "Contact", "Projects"],
+  navigationItem: ["About me", "Resume", "Tools", "Contact", "Projects"],
   headerTitle: ["Hello, I am", "Boris Blagojevic"],
   toolsSection: "Languages and tools I use",
   aboutSection: [
@@ -77,7 +86,12 @@ export const eng = {
   projects: [
     {
       title: "IMAGE GALLERY w/ PIXABAYAPI",
-      info: "This application allows its user to search the enormous amount of images using powerfull Pixabay API. Users can search any image by typing in a desired keyword like 'cats' or 'cars' and the get a list of images present that to the user as a card with image and data about that image. Filter those search results by selecting the type of image like photos, vectors and illustrations.",
+      info:
+        "A front end application that allows its user to search an enormous amount " +
+        "of images. The user can search any image by typing in a desired keyword" +
+        " like 'cats' or 'cars' and then get a list of images present to the user as a " +
+        " card with image and data about that image. Filter those search results by " +
+        " selecting the type of image like photos, vectors and illustrations.",
       btn_title: "Try searching images yourself",
       github:
         "https://blagoja95.github.io/image-gallery-pixabayAPI-tailwind-react/",
@@ -85,21 +99,29 @@ export const eng = {
     },
     {
       title: "RECIPE APP",
-      info: "This application allows its user to search over a million of different recipes. Add new recipes, filter recipes by keyword like ingredient or find specific recipe with a search bar. A user also has the option of creating their own recipe. This application is made with MVC architecture.",
+      info:
+        "This application allows its user to search over a million of different recipes. Add new recipes," +
+        " filter recipes by keyword like ingredient or find specific recipe with a search bar. " +
+        " A user also has the option of creating their own recipe. This application is made with MVC architecture.",
       btn_title: "Don't have an idea for the dinner today? ",
       github: "https://recipe-app-demo-bb.netlify.app/",
       img: "src/images/projects/recipe.webm",
     },
     {
       title: "TO DO APP",
-      info: "To do application that allows its user to enter new tasks, delete old and filter  tasks. Saves the content and status of  tasks and the chosen theme of the application in the local memory of the browser. This application is also made with MVC architecture.",
+      info:
+        "To do application that allows its user to enter new tasks, delete old and filter  tasks. " +
+        "Saves the content and status of  tasks and the chosen theme of the application in the local " +
+        "memory of the browser. This application is also made with MVC architecture.",
       btn_title: "Always forget to buy the milk?",
       github: "https://blagoja95.github.io/todo-app/",
       img: "src/images/projects/todo.webm",
     },
     {
       title: "AUTOMATIC WATERING SYSTEM FOR GARDEN",
-      info: "A garden irrigation system that opens the valve and discharges water at a predetermined time. The first version of this system was made in 2020. ",
+      info:
+        "A garden irrigation system that opens the valve and discharges water at a predetermined time. " +
+        " The first version of this system was made in 2020. ",
       btn_title: "Want to have a healthy and green garden?",
       github:
         "https://github.com/Blagoja95/automatic-garden-watering-sys-aurdion",
@@ -107,15 +129,19 @@ export const eng = {
     },
     {
       title: "THIS PAGE",
-      info: "This page is also one of my major projects. Made in HTML, SASS and a bit of JavaScript to display the mobile menu, select languages and to store user preferences locally.",
+      info:
+        "This page is also one of my major projects. Made in HTML, SASS and a bit of " +
+        "JavaScript to display the mobile menu, select languages and to store user preferences locally.",
       btn_title: "Source code",
       github: "https://github.com/Blagoja95/personal-page",
       img: "src/images/projects/mywebpage.webm",
     },
     {
       title: "OTHER PROJECTS",
-      info: "On github you can see all my other work, of which I single out the advice generator app, the time tracking dashboard and the Sunnyside agency landing page.",
-      btn_title: "Take a look my other projects",
+      info:
+        "On github you can see all my other work, of which I single out the advice generator app, " +
+        " the time tracking dashboard and the Sunnyside agency landing page.",
+      btn_title: "Take a look of my other projects",
       github: "https://github.com/Blagoja95",
       img: "src/images/projects//github.png",
     },

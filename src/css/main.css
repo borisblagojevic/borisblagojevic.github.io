@@ -86,6 +86,7 @@ ion-icon:active {
 .navigation__link:hover:visited, .btn:hover {
   cursor: pointer;
   color: #f5f5f5 !important;
+  transform: translateY(10%);
 }
 .navigation__link:active:link:hover,
 .navigation__link:active:visited:hover, .btn:active {
@@ -111,6 +112,9 @@ ion-icon:active {
 }
 .btn--cv:hover {
   background-color: transparent;
+}
+.btn--cv:hover .cv-icon {
+  color: #d1d646;
 }
 .btn--cv:active {
   background-color: #d1d646;
@@ -150,6 +154,7 @@ ion-icon:active {
 .navigation__link:visited {
   text-decoration: none;
   padding: 1rem 2.2rem;
+  border: 2px solid transparent;
 }
 .active-language {
   padding: 1rem 2.2rem;
@@ -302,6 +307,10 @@ ion-icon:active {
   background-color: #040f0f;
 }
 
+.contact__links a:hover {
+  transform: translateY(10%);
+}
+
 .contact__links {
   gap: 6rem;
 }
@@ -397,19 +406,15 @@ ion-icon:active {
   .hero__content {
     gap: 3.6rem;
   }
-
   .hero__title {
     width: 20ch;
   }
-
   .about-box {
     flex-direction: column;
   }
-
   .project__right {
     width: 40rem;
   }
-
   .project .project__paragraph {
     width: 45ch;
   }
@@ -419,29 +424,23 @@ ion-icon:active {
     flex-direction: column;
     gap: 5em;
   }
-
   .hero__left {
     text-align: center;
   }
-
   .hero__title {
     line-height: 1.5;
     width: 18ch;
   }
-
   .title {
     text-align: center;
     font-size: 4.2rem;
   }
-
   .subtitle {
     text-align: center;
   }
-
   .about__right {
     border: none;
   }
-
   .about__paragraph {
     text-align: center;
     padding: 4rem 0 1rem 0;
@@ -449,24 +448,19 @@ ion-icon:active {
   .about__paragraph:last-child {
     border-bottom: 0.5rem dashed #d1d646;
   }
-
   .projects__box {
     row-gap: 15rem;
   }
-
   .project:nth-child(odd) {
     flex-direction: column-reverse;
   }
-
   .project {
     flex-direction: column-reverse;
     gap: 6rem;
   }
-
   .project_inner {
     align-items: center;
   }
-
   .project__paragraph {
     text-align: center;
   }
@@ -476,17 +470,14 @@ ion-icon:active {
     height: 30rem;
     width: 30rem;
   }
-
   .tools-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     column-gap: 8.6rem;
   }
-
   .desktop {
     display: none;
   }
-
   .mobile {
     padding: 0;
     width: 100%;
@@ -498,42 +489,33 @@ ion-icon:active {
   html {
     font-size: 50%;
   }
-
   .hero {
     padding: 10% 0;
   }
-
   .navigation-bar {
     padding: 1rem;
   }
-
   .title {
     font-size: 3.6rem;
   }
-
   .hero__content {
     margin-top: 2rem;
     gap: 2rem;
   }
-
   .hero__right {
     height: 28rem;
     width: 28rem;
   }
-
   .tools-grid {
     column-gap: 5.6rem;
   }
-
   .tool {
     width: 13rem;
     height: 13rem;
   }
-
   .subtitle {
     font-size: 2rem;
   }
-
   .project__title {
     width: 15ch;
   }
@@ -542,11 +524,9 @@ ion-icon:active {
   html {
     font-size: 46%;
   }
-
   .container {
     width: 90%;
   }
-
   .project__paragraph {
     width: 30ch;
   }
