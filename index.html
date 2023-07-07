@@ -1,246 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-site-verification"
-      content="fr1wiwLMbqWK38qQBIvK1G1__WH5INlP8Tj5FqrTxAw"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      class="favicon"
-      href="src/images/favicon/bbFavicon.svg"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <link rel="stylesheet" href="src/css/main.css" />
-    <script type="module" src="src/js/main.js"></script>
-    <title>Boris Blagojevic frontend web developer</title>
-    <meta
-      name="description"
-      content="Boris Blagojevic frontend developer personal page, containing personal project and resume "
-    />
-  </head>
-  <body>
-    <a id="main" href="#main-content" class="skip-nav-link">Skip Navigation</a>
-    <header class="hero dark" id="TOP">
-      <a href="#TOP" class="back-to-top-box">
-        <ion-icon name="arrow-up" class="back-to-top"> </ion-icon>
-      </a>
-      <nav class="navigation-bar mobile">
-        <ion-icon
-          class="btn btn--menu-mobile menu-mobile"
-          name="menu"
-        ></ion-icon>
-        <ion-icon
-          class="btn btn--menu-mobile menu-close"
-          name="close"
-        ></ion-icon>
-      </nav>
 
-      <nav class="navigation-bar desktop container">
-        <ul class="navigation__links-list navigation__links-list--left">
-          <li class="navigation__link-item">
-            <a href="#eng" class="navigation__link user-eng">ENG</a>
-          </li>
-          <li class="navigation__link-item">
-            <a href="#bih" class="navigation__link user-bih">BIH</a>
-          </li>
-        </ul>
-        <ul class="navigation__links-list navigation__links-list--right">
-          <li class="navigation__link-item">
-            <a href="#About" class="navigation__link">About me</a>
-          </li>
-          <li class="navigation__link-item">
-            <a href="#CV" class="navigation__link">Resume</a>
-          </li>
-          <li class="navigation__link-item">
-            <a href="#Tools" class="navigation__link">Tools</a>
-          </li>
-          <li class="navigation__link-item">
-            <a class="navigation__link" href="#Contact">Contact</a>
-          </li>
-          <li class="navigation__link-item">
-            <a class="navigation__link" href="#Projects">Projects</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="hero__content" id="main-content">
-        <div class="hero__left">
-          <h1 class="title hero__title">
-            Hello, I am <span class="hero__span"> Boris Blagojevic</span>
-          </h1>
-          <h2 class="subtitle hero__paragraph">
-            <span class="typing-animation">Frontend web</span> developer
-          </h2>
-        </div>
-        <figure class="hero__right hero-img"></figure>
-      </div>
-    </header>
-    <main class="main">
-      <section class="about light" id="About">
-        <div class="container about-box">
-          <h2 class="title about__item about__title">About me</h2>
-          <div class="about__right">
-            <p class="paragraph about__item about__paragraph">
-              Born in Banja Luka.
-            </p>
-            <p class="paragraph about__item about__paragraph">
-              I graduated from the electro-technical high school in Banja Luka
-              as a telecommunication technician.
-            </p>
-            <p class="paragraph about__item about__paragraph">
-              I'm currently studying software engineering at Pan-European
-              University Apeiron in Banja Luka.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="cv dark" id="CV">
-        <h2 class="subtitle cv__subtitle">My resume</h2>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="google-site-verification" content="fr1wiwLMbqWK38qQBIvK1G1__WH5INlP8Tj5FqrTxAw" />
+	<meta name="description"
+		content="Boris Blagojevic frontend developer personal page, containing personal project and resume " />
 
-        <a
-          href="src/cv/BorisBlagojevicResume.pdf"
-          target="_blank"
-          class="btn btn--cv"
-          ><ion-icon class="cv-icon" name="document"></ion-icon
-        ></a>
-      </section>
-      <section class="tools light" id="Tools">
-        <div class="container tools-box">
-          <h2 class="title tools__title">Languages and tools I use</h2>
-          <div class="tools-grid">
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              alt="HTML5"
-            />
-            <img
-              class="tool"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-              alt="CSS3"
-            />
-            <img
-              class="tool"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-              alt="JS"
-            />
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt="ReactJS"
-            />
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-              alt="SASS"
-            />
+	<link rel="shortcut icon" type="image/x-icon" class="favicon" href="src/images/favicon/bbFavicon.svg" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap" rel="stylesheet" />
+	<!-- <link rel="stylesheet" href="./src/sass/main.scss" /> Jekyll support needed -->
+	<link rel="stylesheet" href="./src/css/main.css" />
 
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-              alt="bootstrap"
-            />
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script type="module" src="src/js/main.js"></script>
 
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-              alt="tailwindcss"
-            />
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              alt="GITHUB"
-            />
+	<title>Boris Blagojevic Software Engineer</title>
+</head>
 
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              alt="GIT"
-            />
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-              alt="php"
-            />
+<body>
+	<a id="main" href="#main-content" class="skip-nav-link">Skip Navigation</a>
+	<header class="hero dark" id="TOP">
+		<a href="#TOP" class="back-to-top-box">
+			<ion-icon name="arrow-up" class="back-to-top"> </ion-icon>
+		</a>
+		<nav class="navigation-bar mobile">
+			<ion-icon class="btn btn--menu-mobile menu-mobile" name="menu"></ion-icon>
+			<ion-icon class="btn btn--menu-mobile menu-close" name="close"></ion-icon>
+		</nav>
 
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-              alt="mysql"
-            />
+		<nav class="navigation-bar desktop container">
+			<ul class="navigation__links-list navigation__links-list--left">
+				<li class="navigation__link-item">
+					<a href="#eng" class="navigation__link user-eng">ENG</a>
+				</li>
+				<li class="navigation__link-item">
+					<a href="#bih" class="navigation__link user-bih">BIH</a>
+				</li>
+			</ul>
+			<ul class="navigation__links-list navigation__links-list--right">
+				<li class="navigation__link-item">
+					<a href="#About" class="navigation__link">About me</a>
+				</li>
+				<li class="navigation__link-item">
+					<a href="#CV" class="navigation__link">Resume</a>
+				</li>
+				<li class="navigation__link-item">
+					<a href="#Tools" class="navigation__link">Tools</a>
+				</li>
+				<li class="navigation__link-item">
+					<a class="navigation__link" href="#Contact">Contact</a>
+				</li>
+				<li class="navigation__link-item">
+					<a class="navigation__link" href="#Projects">Projects</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="hero__content" id="main-content">
+			<div class="hero__left">
+				<h1 class="title hero__title">
+					Hello, I am <span class="hero__span"> Boris Blagojevic</span>
+				</h1>
+				<h2 class="subtitle hero__paragraph">
+					<span class="typing-animation">Frontend web</span>
+					<span class="typing-developer">developer</span>
+				</h2>
+			</div>
+			<figure class="hero__right hero-img"></figure>
+		</div>
+	</header>
+	<main class="main">
+		<section class="about light" id="About">
+			<div class="container about-box">
+				<h2 class="title about__item about__title">About me</h2>
+				<div class="about__right">
+					<p class="paragraph about__item about__paragraph">
+						Born in Banja Luka.
+					</p>
+					<p class="paragraph about__item about__paragraph">
+						I graduated from the electro-technical high school in Banja Luka
+						as a telecommunication technician.
+					</p>
+					<p class="paragraph about__item about__paragraph">
+						I'm currently studying software engineering at Pan-European
+						University Apeiron in Banja Luka.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="cv dark" id="CV">
+			<h2 class="subtitle cv__subtitle">My resume</h2>
 
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"
-              alt="mssql"
-            />
+			<a href="src/cv/BorisBlagojevicResume.pdf" target="_blank" class="btn btn--cv"><ion-icon class="cv-icon"
+					name="document"></ion-icon></a>
+		</section>
+		<section class="tools light" id="Tools">
+			<div class="container tools-box">
+				<h2 class="title tools__title">Languages and tools I use</h2>
+				<div class="tools-grid">
+					<img class="tool" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+						alt="HTML5" />
 
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-              alt="FIGMA"
-            />
+					<img class="tool"
+						src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+						alt="CSS3" />
 
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-              alt="C"
-            />
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-              alt="C++"
-            />
-            <img
-              class="tool"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
-              alt="ARDUINO"
-            />
-          </div>
-        </div>
-      </section>
-      <section class="contact dark" id="Contact">
-        <h2 class="subtitle contact__title">Let's get in touch</h2>
-        <div class="contact__links">
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/boris-blagojevic/"
-            ><ion-icon class="contact__icon" name="logo-linkedin"></ion-icon
-          ></a>
-          <a target="_blank" href="tel:+387644151370">
-            <ion-icon class="contact__icon" name="call"></ion-icon>
-          </a>
-          <a target="_blank" href="mailto:boris.blagojevicc@hotmail.com">
-            <ion-icon class="contact__icon" name="mail"></ion-icon>
-          </a>
-        </div>
-      </section>
-      <section class="projects light" id="Projects">
-        <h2 class="title project__title">Some of my projects</h2>
-        <div class="projects__box container"></div>
-      </section>
-    </main>
-    <footer class="footer dark" id="footer">
-      <h2 class="subtitle footer__paragraph">
-        &copy;<span class="crNumber"> 2022 </span>
-        Boris Blagojevic
-      </h2>
-    </footer>
-  </body>
+					<img class="tool"
+						src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+						alt="JS" />
+
+					<img class="tool" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+						alt="ReactJS" />
+
+					<img class="tool"
+						src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mocha/mocha-plain.svg"
+						alt="MochaJS" />
+
+					<img class="tool" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+						alt="SASS" />
+
+					<img class="tool"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+						alt="bootstrap" />
+
+					<img class="tool"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+						alt="tailwindcss" />
+
+
+					<img class="tool" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+						alt="PHP" />
+
+					<img class="tool"
+						src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/java/java-original.svg"
+						alt="JAVA" />
+
+					<img class="tool"
+						src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tomcat/tomcat-original.svg"
+						alt="TOMCAT WS" />
+
+					<img class="tool"
+						src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/apache/apache-original.svg"
+						alt="APACHE WS" />
+
+					<img class="tool" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+						alt="MySQL" />
+
+					<img class="tool"
+						src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/docker/docker-original.svg"
+						alt="DOCKER" />
+
+					<img class="tool"
+						src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/kubernetes/kubernetes-plain.svg"
+						alt="KUBERNETES" />
+
+					<img class="tool" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+						alt="GIT" />
+
+					<img class="tool" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+						alt="FIGMA" />
+
+					<img class="tool" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+						alt="C" />
+
+					<img class="tool"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+						alt="C++" />
+
+					<img class="tool"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
+						alt="ARDUINO" />
+				</div>
+			</div>
+		</section>
+		<section class="contact dark" id="Contact">
+			<h2 class="subtitle contact__title">Let's get in touch</h2>
+			<div class="contact__links">
+				<a target="_blank" href="https://www.linkedin.com/in/boris-blagojevic/"><ion-icon class="contact__icon"
+						name="logo-linkedin"></ion-icon></a>
+
+				<a target="_blank" href="mailto:boris.blagojevicc@hotmail.com">
+					<ion-icon class="contact__icon" name="mail"></ion-icon>
+				</a>
+			</div>
+		</section>
+		<section class="projects light" id="Projects">
+			<h2 class="title project__title">Some of my projects</h2>
+			<div class="projects__box container"></div>
+		</section>
+	</main>
+	<footer class="footer dark" id="footer">
+		<h2 class="subtitle footer__paragraph">
+			&copy;<span class="crNumber"> 2022 </span>
+			Boris Blagojevic
+		</h2>
+	</footer>
+</body>
+
 </html>

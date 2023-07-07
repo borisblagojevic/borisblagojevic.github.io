@@ -1,9 +1,9 @@
 .cv {
-  @extend %section;
-  background-color: $rich-black-fogra-29;
-  gap: 4.6rem;
+	@extend %section;
+	background-color: $rich-black-fogra-29;
+	gap: 4.6rem;
 }
 
 .cv__subtitle {
-  letter-spacing: 1rem;
+	letter-spacing: 1rem;
 }
