@@ -1,7 +1,7 @@
 # Welcome to my personal web page 👋
 
 ## Live site url
-[www.borisblagojevic.me](www.borisblagojevic.me)
+www.borisblagojevic.me
 
 ## About
 One of my major projects. Made it with HTML and SASS. Used JS for displaying the mobile menu, changing languages and storing user preferences locally.
