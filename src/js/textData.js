@@ -73,7 +73,7 @@ export const bih = {
 			info: "Na github-u možete pogledati sve moje ostale radove od kojih opet izdvajam advice generator app, time tracking dashboard i sunnyside agency landing page.",
 			btn_title: "Pogledaj i moje ostale projekat",
 			github: "https://github.com/Blagoja95",
-			img: "src/images/projects//github.png",
+			img: "src/images/projects/github.png",
 		},
 	],
 };
@@ -113,7 +113,7 @@ export const eng = {
 			btn_title: "Try searching images yourself",
 			github:
 				"https://blagoja95.github.io/image-gallery-pixabayAPI-tailwind-react/",
-			img: "src/images/projects/imagesSearch.webm",
+			img: "./src/images/projects/imagesSearch.webm",
 		},
 		{
 			title: "RECIPE APP",
@@ -123,7 +123,7 @@ export const eng = {
 				" A user also has the option of creating their own recipe. This application is made with MVC architecture.",
 			btn_title: "Don't have an idea for the dinner today? ",
 			github: "https://recipe-app-demo-bb.netlify.app/",
-			img: "src/images/projects/recipe.webm",
+			img: "./src/images/projects/recipe.webm",
 		},
 		{
 			title: "TO DO APP",

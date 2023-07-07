@@ -1,21 +1,21 @@
 .contact {
-  @extend %section;
-  @extend %flexbox;
-  flex-direction: column;
-  background-color: $rich-black-fogra-29;
+	@extend %section;
+	@extend %flexbox;
+	flex-direction: column;
+	background-color: $rich-black-fogra-29;
 }
 
 .contact__links {
-  & a:hover {
-    transform: translateY(10%);
-  }
+	& a:hover {
+		transform: translateY(10%);
+	}
 }
 
 .contact__links {
-  @extend %flexbox;
-  gap: 6rem;
+	@extend %flexbox;
+	gap: 6rem;
 }
 
 .contact__icon {
-  color: $white-2;
+	color: $white-2;
 }

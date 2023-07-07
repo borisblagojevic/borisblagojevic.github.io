@@ -1,68 +1,68 @@
 .projects {
-  @extend %section;
-  @extend %flexbox;
+	@extend %section;
+	@extend %flexbox;
 }
 
 .projects__box {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
-  row-gap: 12rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-items: center;
+	row-gap: 12rem;
 }
 
 .project {
-  width: 100%;
-  @extend %flexbox;
-  align-items: center;
-  justify-content: space-around;
+	width: 100%;
+	@extend %flexbox;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .project:nth-child(odd) {
-  flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .project_inner {
-  @extend %flexbox;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3rem;
+	@extend %flexbox;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 3rem;
 }
 
 .project__paragraph {
-  width: 50ch;
+	width: 50ch;
 }
 
 .project__right {
-  width: 50rem;
-  border-radius: 20rem;
+	width: 50rem;
+	border-radius: 20rem;
 }
 
 .project__link {
-  &:link {
-    font-size: 1.4rem;
-    letter-spacing: 0.3rem;
-    padding: 2rem 2.2rem;
-    border-radius: 10rem;
-    color: $white-2;
-    background-color: $rich-black-2;
-    text-decoration: none;
-    border: 0.3rem solid transparent;
-  }
+	&:link {
+		font-size: 1.4rem;
+		letter-spacing: 0.3rem;
+		padding: 2rem 2.2rem;
+		border-radius: 10rem;
+		color: $white-2;
+		background-color: $rich-black-2;
+		text-decoration: none;
+		border: 0.3rem solid transparent;
+	}
 
-  &:visited {
-    color: $white-2;
-  }
+	&:visited {
+		color: $white-2;
+	}
 
-  &:hover {
-    border: 0.3rem solid $rich-black-2;
-    cursor: pointer;
-    background-color: transparent;
-    color: $rich-black-2 !important;
-  }
+	&:hover {
+		border: 0.3rem solid $rich-black-2;
+		cursor: pointer;
+		background-color: transparent;
+		color: $rich-black-2 !important;
+	}
 
-  &:active {
-    border-color: $maximum-green-yellow;
-    background-color: $maximum-green-yellow;
-  }
+	&:active {
+		border-color: $maximum-green-yellow;
+		background-color: $maximum-green-yellow;
+	}
 }

@@ -16,14 +16,20 @@ const contactSection = document.querySelector(".contact__title");
 const projectBox = document.querySelector(".projects__box");
 const projectTitle = document.querySelector(".project__title");
 
-let stateLang = JSON.parse(localStorage.getItem("language")) || eng;
-
 // LANGUAGE SETTINGS ************************************************
-const changeLanguage = function (lang) {
+const changeLanguage = function (storedLng) {
+	let lang;
+
 	// header
-	lang.lang === "eng"
-		? btnENG.classList.add("active-language")
-		: btnBIH.classList.add("active-language");
+	if (storedLng === "eng") {
+		lang = eng;
+
+		btnENG.classList.add("active-language")
+	} else {
+		lang = bih;
+
+		btnBIH.classList.add("active-language");
+	}
 
 	navLink.forEach((el, i) => {
 		if (i > 1) el.innerHTML = lang.navigationItem[i - 2];
@@ -93,10 +99,9 @@ const createHTMLIMG = (element, data) => {
                 >${data.btn_title}</a
               >
               </div>
-              <img src="${data.img}" alt="${data.btn_title}"  loading="lazy"
-              class="project__right hero__right project__todo-img"
-              >
-              </img>
+              		<img src="${data.img }" alt="${data.btn_title}"  loading="lazy"
+					class="project__right hero__right project__todo-img"/>
+			</picture>
           </div>
   `;
 
@@ -107,12 +112,19 @@ const languageBtn = function (el) {
 	btnENG.classList.remove("active-language");
 	btnBIH.classList.remove("active-language");
 
-	if (el.target.classList[1] === "user-eng")
-		localStorage.setItem("language", JSON.stringify(eng));
-	else localStorage.setItem("language", JSON.stringify(bih));
+	let chosenLang;
 
-	// refresh the page
-	window.location.reload();
+	if (el.target.classList[1] === "user-eng") {
+		chosenLang = "eng";
+
+		localStorage.setItem("language", JSON.stringify("eng"));
+	} else {
+		chosenLang = "bih";
+
+		localStorage.setItem("language", JSON.stringify("bih"));
+	}
+
+	changeLanguage(chosenLang)
 };
 
 btnENG.addEventListener("click", languageBtn.bind(btnENG));
@@ -148,7 +160,7 @@ const callDisplayFunctions = function (open = true) {
 	toggleDisplay(btnMenuClose, open === true ? true : false);
 
 	if (open)
-	 hero.style.height = "100vh";
+		hero.style.height = "100vh";
 	else {
 		hero.style.height = "100vh";
 		hero.style.paddingBottom = "10%";
@@ -165,6 +177,6 @@ btnMenuMobile.addEventListener("click", callDisplayFunctions);
 btnMenuClose.addEventListener("click", () => callDisplayFunctions(false));
 
 // init ******************************************************
-changeLanguage(stateLang);
+changeLanguage(JSON.parse(localStorage.getItem("language")) || "eng");
 toggleDisplay(btnMenuClose, true);
 typingAnimation();

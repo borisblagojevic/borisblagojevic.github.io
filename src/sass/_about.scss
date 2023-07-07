@@ -1,23 +1,27 @@
 .about {
-  @extend %section;
-  min-height: 60rem;
+	@extend %section;
+	min-height: 60rem;
 }
 
 .about-box {
-  @extend %flexbox;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 2rem;
+	@extend %flexbox;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 2rem;
 }
 
 .about__paragraph {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 .about__right {
-  text-align: left;
-  border-color: $maximum-green-yellow !important;
-  border-left: 0.5rem dashed;
-  padding: 3rem;
-  border-bottom: 0.5rem dashed;
+	text-align: left;
+	border-color: $maximum-green-yellow !important;
+	border-left: 0.5rem dashed;
+	padding: 3rem;
+	border-bottom: 0.5rem dashed;
+}
+
+.about__title {
+	text-wrap: nowrap;
 }

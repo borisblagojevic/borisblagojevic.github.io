@@ -1,76 +1,77 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Hind", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  width: 100vw;
-  overflow-x: hidden;
+	font-family: "Hind", sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 %flexbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 %section {
-  @extend %flexbox;
-  padding: 12rem 0;
-  flex-direction: column;
-  gap: 9.6rem;
-  width: 100%;
+	@extend %flexbox;
+	padding: 12rem 0;
+	flex-direction: column;
+	gap: 9.6rem;
+	width: 100%;
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .title {
-  font-size: 5.2rem;
-  text-transform: uppercase;
-  border-bottom: 0.3rem dashed $rich-black-fogra-29;
+	font-size: 5.2rem;
+	text-transform: uppercase;
+	border-bottom: 0.3rem dashed $rich-black-fogra-29;
 }
 
 .subtitle {
-  font-size: 2.4rem;
-  border-bottom: 0.3rem dashed $maximum-green-yellow;
+	font-size: 2.4rem;
+	border-bottom: 0.3rem dashed $maximum-green-yellow;
 }
 
 ion-icon {
-  font-size: 6.4rem;
-  color: black;
-  &:hover {
-    color: $ivory;
-    cursor: pointer;
-  }
+	font-size: 6.4rem;
+	color: black;
 
-  &:active {
-    color: $maximum-green-yellow;
-  }
+	&:hover {
+		color: $ivory;
+		cursor: pointer;
+	}
+
+	&:active {
+		color: $maximum-green-yellow;
+	}
 }
 
 .footer {
-  height: 10rem;
-  background-color: $rich-black-fogra-29;
-  padding-top: 3rem;
+	height: 10rem;
+	background-color: $rich-black-fogra-29;
+	padding-top: 3rem;
 }
 
 .footer__paragraph {
-  width: 19ch;
-  margin: 0 auto;
+	width: 19ch;
+	margin: 0 auto;
 }
 
 .hidden {
-  display: none !important;
+	display: none !important;
 }
