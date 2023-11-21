@@ -25,3 +25,12 @@
 .about__title {
 	text-wrap: nowrap;
 }
+
+.about__link {
+	text-decoration: none;
+	color: $middle-grey;
+
+	&:hover{
+		color: $maximum-green-yellow;
+	}
+}

@@ -1,4 +1,4 @@
-import { bih, eng } from "./textData.js";
+import {bih, eng} from "./textData.js";
 import typingAnimation from "./typingAnimation.js";
 
 const btnENG = document.querySelector(".user-eng");
@@ -18,45 +18,57 @@ const projectTitle = document.querySelector(".project__title");
 
 // LANGUAGE SETTINGS ************************************************
 const changeLanguage = function (storedLng) {
-	let lang;
+    let lang;
 
-	// header
-	if (storedLng === "eng") {
-		lang = eng;
+    // header
+    if (storedLng === "eng")
+    {
+        lang = eng;
 
-		btnENG.classList.add("active-language")
-	} else {
-		lang = bih;
+        btnENG.classList.add("active-language")
+    }
+    else
+    {
+        lang = bih;
 
-		btnBIH.classList.add("active-language");
-	}
+        btnBIH.classList.add("active-language");
+    }
 
-	navLink.forEach((el, i) => {
-		if (i > 1) el.innerHTML = lang.navigationItem[i - 2];
-	});
+    navLink.forEach((el, i) => {
+        if (i > 1)
+        {
+            el.innerHTML = lang.navigationItem[i - 2];
+        }
+    });
 
-	heriTitle.innerHTML = `${lang.headerTitle[0]} <span class="hero__span">${lang.headerTitle[1]}</span>`;
+    heriTitle.innerHTML = `${lang.headerTitle[0]} <span class="hero__span">${lang.headerTitle[1]}</span>`;
 
-	aboutBox.forEach((el, i) => (el.innerHTML = lang.aboutSection[i]));
+    aboutBox.forEach((el, i) => (el.innerHTML = lang.aboutSection[i]));
 
-	cvSection.innerHTML = lang.cvSection;
+    cvSection.innerHTML = lang.cvSection;
 
-	toolsSection.innerHTML = lang.toolsSection;
+    toolsSection.innerHTML = lang.toolsSection;
 
-	contactSection.innerHTML = lang.contactSection;
+    contactSection.innerHTML = lang.contactSection;
 
-	projectTitle.innerHTML = lang.projectTitle;
+    projectTitle.innerHTML = lang.projectTitle;
 
-	while (projectBox.firstChild) projectBox.removeChild(projectBox.firstChild);
+    while (projectBox.firstChild) projectBox.removeChild(projectBox.firstChild);
 
-	lang.projects.forEach((project) => {
-		if (project.img.endsWith(".webm")) createHTMLVid(projectBox, project);
-		else createHTMLIMG(projectBox, project);
-	});
+    lang.projects.forEach((project) => {
+        if (project.img.endsWith(".webm"))
+        {
+            createHTMLVid(projectBox, project);
+        }
+        else
+        {
+            createHTMLIMG(projectBox, project);
+        }
+    });
 };
 
 const createHTMLVid = (element, data) => {
-	const html = `
+    const html = `
           <div class="project">
             <div class="project_inner project__left">
               <h2 class="subtitle project__subtitle">${data.title}</h2>
@@ -81,11 +93,11 @@ const createHTMLVid = (element, data) => {
           </div>
   `;
 
-	element.insertAdjacentHTML("beforeend", html);
+    element.insertAdjacentHTML("beforeend", html);
 };
 
 const createHTMLIMG = (element, data) => {
-	const html = `
+    const html = `
           <div class="project">
             <div class="project_inner project__left">
               <h2 class="subtitle project__subtitle">${data.title}</h2>
@@ -99,32 +111,35 @@ const createHTMLIMG = (element, data) => {
                 >${data.btn_title}</a
               >
               </div>
-              		<img src="${data.img }" alt="${data.btn_title}"  loading="lazy"
+              		<img src="${data.img}" alt="${data.btn_title}"  loading="lazy"
 					class="project__right hero__right project__todo-img"/>
 			</picture>
           </div>
   `;
 
-	element.insertAdjacentHTML("beforeend", html);
+    element.insertAdjacentHTML("beforeend", html);
 };
 
 const languageBtn = function (el) {
-	btnENG.classList.remove("active-language");
-	btnBIH.classList.remove("active-language");
+    btnENG.classList.remove("active-language");
+    btnBIH.classList.remove("active-language");
 
-	let chosenLang;
+    let chosenLang;
 
-	if (el.target.classList[1] === "user-eng") {
-		chosenLang = "eng";
+    if (el.target.classList[1] === "user-eng")
+    {
+        chosenLang = "eng";
 
-		localStorage.setItem("language", JSON.stringify("eng"));
-	} else {
-		chosenLang = "bih";
+        localStorage.setItem("language", JSON.stringify("eng"));
+    }
+    else
+    {
+        chosenLang = "bih";
 
-		localStorage.setItem("language", JSON.stringify("bih"));
-	}
+        localStorage.setItem("language", JSON.stringify("bih"));
+    }
 
-	changeLanguage(chosenLang)
+    changeLanguage(chosenLang)
 };
 
 btnENG.addEventListener("click", languageBtn.bind(btnENG));
@@ -133,8 +148,8 @@ btnBIH.addEventListener("click", languageBtn.bind(btnBIH));
 // date **********************************************************
 
 const crNumber = document.querySelector(".crNumber");
-const date = new Date();
-crNumber.innerHTML = date.getFullYear();
+
+crNumber.innerHTML = new Date().getFullYear();
 
 // menu ***************************************************
 const btnMenuMobile = document.querySelector(".menu-mobile");
@@ -144,32 +159,48 @@ const heroContent = document.querySelector(".hero__content");
 const hero = document.querySelector(".hero");
 
 const toggleDisplay = function (el, reverse = false) {
-	if (!reverse) {
-		if (el.style.display === "none" || el.style.display === "")
-			el.style.display = "flex";
-		else el.style.display = "none";
-	} else {
-		if (el.style.display === "flex" || el.style.display === "")
-			el.style.display = "none";
-		else el.style.display = "flex";
-	}
+    if (!reverse)
+    {
+        if (el.style.display === "none" || el.style.display === "")
+        {
+            el.style.display = "flex";
+        }
+        else
+        {
+            el.style.display = "none";
+        }
+    }
+    else
+    {
+        if (el.style.display === "flex" || el.style.display === "")
+        {
+            el.style.display = "none";
+        }
+        else
+        {
+            el.style.display = "flex";
+        }
+    }
 };
 
 const callDisplayFunctions = function (open = true) {
-	toggleDisplay(menuDesktop, open === true ? true : false);
-	toggleDisplay(btnMenuClose, open === true ? true : false);
+    toggleDisplay(menuDesktop, open === true);
+    toggleDisplay(btnMenuClose, open === true);
 
-	if (open)
-		hero.style.height = "100vh";
-	else {
-		hero.style.height = "100vh";
-		hero.style.paddingBottom = "10%";
-	}
+    if (open)
+    {
+        hero.style.height = "100vh";
+    }
+    else
+    {
+        hero.style.height = "100vh";
+        hero.style.paddingBottom = "10%";
+    }
 
-	toggleDisplay(btnMenuMobile, open === true ? false : true);
-	toggleDisplay(heroContent, open === true ? false : true);
+    toggleDisplay(btnMenuMobile, open !== true);
+    toggleDisplay(heroContent, open !== true);
 
-	menuDesktop.classList.toggle("mobile-menu");
+    menuDesktop.classList.toggle("mobile-menu");
 };
 
 btnMenuMobile.addEventListener("click", callDisplayFunctions);

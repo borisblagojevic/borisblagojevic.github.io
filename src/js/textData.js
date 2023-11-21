@@ -8,6 +8,7 @@ export const bih = {
 		"Rođen i odrastao u Banjoj Luci.",
 		"Zavrsio sam srednju Elektrotehničku školu Nikola Tesla u Banjoj Luci kao tehničar telekomunikacija.",
 		"Završio sam informatički smjer na Panevropskom Univerzitetu Apeiron u Banjoj Luci i postao sam softverski inženjer.",
+		"Zaposlen u firmi <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (partneru tvrtke <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), gdje aktivno sudjelujem u razvoju EPM softvera."
 	],
 	cvSection: "Pogledajte moj CV",
 	contactSection: "Kako stupiti u kontakt sa mnom",
@@ -16,7 +17,7 @@ export const bih = {
 		{
 			title: "JOB POSTING WEB APP",
 			info:
-				" About Job posting web app made with ReactJS, TailwindCSS and JAVA.Hosted using Tomcat web server and MySql as DBMS..",
+				"Veb aplikacija za oglasne poslove napravljena uz pomoć ReactJS, TailwindCSS i JAVA tehnologija. Back-end se pokreće na Tomcat-u a podaci se čuvaju u MySQL RDBMS. Svi servisi su kontejnerizovani pomoću Docker-a.",
 			btn_title: "Želis objaviti oglas za posao?",
 			github:
 				"https://github.com/Blagoja95/job-posting-web-app",
@@ -24,11 +25,7 @@ export const bih = {
 		},
 		{
 			title: "PRETRAŽIVANJE SLIKA POMOĆU 'PIXABAY API-a'",
-			info:
-				"This application allows its user to search the enormous amount of images using powerfull Pixabay API." +
-				" Users can search any image by typing in a desired keyword like 'cats' or 'cars' and the get a list of images present " +
-				" that to the user as a card with image and data about that image. " +
-				" Filter those search results by selecting the type of image like photos, vectors and illustrations.",
+			info: "Ova aplikacija omogućava svojim korisnicima pretraživanje ogromne količine slika koristeći moćni Pixabay API. Korisnici mogu pretražiti bilo koju sliku upisivanjem željenog ključnog pojma poput 'mačke' ili 'automobili' i dobiti listu slika koje se prikazuju kao kartice s samom slikom i podacima o njoj. Također, mogu filtrirati rezultate pretrage odabirom vrste slike poput fotografija, vektora i ilustracija.",
 			btn_title: "Pronadji i ti sliku",
 			github:
 				"https://blagoja95.github.io/image-gallery-pixabayAPI-tailwind-react/",
@@ -88,6 +85,7 @@ export const eng = {
 		"Born and raised in  Banja Luka.",
 		"I graduated from the electrotechnical high school in Banja Luka as a telecommunications technician.",
 		"I finished my computer studies at the Pan-European University of Apeiron in Banja Luka and became a software engineer.",
+		"Working at <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (a partner of Jedox A.G.), where I actively develop EPM software."
 	],
 	cvSection: "My resume",
 	contactSection: "Let's get in touch",
@@ -95,12 +93,11 @@ export const eng = {
 	projects: [
 		{
 			title: "JOB POSTING WEB APP",
-			info:
-				" About Job posting web app made with ReactJS, TailwindCSS and JAVA.Hosted using Tomcat web server and MySql as DBMS..",
-			btn_title: "Try searching images yourself",
+			info: "Job board web app made with ReactJS, TailwindCSS and JAVA. Running back-end on Tomcat and storing data using MySQL RDBMS, All parts containerized using Docker.",
+			btn_title: "Want to post information about a new job?",
 			github:
 				"https://github.com/Blagoja95/job-posting-web-app",
-			img: "src/images/projects/imagesSearch.webm",
+			img: "imagesSearch.webm",
 		},
 		{
 			title: "IMAGE GALLERY w/ PIXABAY API",

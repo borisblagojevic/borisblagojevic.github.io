@@ -220,6 +220,7 @@ ion-icon:active {
 }
 
 .typing-animation {
+  cursor: pointer;
   border-right: solid white 0.1rem;
   padding-right: 0.3rem;
 }
@@ -291,6 +292,18 @@ ion-icon:active {
   border-left: 0.5rem dashed;
   padding: 3rem;
   border-bottom: 0.5rem dashed;
+}
+
+.about__title {
+  text-wrap: nowrap;
+}
+
+.about__link {
+  text-decoration: none;
+  color: #898980;
+}
+.about__link:hover {
+  color: #d1d646;
 }
 
 .cv {
@@ -402,7 +415,7 @@ ion-icon:active {
   border: 3px dotted #d1d646;
 }
 
-@media screen and (max-width: 1520px) {
+@media screen and (max-width: 1550px) {
   .hero__content {
     gap: 3.6rem;
   }

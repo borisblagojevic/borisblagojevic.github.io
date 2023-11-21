@@ -1,83 +1,148 @@
-const typingAnimation = async () => {
-	const animationBox = document.querySelector(".typing-animation");
-	const developerBox = document.querySelector(".typing-developer");
+const animationBox = document.querySelector(".typing-animation");
 
-	const subtitles = ["Frontend ", "Backend ", "Software Engineer"];
+const typingAnimation = async (again = 0) => {
 
-	let i = 0,
-		j = 0,
-		gold = 0;
+    const actions = [
+        "getRole() . . . ",
+        "fetching data . . . ",
+        "handle request . . . ",
+        "searching through database . . . ",
+        "HttpServletResponse.SC_OK . . . ",
+        ".then response.json() . . . ",
+        "displaying in 3",
+        "2 . . . ",
+        "1 . . . ",
+        "Software Engineer"
+    ];
 
-	let usersOutput = [];
+    let i = 0, j = 0, gold = 0;
 
-	let isDeleting = false,
-		isEnd = false;
+    let usersOutput = [];
 
-	const type = () => {
-		isEnd = false;
-		animationBox.setHTML(usersOutput.join("developer"));
+    let isDeleting = false, isEnd = false;
 
-		if (i < subtitles.length) {
-			if (!isDeleting && j <= subtitles[i].length) {
-				usersOutput.push(subtitles[i][j]);
-				j++;
-				animationBox.setHTML(usersOutput.join(""));
-			}
+    let timeoutID;
 
-			if (isDeleting && j <= subtitles[i].length) {
-				usersOutput.pop(subtitles[i][j]);
-				j--;
-				animationBox.setHTML(usersOutput.join(""));
-			}
+    const type = () => {
+        isEnd = false;
+        animationBox.innerHTML = usersOutput.join("");
 
-			if (j == subtitles[i].length) {
-				isEnd = true;
-				isDeleting = true;
-				gold++;
-			}
+        if (i < actions.length)
+        {
+            if (!isDeleting && j <= actions[i].length)
+            {
+                usersOutput.push(actions[i][j]);
+                j++;
+                animationBox.innerHTML = usersOutput.join("");
+            }
 
-			if (isDeleting && j === 0) {
-				usersOutput = [];
-				isDeleting = false;
-				i++;
+            if (isDeleting && j <= actions[i].length)
+            {
+                usersOutput.pop(actions[i][j]);
+                j--;
+                animationBox.innerHTML = usersOutput.join("");
+            }
 
-				if (i === subtitles.length)
-					i = 0;
-			}
-		}
+            if (j == actions[i].length)
+            {
+                isEnd = true;
+                isDeleting = true;
+                gold++;
+            }
 
-		switch (gold) {
-			case 0:
-			case 1:
-				animationBox.classList.remove("hero__span");
+            if (isDeleting && j === 0)
+            {
+                usersOutput = [];
+                isDeleting = false;
+                i++;
 
-				if (!isDeleting)
-					developerBox.setHTML("developer");
+                if (i === actions.length - 1)
+                {
+                    i = actions.length + 1;
 
-				break;
+                    animationBox.innerHTML = actions[actions.length - 1];
 
-			case 2:
-				if (!isDeleting)
-					developerBox.setHTML("");
-				break;
+                    animationBox.classList.add("hero__span");
 
+                    animationBox.style.borderStyle = 'none';
 
-			case 3:
-				developerBox.setHTML("");
-				animationBox.classList.add("hero__span");
-				gold = 0;
-				break;
-		}
+                    return;
+                }
+            }
+        }
 
-		const spedUp = Math.random() * (20 - 50) + 50;
-		const normalSpeed = Math.random() * (300 - 200) + 200;
+        const spedUp = Math.random() * (50) + 15;
+        const normalSpeed = Math.random() * (200) + 50;
 
-		const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed;
+        const time = isDeleting ? spedUp : normalSpeed;
 
-		setTimeout(type, time);
-	};
+        timeoutID = setTimeout(type, again !== 0 ? again : time);
+    };
 
-	type();
+    type();
 };
+
+let specialCounter = 0;
+
+animationBox.addEventListener('click', function () {
+    if (animationBox.classList.contains('hero__span'))
+    {
+
+        animationBox.classList.remove("hero__span");
+
+        animationBox.style.color = 'white';
+
+        specialCounter++;
+
+        let respTXT = "HI";
+
+        switch (specialCounter)
+        {
+            case 0:
+            case 1:
+            case 2:
+                respTXT = "Sure, lets do it again.";
+                break;
+
+            case 3:
+                respTXT = "Once again? OK ... ";
+                break;
+
+            case 4:
+                respTXT = "I know my animation is cool but still, 4th time?";
+                break;
+
+            case 5:
+                respTXT = "STAHP !!!!";
+
+                animationBox.style.color = 'red';
+
+                break;
+
+            case 6:
+                respTXT = "PLEASE ...";
+
+                animationBox.style.color = 'red';
+
+                break;
+
+            case 7:
+            default:
+                respTXT = "That's enough! Get out =>";
+
+                animationBox.style.color = 'red';
+
+                setTimeout(() => window.location.href = "https://www.google.com", 500);
+        }
+
+        console.warn(respTXT);
+
+        typingAnimation(Math.floor(Math.random() * 20));
+    }
+    else
+    {
+        console.warn('Don\'t abuse my animation!');
+    }
+});
 
 export default typingAnimation;
