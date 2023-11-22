@@ -71,8 +71,8 @@ const typingAnimation = async (again = 0) => {
             }
         }
 
-        const spedUp = Math.random() * (50) + 15;
-        const normalSpeed = Math.random() * (200) + 50;
+        const spedUp = 5;
+        const normalSpeed = Math.random() * (80) + 20;
 
         const time = isDeleting ? spedUp : normalSpeed;
 
@@ -137,7 +137,7 @@ animationBox.addEventListener('click', function () {
 
         console.warn(respTXT);
 
-        typingAnimation(Math.floor(Math.random() * 20));
+        typingAnimation(Math.floor(Math.random() * 10 + 2));
     }
     else
     {

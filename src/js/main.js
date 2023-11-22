@@ -11,6 +11,8 @@ const aboutBox = document.querySelectorAll(".about__item");
 const cvSection = document.querySelector(".cv__subtitle");
 const toolsSection = document.querySelector(".tools__title");
 const contactSection = document.querySelector(".contact__title");
+const mainTitle = document.querySelector('title');
+const skipNavEL = document.querySelector('.skip-nav-link');
 
 // projects
 const projectBox = document.querySelector(".projects__box");
@@ -33,6 +35,10 @@ const changeLanguage = function (storedLng) {
 
         btnBIH.classList.add("active-language");
     }
+
+    mainTitle.innerHTML = lang.mainTitle;
+
+    skipNavEL.innerHTML = lang.skipNav;
 
     navLink.forEach((el, i) => {
         if (i > 1)

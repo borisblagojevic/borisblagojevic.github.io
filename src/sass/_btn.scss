@@ -10,6 +10,7 @@
 		cursor: pointer;
 		color: $white-2 !important;
 		transform: translateY(10%);
+		transition: transform 300ms;
 	}
 
 	&:active {
@@ -46,13 +47,25 @@
 
 	&:active {
 		background-color: $maximum-green-yellow;
+
+		& .cv-icon {
+			color: $white-2;
+		}
 	}
 }
 
 .btn--menu-mobile {
-	font-size: 2rem;
-	padding: 2rem;
+	font-size: 4rem;
+	padding: 3rem;
 	color: $white-2;
 	border: none;
 	border-radius: 1rem;
+}
+
+.btn-transparent {
+	border-color: transparent;
+
+	&:active{
+		background-color: transparent;
+	}
 }

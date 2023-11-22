@@ -5,8 +5,7 @@
 .cache/
 .cache
 .parcel-cache/
-.parcel-cache
-# inserted following from this git rep : 
+# inserted following from this git rep :
 # https://github.com/parcel-bundler/examples/blob/master/.gitignore
 
 # Logs
@@ -74,3 +73,4 @@ typings/
 # Parcel related files
 dist/
 .cache/
+.idea/

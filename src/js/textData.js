@@ -1,14 +1,16 @@
 export const bih = {
 	lang: "bih",
+	mainTitle: 'Boris Blagojević Softverski Inženjer',
+	skipNav: 'Preskoči navigaciju',
 	navigationItem: ["O meni", "CV", "Alati", "Kontakt", "Projekti"],
-	headerTitle: ["Zdravo, ja sam", "Boris Blagojevic"],
+	headerTitle: ["Zdravo, ja sam", "Boris Blagojević"],
 	toolsSection: "Jezici i alati koje koristim",
 	aboutSection: [
 		"O meni",
 		"Rođen i odrastao u Banjoj Luci.",
-		"Zavrsio sam srednju Elektrotehničku školu Nikola Tesla u Banjoj Luci kao tehničar telekomunikacija.",
+		"Završio sam srednju Elektrotehničku školu Nikola Tesla u Banjoj Luci kao tehničar telekomunikacija.",
 		"Završio sam informatički smjer na Panevropskom Univerzitetu Apeiron u Banjoj Luci i postao sam softverski inženjer.",
-		"Zaposlen u firmi <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (partneru tvrtke <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), gdje aktivno sudjelujem u razvoju EPM softvera."
+		"Zaposlen u kompaniji <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (partner kompanije <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), gdje aktivno sudjelujem u razvoju EPM softvera."
 	],
 	cvSection: "Pogledajte moj CV",
 	contactSection: "Kako stupiti u kontakt sa mnom",
@@ -21,7 +23,7 @@ export const bih = {
 			btn_title: "Želis objaviti oglas za posao?",
 			github:
 				"https://github.com/Blagoja95/job-posting-web-app",
-			img: "src/images/projects/imagesSearch.webm",
+			img: "src/images/projects/jobBoardExample.webm",
 		},
 		{
 			title: "PRETRAŽIVANJE SLIKA POMOĆU 'PIXABAY API-a'",
@@ -77,15 +79,17 @@ export const bih = {
 
 export const eng = {
 	lang: "eng",
+	skipNav: 'Skip Navigation',
+	mainTitle: 'Boris Blagojević Software Engineer',
 	navigationItem: ["About me", "Resume", "Tools", "Contact", "Projects"],
-	headerTitle: ["Hello, I am", "Boris Blagojevic"],
+	headerTitle: ["Hello, I am", "Boris Blagojević"],
 	toolsSection: "Languages and tools I use",
 	aboutSection: [
 		"About me",
 		"Born and raised in  Banja Luka.",
 		"I graduated from the electrotechnical high school in Banja Luka as a telecommunications technician.",
 		"I finished my computer studies at the Pan-European University of Apeiron in Banja Luka and became a software engineer.",
-		"Working at <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (a partner of Jedox A.G.), where I actively develop EPM software."
+		"Working at <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (a partner of <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), where I actively develop EPM software."
 	],
 	cvSection: "My resume",
 	contactSection: "Let's get in touch",
@@ -97,7 +101,7 @@ export const eng = {
 			btn_title: "Want to post information about a new job?",
 			github:
 				"https://github.com/Blagoja95/job-posting-web-app",
-			img: "imagesSearch.webm",
+			img: "src/images/projects/jobBoardExample.webm",
 		},
 		{
 			title: "IMAGE GALLERY w/ PIXABAY API",
