@@ -11,6 +11,8 @@
 }
 
 .tool {
+	@extend %selection-none;
+
 	width: 15rem;
 	height: 15rem;
 	filter: grayscale(100%);
