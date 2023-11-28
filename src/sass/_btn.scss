@@ -1,4 +1,5 @@
 %btn {
+	@extend %selection-none;
 	display: inline-block;
 	border: 2px solid $white;
 	background-color: transparent;
