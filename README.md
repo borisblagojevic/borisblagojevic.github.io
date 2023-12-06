@@ -4,7 +4,7 @@
 www.borisblagojevic.me
 
 ## About
-One of my major projects. Made it with HTML and SASS. Used JS for displaying the mobile menu, changing languages and storing user preferences locally.
+Personal web page made with HTML, SASS, and bit of JS to help me handle localization, mobile specific components and header animation (did you try to run animation more than once :D). 
 
 ## Colors
 https://coolors.co/040f0f-d1d646-898980-2d3a3a-fcfffc
