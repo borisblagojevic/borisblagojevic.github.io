@@ -6,7 +6,7 @@ const btnBIH = document.querySelector(".user-bih");
 
 // elements to change
 const navLink = document.querySelectorAll(".navigation__link");
-const heriTitle = document.querySelector(".hero__title");
+const heroTitle = document.querySelector(".hero__title");
 const aboutBox = document.querySelectorAll(".about__item");
 const cvSection = document.querySelector(".cv__subtitle");
 const toolsSection = document.querySelector(".tools__title");
@@ -47,7 +47,7 @@ const changeLanguage = function (storedLng) {
         }
     });
 
-    heriTitle.innerHTML = `${lang.headerTitle[0]} <span class="hero__span">${lang.headerTitle[1]}</span>`;
+    heroTitle.innerHTML = `${lang.headerTitle[0]} <span class="hero__span">${lang.headerTitle[1]}</span>`;
 
     aboutBox.forEach((el, i) => (el.innerHTML = lang.aboutSection[i]));
 
