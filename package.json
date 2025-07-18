@@ -1,16 +1,17 @@
 {
 	"devDependencies": {
-		"@parcel/transformer-sass": "^2.4.0",
-		"parcel": "^2.4.0",
-		"sass": "^1.49.9"
+		"sass": "^1.49.9",
+		"webpack": "^5.100.2",
+		"webpack-cli": "^6.0.1",
+		"webpack-dev-server": "^5.2.2"
 	},
-	"dependencies": {},
 	"name": "borisblagojevic.github.io",
-	"description": "https://blagoja95.github.io/borisblagojevic.github.io/",
-	"version": "1.0.0",
+	"description": "Personal web page",
+	"version": "2.0.0",
 	"scripts": {
-		"start": "parcel index.html",
-		"build": "parcel build index.html --dist-dir ./dist"
+		"build": "webpack",
+		"watch": "webpack serve --open",
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
