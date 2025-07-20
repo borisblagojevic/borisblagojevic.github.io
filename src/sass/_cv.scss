@@ -1,6 +1,9 @@
+@use "_colors";
+@use "_general_common";
+
 .cv {
 	@extend %section;
-	background-color: $rich-black-fogra-29;
+	background-color: colors.$rich-black-fogra-29;
 	gap: 4.6rem;
 }
 

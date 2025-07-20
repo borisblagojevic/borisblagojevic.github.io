@@ -1,24 +1,5 @@
-%btn {
-	@extend %selection-none;
-	display: inline-block;
-	border: 2px solid $white;
-	background-color: transparent;
-	border-radius: 3rem;
-}
-
-%btn--hover-active {
-	&:hover {
-		cursor: pointer;
-		color: $white-2 !important;
-		transform: translateY(10%);
-		transition: transform 300ms;
-	}
-
-	&:active {
-		color: $rich-black-fogra-29 !important;
-		background-color: $maximum-green-yellow;
-	}
-}
+@use "_colors";
+@use "_btn_common";
 
 .btn {
 	@extend %btn;
@@ -34,23 +15,23 @@
 	font-size: 2rem;
 	letter-spacing: 0.1rem;
 	padding: 2rem 6.2rem;
-	color: $outer-space-crayola !important;
-	background-color: $white-2;
+	color: colors.$outer-space-crayola !important;
+	background-color: colors.$white-2;
 	text-decoration: none;
 
 	&:hover {
 		background-color: transparent;
 
 		& .cv-icon {
-			color: $maximum-green-yellow;
+			color: colors.$maximum-green-yellow;
 		}
 	}
 
 	&:active {
-		background-color: $maximum-green-yellow;
+		background-color: colors.$maximum-green-yellow;
 
 		& .cv-icon {
-			color: $white-2;
+			color: colors.$white-2;
 		}
 	}
 }
@@ -58,7 +39,7 @@
 .btn--menu-mobile {
 	font-size: 4rem;
 	padding: 3rem;
-	color: $white-2;
+	color: colors.$white-2;
 	border: none;
 	border-radius: 1rem;
 }

@@ -1,8 +1,10 @@
+@use "_general_common";
+@use "_colors";
+
 .contact {
 	@extend %section;
-	@extend %flexbox;
 	flex-direction: column;
-	background-color: $rich-black-fogra-29;
+	background-color: colors.$rich-black-fogra-29;
 }
 
 .contact__links {
@@ -17,5 +19,5 @@
 }
 
 .contact__icon {
-	color: $white-2;
+	color: colors.$white-2;
 }

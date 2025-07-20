@@ -1,0 +1,24 @@
+@use "_colors";
+@use "_general_common";
+
+%btn {
+  @extend %selection-none;
+  display: inline-block;
+  border: 2px solid colors.$white;
+  background-color: transparent;
+  border-radius: 3rem;
+}
+
+%btn--hover-active {
+  &:hover {
+    cursor: pointer;
+    color: colors.$white-2 !important;
+    transform: translateY(10%);
+    transition: transform 300ms;
+  }
+
+  &:active {
+    color: colors.$rich-black-fogra-29 !important;
+    background-color: colors.$maximum-green-yellow;
+  }
+}

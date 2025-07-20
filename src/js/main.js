@@ -1,3 +1,6 @@
+import "../sass/main.scss";
+import CVPDF from '../cv/BorisBlagojevicResume.pdf'
+
 import {bih, eng} from "./textData.js";
 import typingAnimation from "./typingAnimation.js";
 
@@ -18,7 +21,10 @@ const skipNavEL = document.querySelector('.skip-nav-link');
 const projectBox = document.querySelector(".projects__box");
 const projectTitle = document.querySelector(".project__title");
 
-// LANGUAGE SETTINGS ************************************************
+//cv
+const cvBtn = document.querySelector(".btn--cv");
+
+// LANGUAGE CHANGE
 const changeLanguage = function (storedLng) {
     let lang;
 
@@ -151,13 +157,10 @@ const languageBtn = function (el) {
 btnENG.addEventListener("click", languageBtn.bind(btnENG));
 btnBIH.addEventListener("click", languageBtn.bind(btnBIH));
 
-// date **********************************************************
+// date
+document.querySelector(".crNumber").innerHTML = new Date().getFullYear() + ' ' ?? ' ';
 
-const crNumber = document.querySelector(".crNumber");
-
-crNumber.innerHTML = new Date().getFullYear();
-
-// menu ***************************************************
+// menu
 const btnMenuMobile = document.querySelector(".menu-mobile");
 const btnMenuClose = document.querySelector(".menu-close");
 const menuDesktop = document.querySelector(".desktop");
@@ -213,7 +216,9 @@ btnMenuMobile.addEventListener("click", callDisplayFunctions);
 
 btnMenuClose.addEventListener("click", () => callDisplayFunctions(false));
 
-// init ******************************************************
+// init
 changeLanguage(JSON.parse(localStorage.getItem("language")) || "eng");
 toggleDisplay(btnMenuClose, true);
 typingAnimation();
+
+cvBtn.href = CVPDF;

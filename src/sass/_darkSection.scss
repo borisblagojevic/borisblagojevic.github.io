@@ -1,14 +1,16 @@
+@use "_colors";
+
 .dark .title {
-	color: $white;
+	color: colors.$white;
 }
 
 .dark .paragraph,
 .dark .subtitle {
-	color: $white-2;
+	color: colors.$white-2;
 }
 
 .dark .navigation__link:link,
 .dark .navigation__link:visited,
 .dark .btn--navigation {
-	color: $white-2;
+	color: colors.$white-2;
 }
