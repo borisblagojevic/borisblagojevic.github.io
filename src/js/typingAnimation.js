@@ -4,14 +4,11 @@ const typingAnimation = async (again = 0) => {
 
     const actions = [
         "getRole() . . . ",
-        "fetching data . . . ",
         "handle request . . . ",
-        "searching through database . . . ",
+        "searching database . . . ",
         "HttpServletResponse.SC_OK . . . ",
         ".then response.json() . . . ",
-        "displaying in 3",
-        "2 . . . ",
-        "1 . . . ",
+        "renderRole()",
         "Software Engineer"
     ];
 

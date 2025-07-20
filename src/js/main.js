@@ -158,10 +158,7 @@ btnENG.addEventListener("click", languageBtn.bind(btnENG));
 btnBIH.addEventListener("click", languageBtn.bind(btnBIH));
 
 // date
-
-const crNumber = document.querySelector(".crNumber");
-
-crNumber.innerHTML = new Date().getFullYear();
+document.querySelector(".crNumber").innerHTML = new Date().getFullYear() + ' ' ?? ' ';
 
 // menu
 const btnMenuMobile = document.querySelector(".menu-mobile");

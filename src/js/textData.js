@@ -96,7 +96,7 @@ export const eng = {
 		"About me",
 		"Born and raised in  Banja Luka.",
 		"I graduated from the electrotechnical high school in Banja Luka as a telecommunications technician.",
-		"I finished my computer studies at the Pan-European University of Apeiron in Banja Luka and became a software engineer.",
+		"I finished my CS at the Pan-European University of Apeiron in Banja Luka and became a software engineer.",
 		"Working at <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (a partner of <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), where I actively develop EPM software."
 	],
 	cvSection: "My resume",

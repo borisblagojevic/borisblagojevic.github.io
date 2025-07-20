@@ -1,3 +1,5 @@
+@use "_colors";
+
 @media screen and (max-width: 1550px) {
 	.hero__content {
 		gap: 3.6rem;
@@ -53,7 +55,7 @@
 		padding: 4rem 0 1rem 0;
 
 		&:last-child {
-			border-bottom: 0.5rem dashed $maximum-green-yellow;
+			border-bottom: 0.5rem dashed colors.$maximum-green-yellow;
 		}
 	}
 
@@ -66,7 +68,9 @@
 	}
 
 	.project {
-		@extend %flexbox;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		flex-direction: column-reverse;
 		gap: 6rem;
 	}
@@ -162,10 +166,3 @@
 		width: 30ch;
 	}
 }
-
-// @media screen and (max-height: 400px) {
-//   .hero {
-//     height: 100%;
-//     padding: 3rem;
-//   }
-// }

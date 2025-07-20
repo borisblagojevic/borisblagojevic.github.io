@@ -1,3 +1,5 @@
+@use "_colors";
+
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -15,12 +17,12 @@
 
 	font-size: 5rem;
 	padding: 1rem;
-	background-color: $white-2;
-	color: $maximum-green-yellow;
+	background-color: colors.$white-2;
+	color: colors.$maximum-green-yellow;
 	border-radius: 0 0 10px 10px;
 }
 
 .skip-nav-link:focus {
 	transform: translatey(0%);
-	border: 3px dotted $maximum-green-yellow;
+	border: 3px dotted colors.$maximum-green-yellow;
 }

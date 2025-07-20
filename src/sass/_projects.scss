@@ -1,6 +1,8 @@
+@use "_colors";
+@use "_general_common";
+
 .projects {
 	@extend %section;
-	@extend %flexbox;
 }
 
 .projects__box {
@@ -46,25 +48,25 @@
 		letter-spacing: 0.3rem;
 		padding: 2rem 2.2rem;
 		border-radius: 10rem;
-		color: $white-2;
-		background-color: $rich-black-2;
+		color: colors.$white-2;
+		background-color: colors.$rich-black-2;
 		text-decoration: none;
 		border: 0.3rem solid transparent;
 	}
 
 	&:visited {
-		color: $white-2;
+		color: colors.$white-2;
 	}
 
 	&:hover {
-		border: 0.3rem solid $rich-black-2;
+		border: 0.3rem solid colors.$rich-black-2;
 		cursor: pointer;
 		background-color: transparent;
-		color: $rich-black-2 !important;
+		color: colors.$rich-black-2 !important;
 	}
 
 	&:active {
-		border-color: $maximum-green-yellow;
-		background-color: $maximum-green-yellow;
+		border-color: colors.$maximum-green-yellow;
+		background-color: colors.$maximum-green-yellow;
 	}
 }

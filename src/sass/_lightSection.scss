@@ -1,11 +1,13 @@
+@use "_colors";
+
 .light .title {
-	color: $maximum-green-yellow;
+	color: colors.$maximum-green-yellow;
 }
 
 .light .subtitle {
-	color: $rich-black-3;
+	color: colors.$rich-black-3;
 }
 
 .light .paragraph {
-	color: $outer-space-crayola;
+	color: colors.$outer-space-crayola;
 }
