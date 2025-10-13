@@ -10,8 +10,9 @@ export const bih = {
 		"Rođen i odrastao u Banjoj Luci.",
 		"Završio sam srednju Elektrotehničku školu Nikola Tesla u Banjoj Luci kao tehničar telekomunikacija.",
 		"Završio sam informatički smjer na Panevropskom Univerzitetu Apeiron u Banjoj Luci i postao sam softverski inženjer.",
-		"Zaposlen u kompaniji <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (partner kompanije <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), gdje aktivno sudjelujem u razvoju EPM softvera."
-	],
+		"Radio sam u <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (partner kompanije <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), gdje sam aktivno sudjelovao u razvoju EPM softvera.",
+        "Zaposlen sam u <a class='about__link' href='https://www.aleapartners.io/' target='_blank'>Alea Partners d.o.o.</a> Banja Luka gdje razvijam 2D igrice"
+    ],
 	cvSection: "Pogledajte moj CV",
 	contactSection: "Kako stupiti u kontakt sa mnom",
 	projectTitle: "Projekte koje bih izdvojio",
@@ -89,8 +90,9 @@ export const eng = {
 		"Born and raised in  Banja Luka.",
 		"I graduated from the electrotechnical high school in Banja Luka as a telecommunications technician.",
 		"I finished my computer studies at the Pan-European University of Apeiron in Banja Luka and became a software engineer.",
-		"Working at <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (a partner of <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), where I actively develop EPM software."
-	],
+		"Worked for <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (a partner of <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), where I developed EPM software.",
+	    "Now I am working for <a class='about__link' href='https://www.aleapartners.io/' target='_blank'>Alea Partners d.o.o.</a> Banja Luka where I develop 2D games"
+    ],
 	cvSection: "My resume",
 	contactSection: "Let's get in touch",
 	projectTitle: "Some of my projects",
