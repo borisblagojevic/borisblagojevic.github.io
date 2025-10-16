@@ -23,7 +23,7 @@ export const bih = {
 				"Veb aplikacija za oglasne poslove napravljena uz pomoć ReactJS, TailwindCSS i JAVA tehnologija. Back-end se pokreće na Tomcat-u a podaci se čuvaju u MySQL RDBMS. Svi servisi su kontejnerizovani pomoću Docker-a.",
 			btn_title: "Želis objaviti oglas za posao?",
 			github:
-				"https://github.com/Blagoja95/job-posting-web-app",
+				"https://github.com/borisblagojevic/job-posting-web-app",
 			img: "src/images/projects/jobBoardExample.webm",
 		},
 		{
@@ -31,7 +31,7 @@ export const bih = {
 			info: "Ova aplikacija omogućava svojim korisnicima pretraživanje ogromne količine slika koristeći moćni Pixabay API. Korisnici mogu pretražiti bilo koju sliku upisivanjem željenog ključnog pojma poput 'mačke' ili 'automobili' i dobiti listu slika koje se prikazuju kao kartice s samom slikom i podacima o njoj. Također, mogu filtrirati rezultate pretrage odabirom vrste slike poput fotografija, vektora i ilustracija.",
 			btn_title: "Pronadji i ti sliku",
 			github:
-				"https://blagoja95.github.io/image-gallery-pixabayAPI-tailwind-react/",
+				"https://borisblagojevic.github.io/image-gallery-pixabayAPI-tailwind-react/",
 			img: "src/images/projects/imagesSearch.webm",
 		},
 		{
@@ -50,7 +50,7 @@ export const bih = {
 				" Todo aplikacija koja omogucava njenom korisniku unos novih, brisanje starih kao i filtriranje  zadataka." +
 				" Čuvanje sadržaja i stanja unesenih zadatka  te podešavanje izgleda aplikacije se čuva u lokalnoj memoriji browsera. I ova aplikacija je rađena po MVC arhitekturi.",
 			btn_title: "Uvjek zaboraviš nešto kupiti?",
-			github: "https://blagoja95.github.io/todo-app/",
+			github: "https://borisblagojevic.github.io/todo-app/",
 			img: "src/images/projects/todo.webm",
 		},
 		{
@@ -58,21 +58,21 @@ export const bih = {
 			info: "Sistem za navodnjavanje baste koji otvara ventil i ispušta vodu u unaprijed zadato vrijeme. Prva verzija ovog sistem napravljena je 2020. ",
 			btn_title: "Da se i tvoja bašta zeleni",
 			github:
-				"https://github.com/Blagoja95/automatic-garden-watering-sys-aurdion",
+				"https://github.com/borisblagojevic/automatic-garden-watering-sys-aurdion",
 			img: "src/images/projects/awgs.jpeg",
 		},
 		{
 			title: "OVA STRANICA",
 			info: "Projekat koji takođe izdvajam. Radjen u HTML-u SASS-u i malo JavaScript-a za prikazivanje menija, odabira i cuvanje odabranog jezika u lokalnom skladištu.",
 			btn_title: "Izvorni kod",
-			github: "https://github.com/Blagoja95/personal-page",
+			github: "https://github.com/borisblagojevic/personal-page",
 			img: "src/images/projects/mywebpage.webm",
 		},
 		{
 			title: "OSTALI PROJEKTI",
 			info: "Na github-u možete pogledati sve moje ostale radove od kojih opet izdvajam advice generator app, time tracking dashboard i sunnyside agency landing page.",
 			btn_title: "Pogledaj i moje ostale projekat",
-			github: "https://github.com/Blagoja95",
+			github: "https://github.com/borisblagojevic",
 			img: "src/images/projects/github.png",
 		},
 	],
@@ -102,7 +102,7 @@ export const eng = {
 			info: "Job board web app made with ReactJS, TailwindCSS and JAVA. Running back-end on Tomcat and storing data using MySQL RDBMS, All parts containerized using Docker.",
 			btn_title: "Want to post information about a new job?",
 			github:
-				"https://github.com/Blagoja95/job-posting-web-app",
+				"https://github.com/borisblagojevic/job-posting-web-app",
 			img: "src/images/projects/jobBoardExample.webm",
 		},
 		{
@@ -115,7 +115,7 @@ export const eng = {
 				" selecting the type of image like photos, vectors and illustrations.",
 			btn_title: "Try searching images yourself",
 			github:
-				"https://blagoja95.github.io/image-gallery-pixabayAPI-tailwind-react/",
+				"https://borisblagojevic.github.io/image-gallery-pixabayAPI-tailwind-react/",
 			img: "./src/images/projects/imagesSearch.webm",
 		},
 		{
@@ -135,7 +135,7 @@ export const eng = {
 				"Saves the content and status of  tasks and the chosen theme of the application in the local " +
 				"memory of the browser. This application is also made with MVC architecture.",
 			btn_title: "Always forget to buy the milk?",
-			github: "https://blagoja95.github.io/todo-app/",
+			github: "https://borisblagojevic.github.io/todo-app/",
 			img: "src/images/projects/todo.webm",
 		},
 		{
@@ -145,7 +145,7 @@ export const eng = {
 				" The first version of this system was made in 2020. ",
 			btn_title: "Want to have a healthy and green garden?",
 			github:
-				"https://github.com/Blagoja95/automatic-garden-watering-sys-aurdion",
+				"https://github.com/borisblagojevic/automatic-garden-watering-sys-aurdion",
 			img: "src/images/projects/awgs.jpeg",
 		},
 		{
@@ -154,7 +154,7 @@ export const eng = {
 				"This page is also one of my major projects. Made in HTML, SASS and a bit of " +
 				"JavaScript to display the mobile menu, select languages and to store user preferences locally.",
 			btn_title: "Source code",
-			github: "https://github.com/Blagoja95/personal-page",
+			github: "https://github.com/borisblagojevic/personal-page",
 			img: "src/images/projects/mywebpage.webm",
 		},
 		{
@@ -163,7 +163,7 @@ export const eng = {
 				"On github you can see all my other work, of which I single out the advice generator app, " +
 				" the time tracking dashboard and the Sunnyside agency landing page.",
 			btn_title: "Take a look of my other projects",
-			github: "https://github.com/Blagoja95",
+			github: "https://github.com/borisblagojevic",
 			img: "src/images/projects//github.png",
 		},
 	],
