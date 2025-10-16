@@ -1,5 +1,6 @@
 import {bih, eng} from "./textData.js";
 import typingAnimation from "./typingAnimation.js";
+import '../sass/main.scss'
 
 const btnENG = document.querySelector(".user-eng");
 const btnBIH = document.querySelector(".user-bih");

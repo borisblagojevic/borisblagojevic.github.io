@@ -1,28 +1,39 @@
 {
-	"devDependencies": {
-		"@parcel/transformer-sass": "^2.4.0",
-		"parcel": "^2.4.0",
-		"sass": "^1.49.9"
-	},
-	"dependencies": {},
-	"name": "borisblagojevic.github.io",
-	"description": "https://blagoja95.github.io/borisblagojevic.github.io/",
-	"version": "1.0.0",
-	"scripts": {
-		"start": "parcel index.html",
-		"build": "parcel build index.html --dist-dir ./dist"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Blagoja95/borisblagojevic.github.io.git"
-	},
-	"keywords": [
-		"webpage"
-	],
-	"author": "Boris Blagojevic",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Blagoja95/borisblagojevic.github.io/issues"
-	},
-	"homepage": "https://github.com/Blagoja95/borisblagojevic.github.io#readme"
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@parcel/transformer-sass": "^2.4.0",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.4",
+    "postcss-loader": "^8.2.0",
+    "sass": "^1.93.2",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "name": "borisblagojevic.github.io",
+  "description": "https://blagoja95.github.io/borisblagojevic.github.io/",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blagoja95/borisblagojevic.github.io.git"
+  },
+  "keywords": [
+    "webpage"
+  ],
+  "author": "Boris Blagojevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blagoja95/borisblagojevic.github.io/issues"
+  },
+  "homepage": "https://github.com/Blagoja95/borisblagojevic.github.io#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^5.6.4"
+  }
 }

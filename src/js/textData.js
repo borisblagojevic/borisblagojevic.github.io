@@ -1,3 +1,11 @@
+import jobBoardVid from "../images/projects/jobBoardExample.webm"
+import pixabay from "../images/projects/imagesSearch.webm"
+import recipe from "../images/projects/recipe.webm"
+import todo from "../images/projects/todo.webm"
+import awgs from "../images/projects/awgs.jpeg"
+import page from "../images/projects/mywebpage.webm"
+import github from "../images/projects/github.png"
+
 export const bih = {
 	lang: "bih",
 	mainTitle: 'Boris Blagojević Softverski Inženjer',
@@ -24,7 +32,7 @@ export const bih = {
 			btn_title: "Želis objaviti oglas za posao?",
 			github:
 				"https://github.com/borisblagojevic/job-board-web-app",
-			img: "src/images/projects/jobBoardExample.webm",
+			img: jobBoardVid,
 		},
 		{
 			title: "PRETRAŽIVANJE SLIKA POMOĆU 'PIXABAY API-a'",
@@ -32,7 +40,7 @@ export const bih = {
 			btn_title: "Pronadji i ti sliku",
 			github:
 				"https://borisblagojevic.github.io/image-gallery-pixabayAPI-tailwind-react/",
-			img: "src/images/projects/imagesSearch.webm",
+			img: pixabay,
 		},
 		{
 			title: "RECIPE APP",
@@ -42,7 +50,7 @@ export const bih = {
 				" Takođe korisnik ima mogućnost kriranja vlastitog recepta. Aplikacija rađena po MVC arhitekturi.",
 			btn_title: "Nemaš ideju za ručak?",
 			github: "https://recipe-app-demo-bb.netlify.app/",
-			img: "src/images/projects/recipe.webm",
+			img: recipe,
 		},
 		{
 			title: "TODO APP",
@@ -51,7 +59,7 @@ export const bih = {
 				" Čuvanje sadržaja i stanja unesenih zadatka  te podešavanje izgleda aplikacije se čuva u lokalnoj memoriji browsera. I ova aplikacija je rađena po MVC arhitekturi.",
 			btn_title: "Uvjek zaboraviš nešto kupiti?",
 			github: "https://borisblagojevic.github.io/todo-app/",
-			img: "src/images/projects/todo.webm",
+			img: todo,
 		},
 		{
 			title: "SISTEM ZA AUTOMATSKO NAVODNJAVANJE BASTE",
@@ -59,21 +67,21 @@ export const bih = {
 			btn_title: "Da se i tvoja bašta zeleni",
 			github:
 				"https://github.com/borisblagojevic/automatic-garden-watering-system-arduino",
-			img: "src/images/projects/awgs.jpeg",
+			img: awgs,
 		},
 		{
 			title: "OVA STRANICA",
 			info: "Projekat koji takođe izdvajam. Radjen u HTML-u SASS-u i malo JavaScript-a za prikazivanje menija, odabira i cuvanje odabranog jezika u lokalnom skladištu.",
 			btn_title: "Izvorni kod",
 			github: "https://github.com/borisblagojevic/borisblagojevic.github.io",
-			img: "src/images/projects/mywebpage.webm",
+			img: page,
 		},
 		{
 			title: "OSTALI PROJEKTI",
 			info: "Na github-u možete pogledati sve moje ostale radove od kojih opet izdvajam advice generator app, time tracking dashboard i sunnyside agency landing page.",
 			btn_title: "Pogledaj i moje ostale projekat",
 			github: "https://github.com/borisblagojevic",
-			img: "src/images/projects/github.png",
+			img: github,
 		},
 	],
 };
@@ -103,7 +111,7 @@ export const eng = {
 			btn_title: "Want to post information about a new job?",
 			github:
 				"https://github.com/borisblagojevic/job-board-web-app",
-			img: "src/images/projects/jobBoardExample.webm",
+			img: jobBoardVid,
 		},
 		{
 			title: "IMAGE GALLERY w/ PIXABAY API",
@@ -116,7 +124,7 @@ export const eng = {
 			btn_title: "Try searching images yourself",
 			github:
 				"https://borisblagojevic.github.io/image-gallery-pixabayAPI-tailwind-react/",
-			img: "./src/images/projects/imagesSearch.webm",
+			img: pixabay,
 		},
 		{
 			title: "RECIPE APP",
@@ -126,7 +134,7 @@ export const eng = {
 				" A user also has the option of creating their own recipe. This application is made with MVC architecture.",
 			btn_title: "Don't have an idea for the dinner today? ",
 			github: "https://recipe-app-demo-bb.netlify.app/",
-			img: "./src/images/projects/recipe.webm",
+			img: recipe,
 		},
 		{
 			title: "TO DO APP",
@@ -136,7 +144,7 @@ export const eng = {
 				"memory of the browser. This application is also made with MVC architecture.",
 			btn_title: "Always forget to buy the milk?",
 			github: "https://borisblagojevic.github.io/todo-app/",
-			img: "src/images/projects/todo.webm",
+			img: todo,
 		},
 		{
 			title: "AUTOMATIC WATERING SYSTEM FOR GARDEN",
@@ -146,7 +154,7 @@ export const eng = {
 			btn_title: "Want to have a healthy and green garden?",
 			github:
 				"https://github.com/borisblagojevic/automatic-garden-watering-system-arduino",
-			img: "src/images/projects/awgs.jpeg",
+			img: awgs,
 		},
 		{
 			title: "THIS PAGE",
@@ -155,7 +163,7 @@ export const eng = {
 				"JavaScript to display the mobile menu, select languages and to store user preferences locally.",
 			btn_title: "Source code",
 			github: "https://github.com/borisblagojevic/borisblagojevic.github.io",
-			img: "src/images/projects/mywebpage.webm",
+			img: page,
 		},
 		{
 			title: "OTHER PROJECTS",
@@ -164,7 +172,7 @@ export const eng = {
 				" the time tracking dashboard and the Sunnyside agency landing page.",
 			btn_title: "Take a look of my other projects",
 			github: "https://github.com/borisblagojevic",
-			img: "src/images/projects//github.png",
+			img: github,
 		},
 	],
 };
