@@ -23,7 +23,7 @@ export const bih = {
 				"Veb aplikacija za oglasne poslove napravljena uz pomoć ReactJS, TailwindCSS i JAVA tehnologija. Back-end se pokreće na Tomcat-u a podaci se čuvaju u MySQL RDBMS. Svi servisi su kontejnerizovani pomoću Docker-a.",
 			btn_title: "Želis objaviti oglas za posao?",
 			github:
-				"https://github.com/borisblagojevic/job-posting-web-app",
+				"https://github.com/borisblagojevic/job-board-web-app",
 			img: "src/images/projects/jobBoardExample.webm",
 		},
 		{
@@ -58,14 +58,14 @@ export const bih = {
 			info: "Sistem za navodnjavanje baste koji otvara ventil i ispušta vodu u unaprijed zadato vrijeme. Prva verzija ovog sistem napravljena je 2020. ",
 			btn_title: "Da se i tvoja bašta zeleni",
 			github:
-				"https://github.com/borisblagojevic/automatic-garden-watering-sys-aurdion",
+				"https://github.com/borisblagojevic/automatic-garden-watering-system-arduino",
 			img: "src/images/projects/awgs.jpeg",
 		},
 		{
 			title: "OVA STRANICA",
 			info: "Projekat koji takođe izdvajam. Radjen u HTML-u SASS-u i malo JavaScript-a za prikazivanje menija, odabira i cuvanje odabranog jezika u lokalnom skladištu.",
 			btn_title: "Izvorni kod",
-			github: "https://github.com/borisblagojevic/personal-page",
+			github: "https://github.com/borisblagojevic/borisblagojevic.github.io",
 			img: "src/images/projects/mywebpage.webm",
 		},
 		{
@@ -102,7 +102,7 @@ export const eng = {
 			info: "Job board web app made with ReactJS, TailwindCSS and JAVA. Running back-end on Tomcat and storing data using MySQL RDBMS, All parts containerized using Docker.",
 			btn_title: "Want to post information about a new job?",
 			github:
-				"https://github.com/borisblagojevic/job-posting-web-app",
+				"https://github.com/borisblagojevic/job-board-web-app",
 			img: "src/images/projects/jobBoardExample.webm",
 		},
 		{
@@ -145,7 +145,7 @@ export const eng = {
 				" The first version of this system was made in 2020. ",
 			btn_title: "Want to have a healthy and green garden?",
 			github:
-				"https://github.com/borisblagojevic/automatic-garden-watering-sys-aurdion",
+				"https://github.com/borisblagojevic/automatic-garden-watering-system-arduino",
 			img: "src/images/projects/awgs.jpeg",
 		},
 		{
@@ -154,7 +154,7 @@ export const eng = {
 				"This page is also one of my major projects. Made in HTML, SASS and a bit of " +
 				"JavaScript to display the mobile menu, select languages and to store user preferences locally.",
 			btn_title: "Source code",
-			github: "https://github.com/borisblagojevic/personal-page",
+			github: "https://github.com/borisblagojevic/borisblagojevic.github.io",
 			img: "src/images/projects/mywebpage.webm",
 		},
 		{
