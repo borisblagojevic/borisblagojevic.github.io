@@ -9,7 +9,7 @@
 
 	.about-box {
 		flex-direction: column;
-      gap: 3rem;
+        gap: 3rem;
 	}
 
 	.project__right {
@@ -22,19 +22,39 @@
 }
 
 @media screen and (max-width: 1120px) {
-	.hero__content {
-		flex-direction: column;
-		gap: 5em;
-	}
+  .desktop {
+    display: none;
+  }
 
-	.hero__left {
-		text-align: center;
-	}
+  .mobile {
+    padding: 0;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+  }
 
-	.hero__title {
-		line-height: 1.5;
-		width: 18ch;
-	}
+  .menu-mobile {
+    margin-right: 5rem;
+  }
+
+  .hero__content {
+    flex-direction: column;
+    gap: 5em;
+  }
+
+  .hero__left {
+    text-align: center;
+    font-size: 3.2rem !important;
+  }
+
+  .hero__title {
+    line-height: 1.5;
+    width: 18ch;
+  }
+
+  .hero-img {
+    scale: 0.5;
+  }
 
 	.title {
 		text-align: center;
@@ -92,17 +112,6 @@
 		grid-template-rows: repeat(6, 1fr);
 		column-gap: 8.6rem;
 	}
-
-	.desktop {
-		display: none;
-	}
-
-	.mobile {
-		padding: 0;
-		width: 100%;
-		justify-content: flex-end;
-		display: flex;
-	}
 }
 
 @media screen and (max-width: 600px) {
@@ -113,6 +122,10 @@
 	.hero {
 		padding: 10% 0;
 	}
+
+  .menu-mobile {
+    margin-right: 1rem;
+  }
 
 	.navigation-bar {
 		padding: 1rem;

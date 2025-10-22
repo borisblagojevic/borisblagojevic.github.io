@@ -5,6 +5,10 @@ import '../sass/main.scss'
 const btnENG = document.querySelector(".user-eng");
 const btnBIH = document.querySelector(".user-bih");
 
+// back to the top arrow
+const backToTop = document.querySelector(".back-to-top");
+const sentinelElement = document.querySelector('#scroll-sentinel');
+
 // elements to change
 const navLink = document.querySelectorAll(".navigation__link");
 const heroTitle = document.querySelector(".hero__title");
@@ -213,6 +217,28 @@ const callDisplayFunctions = function (open = true) {
 btnMenuMobile.addEventListener("click", callDisplayFunctions);
 
 btnMenuClose.addEventListener("click", () => callDisplayFunctions(false));
+
+const options = {
+    root: null,
+    rootMargin: '-20% 0% 0% 0%',
+    threshold: 0
+};
+
+const callback = (entries, observer) => {
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting)
+        {
+            backToTop.classList.remove('hidden');
+        } else
+        {
+            backToTop.classList.add('hidden');
+        }
+    });
+};
+
+const observer = new IntersectionObserver(callback, options);
+observer.observe(sentinelElement);
 
 // init ******************************************************
 changeLanguage(JSON.parse(localStorage.getItem("language")) || "eng");
