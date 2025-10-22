@@ -93,11 +93,26 @@
 }
 
 .back-to-top {
-	font-size: 3rem;
-	position: fixed;
-	right: 5%;
-	top: 90%;
-	color: $maximum-green-yellow;
+  visibility: visible;
+}
+
+.back-to-top-arrow
+{
+  font-size: 3rem !important;;
+  position: fixed !important;;
+  right: 5% !important;;
+  top: 90% !important;;
+  color: $maximum-green-yellow !important;
+}
+
+.back-to-top.hidden {
+  visibility: hidden;
+}
+
+#scroll-sentinel {
+	border-color: $maximum-green-yellow;
+  width: 1px;
+  height: 1px;
 }
 
 .typing-animation {

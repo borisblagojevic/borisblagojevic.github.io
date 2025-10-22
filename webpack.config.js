@@ -8,6 +8,7 @@ module.exports = {
     devServer: {
         static: path.resolve(__dirname, './dist'),
         port: 3333,
+        compress: true,
     },
     output: {
         filename: 'main.js',
