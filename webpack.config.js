@@ -17,6 +17,8 @@ module.exports = {
     },
     module: {
         rules: [
+
+
             // 1. SCSS/CSS Rule (Kept your fixed version)
             {
                 test: /\.s[ac]ss$/i,
