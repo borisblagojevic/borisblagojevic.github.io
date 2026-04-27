@@ -1,0 +1,79 @@
+{
+  "lang": "de",
+  "mainTitle": "Boris Blagojević Softwareentwickler",
+  "skipNav": "Navigation überspringen",
+  "navigationItem": [
+    "Über mich",
+    "Lebenslauf",
+    "Tools",
+    "Kontakt",
+    "Projekte"
+  ],
+  "headerTitle": [
+    "Hallo, ich bin",
+    "Boris Blagojević"
+  ],
+  "toolsSection": "Sprachen und Tools, die ich verwende",
+  "aboutSection": [
+    "Über mich",
+    "Geboren und aufgewachsen in Banja Luka.",
+    "Ich habe das elektrotechnische Gymnasium in Banja Luka als Telekommunikationstechniker abgeschlossen.",
+    "Ich habe mein Informatikstudium an der Paneuropäischen Universität Apeiron in Banja Luka abgeschlossen und bin Softwareentwickler geworden.",
+    "Ich habe bei <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> gearbeitet (ein Partner von <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), wo ich EPM-Software entwickelt habe.",
+    "Derzeit arbeite ich bei <a class='about__link' href='https://www.aleapartners.io/' target='_blank'>Alea Partners d.o.o.</a> Banja Luka, wo ich 2D-Spiele entwickle."
+  ],
+  "cvSection": "Mein Lebenslauf",
+  "contactSection": "Kontaktieren Sie mich",
+  "projectTitle": "Einige meiner Projekte",
+  "projects": [
+    {
+      "title": "JOB POSTING WEB APP",
+      "info": "Jobbörse-Web-App, erstellt mit ReactJS, TailwindCSS und JAVA. Das Back-end läuft auf Tomcat, die Datenhaltung erfolgt über MySQL RDBMS. Alle Komponenten sind mit Docker containerisiert.",
+      "btn_title": "Möchten Sie eine Stellenanzeige veröffentlichen?",
+      "github": "https://github.com/borisblagojevic/job-board-web-app",
+      "img": "/images/projects/jobBoardExample.webm"
+    },
+    {
+      "title": "BILDERGALERIE MIT PIXABAY API",
+      "info": "Eine Front-end-Anwendung, die es Benutzern ermöglicht, eine riesige Menge an Bildern zu durchsuchen. Nutzer können nach Stichworten wie 'Katzen' oder 'Autos' suchen und erhalten eine Liste von Bildern in Form von Karten mit Bilddaten. Die Ergebnisse lassen sich nach Typ wie Fotos, Vektoren und Illustrationen filtern.",
+      "btn_title": "Probieren Sie die Bildersuche aus",
+      "github": "https://borisblagojevic.github.io/image-gallery-pixabayAPI-tailwind-react/",
+      "img": "/images/projects/imagesSearch.webm"
+    },
+    {
+      "title": "RECIPE APP",
+      "info": "Diese Anwendung ermöglicht die Suche in über einer Million Rezepten. Nutzer können neue Rezepte hinzufügen, nach Zutaten filtern oder über die Suchleiste spezifische Gerichte finden. Zudem besteht die Möglichkeit, eigene Rezepte zu erstellen. Die App basiert auf der MVC-Architektur.",
+      "btn_title": "Keine Idee für das Abendessen?",
+      "github": "https://recipe-app-demo-bb.netlify.app/",
+      "img": "/images/projects/recipe.webm"
+    },
+    {
+      "title": "TO DO APP",
+      "info": "Eine To-Do-Anwendung zum Erstellen, Löschen und Filtern von Aufgaben. Der Inhalt, der Status der Aufgaben sowie das gewählte Design-Theme werden im Local Storage des Browsers gespeichert. Auch diese App wurde nach der MVC-Architektur entwickelt.",
+      "btn_title": "Vergessen Sie ständig, die Milch zu kaufen?",
+      "github": "https://borisblagojevic.github.io/todo-app/",
+      "img": "/images/projects/todo.webm"
+    },
+    {
+      "title": "AUTOMATISCHES GARTENBEWÄSSERUNGSSYSTEM",
+      "info": "Ein Bewässerungssystem für den Garten, das das Ventil öffnet und Wasser zu einer vordefinierten Zeit abgibt. Die erste Version dieses Systems wurde 2020 erstellt.",
+      "btn_title": "Möchten Sie einen gesunden und grünen Garten?",
+      "github": "https://github.com/borisblagojevic/automatic-garden-watering-system-arduino",
+      "img": "/images/projects/awgs.jpeg"
+    },
+    {
+      "title": "DIESE SEITE",
+      "info": "Diese Seite ist ebenfalls eines meiner Hauptprojekte. Erstellt mit HTML, SASS und etwas JavaScript für das mobile Menü, die Sprachauswahl und die lokale Speicherung der Benutzereinstellungen.",
+      "btn_title": "Quellcode",
+      "github": "https://github.com/borisblagojevic/borisblagojevic.github.io",
+      "img": "/images/projects/mywebpage.webm"
+    },
+    {
+      "title": "WEITERE PROJEKTE",
+      "info": "Auf GitHub finden Sie alle meine weiteren Arbeiten, darunter die Advice Generator App, das Time Tracking Dashboard und die Sunnyside Agency Landing Page.",
+      "btn_title": "Schauen Sie sich meine anderen Projekte an",
+      "github": "https://github.com/borisblagojevic",
+      "img": "/images/projects/github.png"
+    }
+  ]
+}

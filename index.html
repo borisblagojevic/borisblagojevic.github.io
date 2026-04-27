@@ -30,16 +30,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="./src/css/main.css"/>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="src/js/main.js"></script>
+
+    <script type="module" src="./src/js/main.js"></script>
 
     <title>Boris Blagojević</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .loader-container {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #040f0fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.3s ease-out, visibility 0.3s;
+        }
+
+        .loader-container--hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-transparent {
+            opacity: 0.4;
+        }
+
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.1);
+            border-top-color: #d1d646ff;
+            border-radius: 50%;
+
+            animation: spin 1s linear infinite,
+            colorChange 2s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes colorChange {
+            0%, 100% {
+                border-top-color: #ffffff;
+            }
+            50% {
+                border-top-color: #d1d646ff;
+            }
+        }
+    </style>
+
+    <script type="module" src="/src/js/main.js"></script>
 </head>
 
 <body>
+
+<div class="loader-container">
+    <div class="loader-spinner"></div>
+</div>
 
 <a id="main" href="#main-content" class="skip-nav-link">Skip Navigation</a>
 
@@ -56,10 +120,10 @@
     <nav class="navigation-bar desktop container">
         <ul class="navigation__links-list navigation__links-list--left">
             <li class="navigation__link-item">
-                <a href="#eng" class="navigation__link user-eng">ENG</a>
+                <a href="#en" class="navigation__link user-en">ENG</a>
             </li>
             <li class="navigation__link-item">
-                <a href="#bih" class="navigation__link user-bih">BIH</a>
+                <a href="#bs" class="navigation__link user-bs">BIH</a>
             </li>
         </ul>
         <ul class="navigation__links-list navigation__links-list--right">
@@ -126,7 +190,8 @@
     <section class="cv dark" id="CV">
         <h2 class="subtitle cv__subtitle">My resume</h2>
 
-        <a href="src/cv/BorisBlagojevicResume.pdf" target="_blank" class="btn btn--cv">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQHGKRXfjqR21afKUGHH-hxT8IUPG9Q0-wDGaePiLgtBlU58iEvSZbuXL3PHf5bLLrVOqVcCX4cxyta/pub"
+           target="_blank" class="btn btn--cv">
             <ion-icon class="cv-icon"
                       name="document">
             </ion-icon>
@@ -141,8 +206,8 @@
                      alt="HTML5" title="HTML5"/>
 
                 <img
-                    class="tool" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-                    alt="SASS" title="SASS"/>
+                        class="tool" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                        alt="SASS" title="SASS"/>
 
                 <img class="tool"
                      src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/typescript/typescript-original.svg"
@@ -159,9 +224,9 @@
                      src="https://raw.githubusercontent.com/devicons/devicon/55609aa5bd817ff167afce0d965585c92040787a/icons/jest/jest-plain.svg"
                      alt="JestJS" title="JestJS testing framework"/>
 
-                <img
-                    class="tool" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/materialui/materialui-original.svg"
-                    alt="MUI" title="MATERIAL UI"/>
+                <img class="tool"
+                     src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/materialui/materialui-original.svg"
+                     alt="MUI" title="MATERIAL UI"/>
 
                 <img class="tool"
                      src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg"
@@ -220,8 +285,9 @@
             <a class="btn btn-transparent" target="_blank" href="https://www.linkedin.com/in/boris-blagojevic/">
                 <ion-icon class="contact__icon" name="logo-linkedin"></ion-icon>
             </a>
-            <a class="btn btn-transparent" target="_blank" href="mailto:boris.blagojevicc@hotmail.com">
-                <ion-icon class="contact__icon" name="mail"></ion-icon>
+            <a class="btn btn-transparent" target="_blank" href="mailto:borisblagojevic@proton.me">
+                <ion-icon class="contact__icon" name="mail"
+                          title="Let's all use more secure and personal data secure systems"></ion-icon>
             </a>
         </div>
     </section>
