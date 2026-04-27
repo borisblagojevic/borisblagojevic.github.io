@@ -1,0 +1,70 @@
+{
+  "lang": "eng",
+  "skipNav": "Skip Navigation",
+  "mainTitle": "Boris Blagojević | Software Engineer",
+  "navigationItem": ["About me", "Resume", "Tools", "Contact", "Projects"],
+  "headerTitle": ["Hello, I am", "Boris Blagojević"],
+  "toolsSection": "Languages and tools I use",
+  "aboutSection": [
+    "About me",
+    "Born and raised in Banja Luka.",
+    "I graduated from the Electrotechnical High School in Banja Luka as a telecommunications technician.",
+    "I completed my computer science studies at the Pan-European University Apeiron in Banja Luka and became a software engineer.",
+    "I worked for <a class='about__link' href='https://develabs.com/' target='_blank'>Develabs d.o.o.</a> (a partner of <a class='about__link' href='https://www.jedox.com/en/' target='_blank'>Jedox A.G.</a>), where I contributed to the development of EPM software.",
+    "Currently, I am working at <a class='about__link' href='https://www.aleapartners.io/' target='_blank'>Alea Partners d.o.o.</a> Banja Luka, where I develop 2D games."
+  ],
+  "cvSection": "My resume",
+  "contactSection": "Let's get in touch",
+  "projectTitle": "Featured Projects",
+  "projects": [
+    {
+      "title": "JOB POSTING WEB APP",
+      "info": "A job board web app built with ReactJS, TailwindCSS, and Java. The back-end runs on Tomcat with data managed via MySQL RDBMS. All components are containerized using Docker.",
+      "btn_title": "Want to post a new job?",
+      "github": "https://github.com/borisblagojevic/job-board-web-app",
+      "img": "/images/projects/jobBoardExample.webm"
+    },
+    {
+      "title": "IMAGE GALLERY w/ PIXABAY API",
+      "info": "A front-end application that allows users to search a vast library of images using the Pixabay API. Users can search by keywords like 'cats' or 'cars' to receive a grid of image cards with metadata. Results can be filtered by type, such as photos, vectors, or illustrations.",
+      "btn_title": "Try searching images yourself",
+      "github": "https://borisblagojevic.github.io/image-gallery-pixabayAPI-tailwind-react/",
+      "img": "/images/projects/imagesSearch.webm"
+    },
+    {
+      "title": "RECIPE APP",
+      "info": "This application allows users to search through over a million different recipes. It features ingredient-based filtering, keyword search, and the ability for users to create their own recipes. The project follows the MVC architecture.",
+      "btn_title": "Need dinner ideas?",
+      "github": "https://recipe-app-demo-bb.netlify.app/",
+      "img": "/images/projects/recipe.webm"
+    },
+    {
+      "title": "TO DO APP",
+      "info": "A task management application for creating, deleting, and filtering tasks. It persists data and user theme preferences in the browser's local storage. This application is also built using the MVC architecture.",
+      "btn_title": "Always forget to buy milk?",
+      "github": "https://borisblagojevic.github.io/todo-app/",
+      "img": "/images/projects/todo.webm"
+    },
+    {
+      "title": "AUTOMATIC GARDEN WATERING SYSTEM",
+      "info": "An irrigation system that opens a valve to discharge water at predetermined times. The first version of this system was developed in 2020.",
+      "btn_title": "Keep your garden healthy and green",
+      "github": "https://github.com/borisblagojevic/automatic-garden-watering-system-arduino",
+      "img": "/images/projects/awgs.jpeg"
+    },
+    {
+      "title": "THIS PAGE",
+      "info": "My personal portfolio website, built with HTML, SASS, and vanilla JavaScript for handling the mobile menu, language selection, and local storage preferences.",
+      "btn_title": "Source code",
+      "github": "https://github.com/borisblagojevic/borisblagojevic.github.io",
+      "img": "/images/projects/mywebpage.webm"
+    },
+    {
+      "title": "OTHER PROJECTS",
+      "info": "You can find more of my work on GitHub, including an advice generator app, a time-tracking dashboard, and the Sunnyside agency landing page.",
+      "btn_title": "View more projects",
+      "github": "https://github.com/borisblagojevic",
+      "img": "/images/projects/github.png"
+    }
+  ]
+}
