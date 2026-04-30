@@ -12,30 +12,38 @@ const skipNavEL = document.querySelector(".skip-nav-link");
 const projectBox = document.querySelector(".projects__box");
 const projectTitle = document.querySelector(".project__title");
 
-const btnENG = document.querySelector(".user-en");
-const btnBIH = document.querySelector(".user-bs");
+const lngButtons = {
+	en: document.querySelector(".user-en"),
+	bs: document.querySelector(".user-bs"),
+	de: document.querySelector(".user-de"),
+};
 
 const languageBtn = function (el) {
-	btnENG.classList.remove("active-language");
-	btnBIH.classList.remove("active-language");
+	Object.values(lngButtons).forEach((el) => {
+		el.classList.remove("active-language");
+	});
 
 	let chosenLang;
-	console.log(el.target.classList[1]);
+
 	if (el.target.classList[1] === "user-en") {
 		chosenLang = "en";
-
 		localStorage.setItem("language", JSON.stringify("en"));
+	} else if (el.target.classList[1] === "user-de") {
+		chosenLang = "de";
+		localStorage.setItem("language", JSON.stringify("de"));
 	} else {
 		chosenLang = "bs";
-
 		localStorage.setItem("language", JSON.stringify("bs"));
 	}
+
+	lngButtons[chosenLang].classList.add("active-language");
 
 	changeLanguage(chosenLang);
 };
 
-btnENG.addEventListener("click", languageBtn.bind(btnENG));
-btnBIH.addEventListener("click", languageBtn.bind(btnBIH));
+Object.values(lngButtons).forEach((el) => {
+	el.addEventListener("click", languageBtn.bind(el));
+});
 
 const createHTMLVid = (element, data) => {
 	const html = `
@@ -55,7 +63,7 @@ const createHTMLVid = (element, data) => {
               <video alt="${data.btn_title}"
               class="project__right hero__right project__todo-img"
               autoplay loop muted playsinline
-              poster="src/images/favicon/bbFavicon.svg"
+              poster="/images/favicon/bbFavicon.svg"
               >
                 <source src="${data.img}" type="video/webm">
                 This video is not supported on your browser!
@@ -91,10 +99,9 @@ const createHTMLIMG = (element, data) => {
 };
 
 const fetchTranslations = async (lang) => {
-	showLoader();
-
 	try {
 		const response = await fetch(`/locals/${lang}/translation.json`);
+
 		if (!response.ok) {
 			throw new Error(`Language ${lang} not found`);
 		}
@@ -103,34 +110,22 @@ const fetchTranslations = async (lang) => {
 
 	} catch (error) {
 		console.error("Error loading translations:", error);
+
 		return null;
 	}
 };
 
 async function changeLanguage(storedLng) {
-	let lang;
+	showLoader();
 
-	if (storedLng === "en") {
-		lang = await fetchTranslations("en");
+	let lang = await fetchTranslations(storedLng);
 
-		btnENG.classList.add("active-language");
-	} else if (storedLng === "de") {
-		lang = await fetchTranslations("de");
-
-		btnENG.classList.add("active-language");
-	} else {
-		lang = await fetchTranslations("bs");
-
-		btnBIH.classList.add("active-language");
-	}
-
-	mainTitle.innerHTML = lang.mainTitle;
-
-	skipNavEL.innerHTML = lang.skipNav;
+	mainTitle.textContent = lang.mainTitle;
+	skipNavEL.textContent = lang.skipNav;
 
 	navLink.forEach((el, i) => {
-		if (i > 1) {
-			el.innerHTML = lang.navigationItem[i - 2];
+		if (i > 2) {
+			el.textContent = lang.navigationItem[i - 2];
 		}
 	});
 
@@ -138,13 +133,10 @@ async function changeLanguage(storedLng) {
 
 	aboutBox.forEach((el, i) => (el.innerHTML = lang.aboutSection[i]));
 
-	cvSection.innerHTML = lang.cvSection;
-
-	toolsSection.innerHTML = lang.toolsSection;
-
-	contactSection.innerHTML = lang.contactSection;
-
-	projectTitle.innerHTML = lang.projectTitle;
+	cvSection.textContent = lang.cvSection;
+	toolsSection.textContent = lang.toolsSection;
+	contactSection.textContent = lang.contactSection;
+	projectTitle.textContent = lang.projectTitle;
 
 	while (projectBox.firstChild) projectBox.removeChild(projectBox.firstChild);
 
@@ -160,5 +152,7 @@ async function changeLanguage(storedLng) {
 }
 
 export default function initLanguages() {
-	changeLanguage(JSON.parse(localStorage.getItem("language")) || "en");
+	const lng = JSON.parse(localStorage.getItem("language")) || "en";
+	lngButtons[lng].classList.add("active-language");
+	changeLanguage(lng);
 }

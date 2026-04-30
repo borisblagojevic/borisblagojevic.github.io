@@ -63,7 +63,7 @@
     },
     {
       "title": "OVA STRANICA",
-      "info": "Projekat koji takođe izdvajam. Radjen u HTML-u SASS-u i malo JavaScript-a za prikazivanje menija, odabira i cuvanje odabranog jezika u lokalnom skladištu.",
+      "info": "Razvio i održavao personalni sajt visokih performansi, dizajniran za prikaz tehničkih projekata i profesionalnog iskustva. Ovaj projekat se fokusira na demonstraciju osnovne web stručnosti kroz izgradnju prilagođenih rješenja bez opterećenja teškim radnim okvirima (frameworks).",
       "btn_title": "Izvorni kod",
       "github": "https://github.com/borisblagojevic/borisblagojevic.github.io",
       "img": "/images/projects/mywebpage.webm"

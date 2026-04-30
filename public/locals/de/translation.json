@@ -27,7 +27,7 @@
   "projectTitle": "Einige meiner Projekte",
   "projects": [
     {
-      "title": "JOB POSTING WEB APP",
+      "title": "JOB BOARD WEB APP",
       "info": "Jobbörse-Web-App, erstellt mit ReactJS, TailwindCSS und JAVA. Das Back-end läuft auf Tomcat, die Datenhaltung erfolgt über MySQL RDBMS. Alle Komponenten sind mit Docker containerisiert.",
       "btn_title": "Möchten Sie eine Stellenanzeige veröffentlichen?",
       "github": "https://github.com/borisblagojevic/job-board-web-app",
@@ -63,7 +63,7 @@
     },
     {
       "title": "DIESE SEITE",
-      "info": "Diese Seite ist ebenfalls eines meiner Hauptprojekte. Erstellt mit HTML, SASS und etwas JavaScript für das mobile Menü, die Sprachauswahl und die lokale Speicherung der Benutzereinstellungen.",
+      "info": "Entwicklung und Wartung einer hochperformanten persönlichen Website zur Präsentation technischer Projekte und beruflicher Erfahrung. Dieses Projekt konzentriert sich auf den Nachweis fundierter Web-Kompetenzen durch die Erstellung maßgeschneiderter Lösungen ohne den Overhead schwerer Frameworks.",
       "btn_title": "Quellcode",
       "github": "https://github.com/borisblagojevic/borisblagojevic.github.io",
       "img": "/images/projects/mywebpage.webm"

@@ -10,10 +10,15 @@ Developed and maintained a high-performance personal website designed to showcas
 experience. This project focuses on demonstrating core web proficiency by building custom solutions without the overhead
 of heavy frameworks.
 
+<img alt="Lighthouse test by google" src="./ghAssets/lighthouseTest.png">
+
+<br/>
+<br/>
+<br/>
 <details>
   <summary>SPOILERS DO NOT OPEN !</summary>
 
-  **Did you try to run animation more than once?**
+[Did you try to run animation more than once?](https://en.wikipedia.org/wiki/Easter_egg_(media))
 
 </details>
 

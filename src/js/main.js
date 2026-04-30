@@ -2,7 +2,6 @@ import typingAnimation from "./typingAnimation.js";
 import "../sass/main.scss";
 import initLanguages from "./i10n";
 
-// back to the top arrow
 const backToTop = document.querySelector(".back-to-top");
 const sentinelElement = document.querySelector("#scroll-sentinel");
 
@@ -10,12 +9,12 @@ const crNumber = document.querySelector(".crNumber");
 
 crNumber.innerHTML = new Date().getFullYear();
 
-// menu ***************************************************
 const btnMenuMobile = document.querySelector(".menu-mobile");
 const btnMenuClose = document.querySelector(".menu-close");
 const menuDesktop = document.querySelector(".desktop");
 const heroContent = document.querySelector(".hero__content");
 const hero = document.querySelector(".hero");
+const navBar = document.querySelector(".desktop");
 
 const toggleDisplay = function (el, reverse = false) {
 	if (!reverse) {
@@ -50,8 +49,13 @@ const callDisplayFunctions = function (open = true) {
 	menuDesktop.classList.toggle("mobile-menu");
 };
 
-btnMenuMobile.addEventListener("click", callDisplayFunctions);
+const handleNavElClick = function () {
+	if(menuDesktop.classList.contains("mobile-menu"))
+		callDisplayFunctions(false);
+}
 
+btnMenuMobile.addEventListener("click", callDisplayFunctions);
+navBar.addEventListener("click", handleNavElClick);
 btnMenuClose.addEventListener("click", () => callDisplayFunctions(false));
 
 const options = {

@@ -1,7 +1,7 @@
 {
   "lang": "eng",
   "skipNav": "Skip Navigation",
-  "mainTitle": "Boris Blagojević | Software Engineer",
+  "mainTitle": "Boris Blagojević Software Engineer",
   "navigationItem": ["About me", "Resume", "Tools", "Contact", "Projects"],
   "headerTitle": ["Hello, I am", "Boris Blagojević"],
   "toolsSection": "Languages and tools I use",
@@ -54,7 +54,7 @@
     },
     {
       "title": "THIS PAGE",
-      "info": "My personal portfolio website, built with HTML, SASS, and vanilla JavaScript for handling the mobile menu, language selection, and local storage preferences.",
+      "info": "Developed and maintained a high-performance personal website designed to showcase technical projects and professional experience. This project focuses on demonstrating core web proficiency by building custom solutions without the overhead of heavy frameworks.",
       "btn_title": "Source code",
       "github": "https://github.com/borisblagojevic/borisblagojevic.github.io",
       "img": "/images/projects/mywebpage.webm"

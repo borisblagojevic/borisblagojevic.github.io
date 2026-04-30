@@ -3,17 +3,22 @@ let firstLoaded = false;
 
 export function showLoader() {
 	loaderContainer.classList.remove("loader-container--hidden");
+
+	document.body.style.overflowY = "hidden";
 }
 
 export function hideLoader() {
 	if (loaderContainer.classList.contains("loader-container--hidden")) return;
 
-	console.log(firstLoaded);
-	loaderContainer.classList.add("loader-container--hidden");
+	setTimeout(function () {
+		document.body.style.overflowY = "auto";
 
-	if (firstLoaded)
-		loaderContainer.classList.add("loader-transparent");
+		loaderContainer.classList.add("loader-container--hidden");
 
-	if (!firstLoaded)
-		firstLoaded = true;
+		if (firstLoaded)
+			loaderContainer.classList.add("loader-transparent");
+
+		if (!firstLoaded)
+			firstLoaded = true;
+	}, 100)
 }

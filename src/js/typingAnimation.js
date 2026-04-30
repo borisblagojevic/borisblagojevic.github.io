@@ -1,7 +1,6 @@
 const animationBox = document.querySelector(".typing-animation");
 
 const typingAnimation = async (again = 0) => {
-
     const actions = [
         "getRole() . . . ",
         "fetching data . . . ",
@@ -87,7 +86,6 @@ let specialCounter = 0;
 animationBox.addEventListener('click', function () {
     if (animationBox.classList.contains('hero__span'))
     {
-
         animationBox.classList.remove("hero__span");
 
         animationBox.style.color = 'white';
@@ -101,26 +99,26 @@ animationBox.addEventListener('click', function () {
             case 0:
             case 1:
             case 2:
-                respTXT = "Sure, lets do it again.";
+                respTXT = atob("U3VyZSwgbGV0cyBkbyBpdCBhZ2Fpbi4=");
                 break;
 
             case 3:
-                respTXT = "Once again? OK ... ";
+                respTXT = atob("T25jZSBhZ2Fpbj8gT0sgLi4uIA==");
                 break;
 
             case 4:
-                respTXT = "I know my animation is cool but still, 4th time?";
+                respTXT = atob("SSBrbm93IG15IGFuaW1hdGlvbiBpcyBjb29sIGJ1dCBzdGlsbCwgNHRoIHRpbWU/");
                 break;
 
             case 5:
-                respTXT = "STAHP !!!!";
+                respTXT = atob("U1RBSFAgISEhIQ==");
 
                 animationBox.style.color = 'red';
 
                 break;
 
             case 6:
-                respTXT = "PLEASE ...";
+                respTXT = atob("UExFQVNFIC4uLg==");
 
                 animationBox.style.color = 'red';
 
@@ -128,7 +126,7 @@ animationBox.addEventListener('click', function () {
 
             case 7:
             default:
-                respTXT = "That's enough! Get out =>";
+                respTXT = atob("VGhhdCdzIGVub3VnaCEgR2V0IG91dCA9Pg==");
 
                 animationBox.style.color = 'red';
 
