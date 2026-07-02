@@ -19,6 +19,8 @@ const lngButtons = {
 };
 
 const languageBtn = function (el) {
+	const url = new URL(window.location.href);
+
 	Object.values(lngButtons).forEach((el) => {
 		el.classList.remove("active-language");
 	});
@@ -27,16 +29,17 @@ const languageBtn = function (el) {
 
 	if (el.target.classList[1] === "user-en") {
 		chosenLang = "en";
-		localStorage.setItem("language", JSON.stringify("en"));
 	} else if (el.target.classList[1] === "user-de") {
 		chosenLang = "de";
-		localStorage.setItem("language", JSON.stringify("de"));
 	} else {
 		chosenLang = "bs";
-		localStorage.setItem("language", JSON.stringify("bs"));
 	}
 
 	lngButtons[chosenLang].classList.add("active-language");
+	localStorage.setItem("language", JSON.stringify(chosenLang));
+
+	url.searchParams.set("language", chosenLang);
+	window.history.pushState({}, "", url);
 
 	changeLanguage(chosenLang);
 };
@@ -107,7 +110,6 @@ const fetchTranslations = async (lang) => {
 		}
 
 		return await response.json();
-
 	} catch (error) {
 		console.error("Error loading translations:", error);
 
@@ -152,7 +154,18 @@ async function changeLanguage(storedLng) {
 }
 
 export default function initLanguages() {
-	const lng = JSON.parse(localStorage.getItem("language")) || "en";
+	const set = new Set(["en", "de", "bs"]);
+
+	let lng = JSON.parse(localStorage.getItem("language"));
+
+	if (!lng || !set.has(lng)) {
+		const urlParams = new URLSearchParams(window.location.search);
+
+		lng = set.has(urlParams.get("language"))
+			? urlParams.get("language")
+			: "en";
+	}
+
 	lngButtons[lng].classList.add("active-language");
 	changeLanguage(lng);
 }
