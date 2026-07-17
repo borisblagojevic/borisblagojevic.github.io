@@ -1,4 +1,4 @@
-import { hideLoader, showLoader } from "./loader";
+import { hideLoader, showLoader } from "./loader.js";
 
 const navLink = document.querySelectorAll(".navigation__link");
 const heroTitle = document.querySelector(".hero__title");
