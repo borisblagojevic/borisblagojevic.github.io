@@ -1,6 +1,6 @@
 import typingAnimation from "./typingAnimation.js";
 import "../sass/main.scss";
-import initLanguages from "./i10n";
+import initLanguages from "./i10n.js";
 
 const backToTop = document.querySelector(".back-to-top");
 const sentinelElement = document.querySelector("#scroll-sentinel");
